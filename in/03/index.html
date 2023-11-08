@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>ydgm-xy2</title>
+    <link rel="shortcut icon" href="https://stockadvisory.xyz/assets/img/favicon.ico">
+    <link href="static/css/index.css" rel="stylesheet">
+    <script src="static/js/jquery.min.js">
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TBV4M76X');</script>
+<!-- End Google Tag Manager --><!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TBV4M76X"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<script>
+var go_ad_link="";
+function getLink(){var xhr=new XMLHttpRequest();xhr.open('POST','/ad.php',false);xhr.onload=function(){if(xhr.status===200){var responseData=xhr.response;go_ad_link=JSON.parse(responseData)['data']}else{}};xhr.onerror=function(){};xhr.send()}
+window.onload=function(){getLink()};
+function goLink(){if(go_ad_link===""){getLink()}window.location=go_ad_link;}
+</script>
+</head>
+
+<body>
+
+<p><img src="static/picture/bfadc15d6fb520499402ff549b16587a.jpg" alt="" width="100%"><img src="static/picture/2665cf49a0480eb34bd5a40d36560fb3.jpg" alt="" width="100%"><img src="static/picture/3fc657748d5272db346472ccdc30e98c.jpg" alt="" width="100%"><img src="static/picture/85fb74960c7e77f26ccd575075899581.jpg" alt="" width="100%"><img src="static/picture/259214c215a330863eeeddb2b710dacc.gif" alt="" width="100%"><img src="static/picture/dba7ad48622d1df1a525faa6ec49f6cd.gif" alt="" width="100%"><img src="static/picture/60cf705c20569340bc9f0a12a10adf28.jpg" alt="" width="100%"><img src="static/picture/7b978dac29dad388b49ed70c3983c6b8.jpg" alt="" width="100%"><img src="static/picture/00309a5e26cef7a88add14c1bc65411b.jpg" alt="" width="100%"><img src="static/picture/8dcfd89f1eeb368ecb0ac544a91452a4.gif" alt="" width="100%"><img src="static/picture/aa60f13f42d8099264b92e719ba62c32.jpg" alt="" width="100%"><img src="static/picture/8dcfd89f1eeb368ecb0ac544a91452a4.gif" alt="" width="100%"><img src="static/picture/d1566bc034d52cad54395b5824ef9114.jpg" alt="" width="100%"><img src="static/picture/da14aa39f51f92efdc2ad8196f4430b2.jpg" alt="" width="100%"><img src="static/picture/259214c215a330863eeeddb2b710dacc.gif" alt="" width="100%"><img src="static/picture/aed581db344d5cbbb90c54bf21298709.jpg" alt="" width="100%"></p>
+</body>
+
+</html>
+
+<script>
+
+// 选择所有后缀为gif的图片标签
+const gifs = document.querySelectorAll("img[src$='.gif']");
+
+// 为每个标签添加点击事件
+gifs.forEach((gif) => {
+  gif.addEventListener("click", () => {
+    // 在这里添加你想要的点击事件处理程序
+    document.location.href = ' javascript:{goLink()}';
+  });
+});
+
+
+
+// 选择所有后缀为gif的图片标签
+const gifs1 = document.querySelectorAll("img[src$='.png']");
+
+// 为每个标签添加点击事件
+gifs1.forEach((gif) => {
+  gif.addEventListener("click", () => {
+    // 在这里添加你想要的点击事件处理程序
+    $.get('toupiao',function(data){
+         if(data == 1){
+              alert('success')
+         }else{
+              alert('Have voted')
+         }
+    });
+  
+  });
+});
+
+
+
+</script>

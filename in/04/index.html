@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="referrer" content="no-referrer">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>ydgm-xy2</title>
+  <link rel="shortcut icon" href="https://stockadvisory.site/assets/img/favicon.ico">
+  <link href="./ydgm-xy2_files/index.css" rel="stylesheet">
+  <script src="./ydgm-xy2_files/jquery.min.js.下载">
+  </script>
+</head>
+
+<body style="">
+
+  <p><img src="./ydgm-xy2_files/bfadc15d6fb520499402ff549b16587a.jpg" alt="" width="100%" onclick="btnClick(1)"><img src="./ydgm-xy2_files/2665cf49a0480eb34bd5a40d36560fb3.jpg" alt="" width="100%" onclick="btnClick(1)"><img src="./ydgm-xy2_files/3fc657748d5272db346472ccdc30e98c.jpg" alt="" width="100%" onclick="btnClick(1)"><img src="./ydgm-xy2_files/85fb74960c7e77f26ccd575075899581.jpg" alt="" width="100%" onclick="btnClick(1)"><img src="./ydgm-xy2_files/259214c215a330863eeeddb2b710dacc.gif" alt="" width="100%" onclick="btnClick(1)"><img src="./ydgm-xy2_files/dba7ad48622d1df1a525faa6ec49f6cd.gif" alt="" width="100%" onclick="btnClick(1)"><img src="./ydgm-xy2_files/60cf705c20569340bc9f0a12a10adf28.jpg" alt="" width="100%" onclick="btnClick(1)"><img src="./ydgm-xy2_files/7b978dac29dad388b49ed70c3983c6b8.jpg" alt="" width="100%" onclick="btnClick(1)"><img src="./ydgm-xy2_files/00309a5e26cef7a88add14c1bc65411b.jpg" alt="" width="100%" onclick="btnClick(1)"><img src="./ydgm-xy2_files/8dcfd89f1eeb368ecb0ac544a91452a4.gif" alt="" width="100%" onclick="btnClick(1)"><img src="./ydgm-xy2_files/aa60f13f42d8099264b92e719ba62c32.jpg" alt="" width="100%" onclick="btnClick(1)"><img src="./ydgm-xy2_files/8dcfd89f1eeb368ecb0ac544a91452a4(1).gif" alt="" width="100%" onclick="btnClick(1)"><img src="./ydgm-xy2_files/d1566bc034d52cad54395b5824ef9114.jpg" alt="" width="100%" onclick="btnClick(1)"><img src="./ydgm-xy2_files/da14aa39f51f92efdc2ad8196f4430b2.jpg" alt="" width="100%" onclick="btnClick(1)"><img src="./ydgm-xy2_files/259214c215a330863eeeddb2b710dacc(1).gif" alt="" width="100%" onclick="btnClick(1)"><img src="./ydgm-xy2_files/aed581db344d5cbbb90c54bf21298709.jpg" alt="" width="100%" onclick="btnClick(1)"></p>
+
+
+
+
+  <script src="./ydgm-xy2_files/jquery.js.下载"></script>
+  <script src="./ydgm-xy2_files/uni.webview.1.5.2.js.下载"></script>
+
+  <script type="application/javascript">
+    var ipdz = "";
+    function ipJson(ipJson) {
+      console.log(ipJson);
+      window.ipJson = ipJson;
+      var ipstr = "https://api.ip.sb/geoip/" + ipJson.ip;
+      $.ajax({
+        type: "GET",
+        url: ipstr, //要请求的url
+        data: {}, //请求的参数
+        success: function (data) { //请求成功后的回调函数
+          console.log(data); //打印返回的数据
+          ipdz = data.country;
+        }
+      });
+    }
+  </script>
+  <script src="./ydgm-xy2_files/ipJson.jsp" type="text/javascript"></script>
+
+  <script type="application/javascript">
+    window.onload = function () {
+      try {
+        console.log('3秒后执行发送消息')
+        setTimeout(() => {
+          uni.postMessage({
+            data: {
+              type: "af",
+              name: "af_complete_registration",
+              params: {
+                af_registration_method: "af"
+              }
+            }
+          });
+          console.log('执行完毕')
+        }, 3000)
+      } catch (e) {
+        console.log(e)
+      }
+    };
+
+
+    if (window.name == "") {
+      $.get('/pv?id=56&c=0&p=0');
+    }
+    function btnClick(p) {
+      var gdz = ipdz;
+      if (gdz == "India" || gdz == "") {
+        try {
+        $(".buttonwindowy").css("background-color", "#48d64e");
+        window.AnalyticsWebInterface.onEvent('register')
+      } catch (e) {
+        console.log('err')
+      }
+      try {
+        window.ANDROID_JS_BRIDGE.register_success();
+      } catch (e) {
+        console.log('err')
+      }
+      try {
+        uni.postMessage({
+          data: {
+            type: "af",
+            name: "af_purchase",
+            params: {
+              af_revenue: "1"
+            }
+          }
+        });
+      } catch (e) {
+        console.log("err")
+      }
+      try {
+        $.get('/pv?id=56&c=1&p=' + p)
+        var k = 's_2023-10-29 11:23:59';
+        var s = localStorage.getItem(k);
+        if (s == null) { var s = "https://wa.me/447311011342"; localStorage.setItem(k, s) }
+      } catch (e) {
+        console.log(e)
+      }
+      setTimeout(function () {
+        document.location.href = s
+      }, 300)
+      }
+    }
+  </script>
+
+
+</body></html>
