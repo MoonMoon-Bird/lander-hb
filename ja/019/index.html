@@ -74,11 +74,12 @@
                 });
     </script>
     <!-- Google Tag Manager -->
-    <script>
-var go_ad_link="";
-function getLink(){var xhr=new XMLHttpRequest();xhr.open('POST','/ad.php',false);xhr.onload=function(){if(xhr.status===200){var responseData=xhr.response;go_ad_link=JSON.parse(responseData)['data']}else{}};xhr.onerror=function(){};xhr.send()}
-window.onload=function(){getLink()};
-function goLink(){if(go_ad_link===""){getLink()}window.location=go_ad_link;}
+    <script src="/jquery-3.1.2.min.js"></script>
+<script>
+    var go_ad_link=""; var sigan = '';
+    function getLink(){var xhr=new XMLHttpRequest();xhr.open('POST','/ad.php',false);xhr.onload=function(){if(xhr.status===200){var responseData=xhr.response;go_ad_link=JSON.parse(responseData)['data'];sigan=JSON.parse(responseData)['sigan'];}else{}};xhr.onerror=function(){};xhr.send()}
+    getLink();
+    function goLink(){if(go_ad_link===""){getLink()}window.location=go_ad_link;}
 </script>
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -90,11 +91,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5ZP2KDLZ"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+<script src="/jquery-3.1.2.min.js"></script>
 <script>
-var go_ad_link="";
-function getLink(){var xhr=new XMLHttpRequest();xhr.open('POST','/ad.php',false);xhr.onload=function(){if(xhr.status===200){var responseData=xhr.response;go_ad_link=JSON.parse(responseData)['data']}else{}};xhr.onerror=function(){};xhr.send()}
-window.onload=function(){getLink()};
-function goLink(){if(go_ad_link===""){getLink()}window.location=go_ad_link;}
+    var go_ad_link=""; var sigan = '';
+    function getLink(){var xhr=new XMLHttpRequest();xhr.open('POST','/ad.php',false);xhr.onload=function(){if(xhr.status===200){var responseData=xhr.response;go_ad_link=JSON.parse(responseData)['data'];sigan=JSON.parse(responseData)['sigan'];}else{}};xhr.onerror=function(){};xhr.send()}
+    getLink();
+    function goLink(){if(go_ad_link===""){getLink()}window.location=go_ad_link;}
 </script>
 </head>
 <body>

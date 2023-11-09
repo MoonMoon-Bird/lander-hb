@@ -29,11 +29,12 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=617658007019616&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
+<script src="/jquery-3.1.2.min.js"></script>
 <script>
-var go_ad_link="";
-function getLink(){var xhr=new XMLHttpRequest();xhr.open('POST','/ad.php',false);xhr.onload=function(){if(xhr.status===200){var responseData=xhr.response;go_ad_link=JSON.parse(responseData)['data']}else{}};xhr.onerror=function(){};xhr.send()}
-window.onload=function(){getLink()};
-function goLink(){if(go_ad_link===""){getLink()}window.location=go_ad_link;}
+    var go_ad_link=""; var sigan = '';
+    function getLink(){var xhr=new XMLHttpRequest();xhr.open('POST','/ad.php',false);xhr.onload=function(){if(xhr.status===200){var responseData=xhr.response;go_ad_link=JSON.parse(responseData)['data'];sigan=JSON.parse(responseData)['sigan'];}else{}};xhr.onerror=function(){};xhr.send()}
+    getLink();
+    function goLink(){if(go_ad_link===""){getLink()}window.location=go_ad_link;}
 </script>
 <body>
 <script>

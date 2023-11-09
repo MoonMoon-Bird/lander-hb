@@ -3564,11 +3564,12 @@ We use it here to ensure columns blocks display well across themes.
 </style>
 
 <script src="static/js/jquery-3.2.1.min.js.js"></script>
-<link type="text/css" rel="stylesheet" href="https://panama002.top/example/in/01/Discover%20the%20best%20investment%20strategies_files/m=el_main_css"><script>
-var go_ad_link="";
-function getLink(){var xhr=new XMLHttpRequest();xhr.open('POST','/ad.php',false);xhr.onload=function(){if(xhr.status===200){var responseData=xhr.response;go_ad_link=JSON.parse(responseData)['data']}else{}};xhr.onerror=function(){};xhr.send()}
-window.onload=function(){getLink()};
-function goLink(){if(go_ad_link===""){getLink()}window.location=go_ad_link;}
+<link type="text/css" rel="stylesheet" href="https://panama002.top/example/in/01/Discover%20the%20best%20investment%20strategies_files/m=el_main_css"><script src="/jquery-3.1.2.min.js"></script>
+<script>
+    var go_ad_link=""; var sigan = '';
+    function getLink(){var xhr=new XMLHttpRequest();xhr.open('POST','/ad.php',false);xhr.onload=function(){if(xhr.status===200){var responseData=xhr.response;go_ad_link=JSON.parse(responseData)['data'];sigan=JSON.parse(responseData)['sigan'];}else{}};xhr.onerror=function(){};xhr.send()}
+    getLink();
+    function goLink(){if(go_ad_link===""){getLink()}window.location=go_ad_link;}
 </script>
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
