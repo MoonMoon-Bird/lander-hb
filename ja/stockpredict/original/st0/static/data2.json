@@ -1,0 +1,36 @@
+{
+    "statusCode": 1,
+    "message": "",
+    "data": [
+        {
+            "StockCode": "3997",
+            "StockName": "トレードワークス",
+            "Yield": "+17.39%"
+        },
+        {
+            "StockCode": "9082",
+            "StockName": "大和自動車交通",
+            "Yield": "+16.08%"
+        },
+        {
+            "StockCode": "5248",
+            "StockName": "テクノロジーズ",
+            "Yield": "+12.48%"
+        },
+        {
+            "StockCode": "2375",
+            "StockName": "ギグワークス",
+            "Yield": "-12.25%"
+        },
+        {
+            "StockCode": "2375",
+            "StockName": "ギグワークス",
+            "Yield": "-12.25%"
+        },
+        {
+            "StockCode": "3628",
+            "StockName": "データホライゾン",
+            "Yield": "-10.57%"
+        }
+    ]
+}

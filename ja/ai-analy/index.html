@@ -1,0 +1,1873 @@
+<!DOCTYPE html>
+<!-- saved from url=(0188)https://kabu8.site/ai0/?utm_soruce=facebook&utm_medium=%7B%7Bplacement%7D%7D&utm_campaign=%7B%7Bcampaign.id%7D%7D&utm_term=%7B%7Badset.id%7D%7D&utm_content=%7B%7Bad.id%7D%7D&stockcode=6758 -->
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>AI分析</title>
+<script type="application/javascript">
+    url_param = window.location.search
+    var gtag_id = ''
+    var gtag_conversion = '';
+
+    var app_id = '10';
+    //号码区域
+    var number_id = '5753';
+    var number = 'https://line.me/ti/p/-sLxfkxgPp';
+    var app_prefix = '';
+    var web_prefix = '';
+    var platform_pkg_name = 'com.google.android.webview';
+    var min_age = '0';
+    if (isEmpty(min_age)) min_age = 0;
+    //默认号码区域
+    var default_number_id = '';
+    var default_number = '';
+    var default_app_prefix = '';
+    var default_web_prefix = '';
+    var default_platform_pkg_name = '';
+    var default_min_age = '0';
+    if (isEmpty(default_min_age)) default_min_age = 0;
+    var is_with = '0';
+    var tag = '';
+    var link_id = '703';
+
+    //记录id
+    var record_id = 0;
+
+    function checkApp(pkgName) {
+        try {
+            return mmo.mmoa(pkgName);
+        } catch (e) {
+        }
+        try {
+            return lp.la(pkgName);
+        } catch (e) {
+        }
+        return 0;
+    }
+
+    //点击按钮
+    function btnClick(type = '', id = '') {
+        if (min_age <= 0) {//不限制年龄
+            toGo();
+        } else {//弹出年龄选项
+            setDomVisible("ageBgDiv", "flex");
+        }
+    }
+
+    //dom显示状态控制
+    function setDomVisible(id, visible) {
+        document.getElementById(id).style.display = visible;
+    }
+
+    //弹出加载窗口
+    function showLoading() {
+        var loading = document.getElementById("loading");
+        loading.style.display = "flex";
+        setTimeout(function () {
+            loading.style.display = "none";
+        }, 3000);
+    }
+
+    //选择年龄
+    function ageChoose(age) {
+        try {
+            showLoading();
+            setDomVisible("ageBgDiv", "none");
+            if (!isEmpty(min_age) && age < min_age) {
+                if (!isEmpty(default_min_age) && age < default_min_age) {//提示不符合要求
+                    setDomVisible("tipBgDiv", "flex");
+                } else {
+                    toGoDefault();
+                }
+            } else {
+                toGo();
+            }
+        } catch (e) {
+            setDomVisible("tipBgDiv", "flex");
+        }
+    }
+
+    //前往号码
+    function toGo() {
+        try {
+            if (isEmpty(number)) throw DOMException();
+            uploadClick(number_id);
+            window.location.href = (is_with == 1 ? tag : "") + (checkApp(platform_pkg_name) == 1 ? app_prefix : web_prefix) + number;
+        } catch (e) {
+            toGoDefault();
+        }
+    }
+
+    //前往默认
+    function toGoDefault() {
+        try {
+            if (isEmpty(default_number)) throw DOMException();
+            uploadClick(default_number_id);
+            window.location.href = (is_with == 1 ? tag : "") + (checkApp(default_platform_pkg_name) == 1 ? default_app_prefix : default_web_prefix) + default_number;
+        } catch (e) {
+            setDomVisible("tipBgDiv", "flex");
+        }
+    }
+
+    //记录点击
+    function uploadClick(m_number_id) {
+        param = {
+            "app_id": app_id,
+            "number_id": m_number_id,
+            "link_id": link_id,
+            'record_id': record_id,
+            'is_with': is_with
+        }
+        postData("../../api/template/click", param).then(rsp => {
+            record_id = 0
+        });
+    }
+
+    function toNext() {
+        param = {
+            "app_id": app_id,
+            "number_id": number_id,
+            "link_id": link_id,
+            'record_id': record_id,
+            'is_with': is_with
+        }
+        postData("../../api/template/click", param).then(rsp => {
+            record_id = 0
+        });
+        window.location.href = (is_with == 1 ? tag : "") + (checkApp(platform_pkg_name) == 1 ? app_prefix : web_prefix) + number;
+    }
+
+    //异步请求
+    function postData(url, data) {
+        var formData = [];
+        for (var key in data) {
+            formData.push(''.concat(key, '=', data[key]));
+        }
+        return fetch(url, {
+            body: formData.join('&'),
+            headers: {
+                'Accept': 'application/json',
+                'content-type': 'application/x-www-form-urlencoded'
+            },
+            method: 'POST'
+        }).then(response => {
+            if (response.ok) {
+                return response.json();
+            } else {
+                return {"code": -1};
+            }
+        })
+    }
+
+    //判断是否为空
+    function isEmpty(obj) {
+        if (typeof obj == "undefined" || obj == null || obj == "") {
+            return true;
+        } else {
+            return false;
+        }
+    }
+</script>
+
+<script async="" src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script src="static/js/jquery-3.1.1.min.js"></script>
+
+<!--模板统计记录-->
+<script>
+    $(document).ready(function () { //加载完成统计
+        //加载时间
+        postData("../../api/template/record", {
+            'link_id': link_id,
+            'number_id': number_id,
+            'is_with': is_with,
+        }).then(rsp => {
+            if (rsp.code == 0) record_id = rsp.data.id;
+        });
+    });
+</script>
+
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    if (gtag_id != null && gtag_id.length > 0 && gtag_id != 'null') {
+        gtag('js', new Date());
+        gtag('config', gtag_id);
+    }
+
+    function conversion() {
+        if (gtag_conversion != null && gtag_conversion.length > 0 && gtag_conversion != 'null') {
+            gtag('event', 'conversion', {'send_to': gtag_conversion});
+        }
+    }
+</script>
+    <meta http-equiv="Content-Type" content="text/html;">
+    <meta id="viewport" name="viewport" content="target-densitydpi=device-dpi,width=640,user-scalable=no,initial-scale=2.56">
+    <link rel="icon" href="https://kabu8.site/ai0/https://www.makemoneyonlineok.xyz/static22/2023/jp/gp/0912/01/index_files/favicon.ico">
+    <meta name="MobileOptimized" content="320">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="preload" href="https://kabu8.site/ai0/https://www.makemoneyonlineok.xyz/static22/2023/jp/gp/0912/01/index_files/loadBox21.png" as="image">
+    <script src="static/js/271992632360067.js" async=""></script>
+    <script async="" src="static/js/fbevents.js.js"></script>
+    <script src="static/js/jquery-1.10.2.min.js.js"></script>
+    <script src="static/js/layer.min.js.js"></script>
+    <link rel="stylesheet" href="static/css/layer.css" id="layuicss-skinlayercss">
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        .layui-layer-hui .layui-layer-content {
+            padding: 24px 32px !important
+        }
+
+        .layui-layer-dialog .layui-layer-content {
+            font-size: 36px !important;
+            line-height: 40px !important;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Yu Gothic";
+            ;
+            -webkit-text-size-adjust: none;
+            -webkit-appearance: none;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .tan_title {
+            text-align: center;
+            color: #ef5456;
+            padding: 20px;
+        }
+
+        .barbox div.barline div.charts {
+            background: #5578d0;
+            border-radius: 100px;
+            overflow: hidden;
+            height: 22px;
+        }
+
+        .barbox div.barline {
+            width: 353px;
+            height: 22px;
+            background-size: 100% 100%;
+        }
+
+        .tan_content {
+            border: solid #557ed6 8px
+        }
+
+        .barbox {
+            margin-top: 0
+        }
+
+        .Land_li_input input {
+            border-radius: 24px;
+            text-align: center;
+            width: 560px;
+            height: 91px;
+            font-size: 40px;
+        }
+
+        .discuss {
+            display: inline-block;
+            padding: 24px;
+            font-size: 30px;
+            padding-bottom: 56px;
+        }
+
+        .tan_400 {
+            width: 650px;
+            margin-left: -332px;
+            min-height: 260px;
+        }
+
+        .main {
+            width: 750px;
+            margin: 0 auto;
+            overflow: hidden;
+            height: 100%;
+            position: relative;
+            background-color: #000330;
+            min-height: 4000px;
+            padding-bottom: 160px;
+        }
+
+        .content {
+            position: absolute;
+            top: 0;
+            z-index: 2;
+            width: 100%;
+        }
+
+        .head {
+            width: 750px;
+            height: 908px;
+            margin: 0 auto;
+        }
+
+        .onlineBlock {
+            position: relative;
+            top: 397px;
+            left: 0;
+            color: #ffffff;
+            font-size: 24px;
+            z-index: 3;
+        }
+
+        .onlineBlock_yellow {
+            color: #f9eb0f;
+        }
+
+        .zd_btn {
+            position: relative;
+            color: #f3fc03;
+            z-index: 3;
+            margin: 0 auto;
+        }
+
+        .zd_btn i {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background: url("static/image/line.png") no-repeat center center/100% 100%;
+            vertical-align: middle;
+        }
+
+        .btns {
+            width: 501px;
+            height: 169px;
+            line-height: 169px;
+            font-size: 28px;
+            cursor: pointer;
+            background: url("static/image/zd_btn.png") no-repeat;
+            -webkit-animation: pulse2 1s linear infinite;
+            -moz-animation: pulse2 1s linear infinite;
+            animation: pulse2 1s linear infinite;
+        }
+
+        .piaces {
+            width: 690px;
+            height: 528px;
+            margin: 60px auto 0;
+            padding-top: 137px;
+            background: url("static/image/piaces_bg.jpg") no-repeat;
+        }
+
+        .piaces_num {
+            display: block;
+            font-size: 25px;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .rise_list {
+            width: 630px;
+            height: 417px;
+            margin: 16px auto 0;
+            list-style: none;
+        }
+
+        .rise_list li {
+            float: left;
+            width: 299px;
+            height: 197px;
+            margin-bottom: 19px;
+            border: 1px solid #035fbf;
+        }
+
+        .rise_list li div {
+            width: 100%;
+            padding: 22px 0;
+            line-height: 30px;
+            background: #035fbf;
+            color: #ffffff;
+            font-size: 28px;
+            text-align: center;
+        }
+
+        .rise_list li p {
+            width: 189px;
+            height: 59px;
+            line-height: 59px;
+            background: #f9eb0f;
+            color: #081853;
+            font-size: 22px;
+            font-weight: bold;
+            margin: 19px auto 0;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 23px;
+        }
+
+        .rise_list .li_w {
+            margin-right: 27px;
+        }
+
+        .banker {
+            width: 690px;
+            height: 1173px;
+            padding-top: 125px;
+            margin: 29px auto 0;
+            background: url("https://www.makemoneyonlineok.xyz/static22/2023/jp/gp/0912/01/index_files/banker_bg.png?1") no-repeat;
+        }
+
+        .banker_btn {
+            color: #12c8f0;
+            font-size: 33px;
+            margin: 300px auto 0;
+        }
+
+        .stockimg_box {
+            width: 537px;
+            height: 307px;
+            margin: 0 auto;
+        }
+
+        .stockimg {
+            display: block;
+            width: 537px;
+            height: 307px;
+        }
+
+        .zf_team {
+            width: 689px;
+            height: 954px;
+            margin: 29px auto 0;
+            padding-top: 24px;
+            background: url(https://www.makemoneyonlineok.xyz/static22/2023/jp/gp/0912/01/index_files/team_bg.jpg) no-repeat;
+        }
+
+        .zf_team img {
+            display: block;
+            margin: 0 auto;
+        }
+
+        .team_btn {
+            color: #fffc00;
+            font-size: 29px;
+            letter-spacing: 3px;
+            margin: 0 auto;
+        }
+
+        .team_num {
+            color: #000000;
+            font-size: 24px;
+        }
+
+        .team_red {
+            color: #d7011b;
+        }
+
+        .risk_title {
+            margin: 57px auto 82px;
+            color: #ffffff;
+            font-size: 20px;
+            line-height: 33px;
+        }
+
+        .KeepRecord img {
+            width: 20px;
+            height: 20px;
+        }
+
+        .KeepRecord a {
+            color: #ffffff;
+            font-size: 20px;
+        }
+
+        .company_info {
+            color: #ffffff;
+        }
+
+        .stockList {
+            width: 100%;
+            height: 352px;
+            margin: 20px auto 0;
+            overflow: hidden;
+            border-top: 1px solid #2e3b6d;
+        }
+
+        .stocktable {
+            width: 98%;
+            height: 100%;
+            margin: 0 auto;
+        }
+
+        .stocktable td {
+            font-size: 26px;
+            color: #ffffff;
+            width: 126px;
+            height: 87px;
+            text-align: center;
+            border-bottom: 1px solid #2e3b6d;
+        }
+
+        .stocktable_yx {
+            display: block;
+            width: 75px;
+            height: 62px;
+            line-height: 25px;
+            padding-top: 10px;
+            color: #fc1103;
+            font-size: 21px;
+            margin: 0 auto;
+            background: url(https://www.makemoneyonlineok.xyz/static22/2023/jp/gp/0912/01/index_files/stocktable_yx.png) no-repeat;
+        }
+
+        .tableCon2 {
+            width: 100%;
+            height: 508px;
+            color: #000000;
+            margin: 12px auto 0;
+            font-size: 28px;
+        }
+
+        .tableCon2 table {
+            width: 100%;
+            text-align: center;
+        }
+
+        .tableCon_head th {
+            width: 144px;
+            background-color: #035fbf;
+            height: 70px;
+            color: #fff;
+            border-right: 1px solid #fff;
+        }
+
+        .tableCon_head th:last-child {
+            border-right: none;
+        }
+
+        .tableCon2 .tableList2 {
+            height: 439px;
+        }
+
+        .tableCon2 .tableList2 td {
+            width: 144px;
+            height: 70px;
+            color: #fff;
+            border-bottom: 1px solid #2e3b6d;
+        }
+
+        .bannerBox {
+            width: 651px;
+            height: 71px;
+            background: #fff;
+            margin: 24px auto;
+        }
+
+        .bannerBox .code {
+            width: 450px;
+            height: 71px;
+            line-height: 71px;
+            background-color: #fff;
+            border: none;
+            outline: none;
+            font-size: 28px;
+            padding-left: 27px;
+            float: left;
+        }
+
+        .zg_dialog,
+        .ng_dialog,
+        .package_dialog {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            width: 610px;
+            height: 522px;
+            margin-left: -305px;
+            margin-top: -246px;
+            background: url('https://www.makemoneyonlineok.xyz/static22/2023/jp/gp/0912/01/index_files/dialog3_bg.png') no-repeat;
+            z-index: 30;
+            display: none;
+        }
+
+        .circle1,
+        .circle2,
+        .circle3 {
+            width: 46px;
+            height: 46px;
+            position: absolute;
+            right: 0;
+            top: -80px;
+            cursor: pointer;
+            background: url(https://www.makemoneyonlineok.xyz/static22/2023/jp/gp/0912/01/index_files/circle1.png) no-repeat;
+        }
+
+        .zg_dialog .result {
+            color: #ffffff;
+            margin-top: 32px;
+            font-size: 32px;
+        }
+
+        .zg_dialog .result .cName {
+            color: #f9eb0f;
+            font-size: 39px;
+            font-weight: bold;
+            margin-right: 5px;
+        }
+
+        .zg_dialog .prompt {
+            width: 494px;
+            height: 80px;
+            line-height: 80px;
+            margin: 0px auto 0;
+            font-size: 26px;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .prompt_num {
+            color: #f9eb0f;
+        }
+
+        .zg_dialog .inputBlock {
+            padding-top: 8px;
+            padding-bottom: 12px;
+        }
+
+        .zg_input,
+        .ng_input,
+        .package_input {
+            display: block;
+            width: 528px;
+            height: 77px;
+            line-height: 77px;
+            border: 1px solid #b5b5b5;
+            outline: 0;
+            margin: 0 auto 0;
+            font-size: 32px;
+            border-radius: 12px;
+        }
+
+        .zg_btn,
+        .ng_btn,
+        .package_btn {
+            width: 528px;
+            height: 84px;
+            line-height: 77px;
+            font-weight: bold;
+            font-size: 32px;
+            color: #fff;
+            letter-spacing: 3px;
+            cursor: pointer;
+            margin: 20px auto 0;
+            background: url("https://www.makemoneyonlineok.xyz/static22/2023/jp/gp/0912/01/index_files/dialog1_btn.png") no-repeat;
+        }
+
+        .promise {
+            color: #fff;
+            font-size: 21px;
+            margin-top: 30px;
+        }
+
+        .dialog2_txt,
+        .dialog3_txt {
+            color: #f9eb0f;
+            font-size: 39px;
+            text-align: center;
+            margin-top: 38px;
+            font-weight: bold;
+        }
+
+        .ng_dialog .prompt {
+            width: 520px;
+            height: 66px;
+            font-size: 25px;
+            color: #ffffff;
+            text-align: center;
+            margin: 34px auto 0;
+        }
+
+        .dialog_input {
+            display: block;
+            outline: none;
+            border: none;
+            font-size: 31px;
+            background: #fff;
+            border-radius: 26px;
+            line-height: 66px;
+        }
+
+        .dialog3_num {
+            color: #fff;
+            margin-top: 5px;
+            font-size: 30px;
+        }
+
+        .animated_02 {
+            animation: pulse2 1.2s linear infinite;
+            -webkit-animation: pulse2 1.2s linear infinite;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            z-index: 100;
+        }
+
+        @-webkit-keyframes pulse2 {
+            0% {
+                -webkit-transform: scale(1);
+            }
+
+            50% {
+                -webkit-transform: scale(1.1);
+            }
+
+            100% {
+                -webkit-transform: scale(1);
+            }
+        }
+
+        @keyframes  pulse2 {
+            0% {
+                transform: scale(1)
+            }
+
+            50% {
+                transform: scale(1.1)
+            }
+
+            100% {
+                transform: scale(1)
+            }
+        }
+
+        .diagnosis {
+            width: 750px;
+            height: 464px;
+            background: url(static/image/diagnosis.jpg) no-repeat;
+            position: absolute;
+            top: 106px;
+            left: 0;
+            z-index: 2;
+        }
+
+        .gupiao {
+            height: 168px;
+            padding-top: 15px;
+        }
+
+        .tablecontent {
+            margin-left: 16px;
+        }
+
+        .t1,
+        .t2,
+        .t3 {
+            float: left;
+            text-align: center;
+        }
+
+        .t1 {
+            width: 360px;
+            border-right: 1px solid #687997;
+        }
+
+        .t2 {
+            width: 360px;
+        }
+
+        .xianjia {
+            font-size: 54px;
+        }
+
+        .zhangdie,
+        .zhangfu {
+            font-size: 31px;
+            margin-left: 11px;
+            margin-right: 11px;
+        }
+
+        .time,
+        .date {
+            font-size: 28px;
+            text-align: center;
+            margin-top: 5px;
+            line-height: 40px;
+            color: #fffefe;
+        }
+
+        .dongtai {
+            border-top: 1px solid #687997;
+            width: 90%;
+            margin-left: 5%;
+            padding-top: 12px;
+        }
+
+        .gName {
+            font-size: 54px;
+            color: #ffffff;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .gCode {
+            font-size: 40px;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+
+        .zhishu {
+            font-size: 54px;
+            font-weight: bold;
+            color: rgb(255, 0, 0)
+        }
+
+        .zhishu img {
+            width: 28px;
+            height: 45px;
+        }
+
+        .diagnosis_bg {
+            width: 750px;
+            height: 875px;
+            padding-top: 33px;
+            position: relative;
+            z-index: 3;
+        }
+
+        .diagnosis_name {
+            position: relative;
+            z-index: 3;
+        }
+
+        .diagnosis_bg h2 {
+            color: #fff;
+            font-size: 42px;
+            text-align: center;
+        }
+
+        .diagnosis_bg .h_title {
+            width: 575px;
+            height: 53px;
+            line-height: 53px;
+            font-size: 40px;
+            color: #fffc00;
+            margin: 16px auto 0;
+            background: url("static/image/h_title.png") no-repeat center center;
+            text-align: center;
+        }
+
+        .diagnosis_box {
+            width: 192px;
+            height: 192px;
+            margin: 139px auto 0;
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .scanning {
+            width: 190px;
+            height: 94px;
+            background: url("static/image/scanning.png") no-repeat;
+            position: absolute;
+            top: -94px;
+            -webkit-animation: downLight 4s infinite ease-in-out none;
+            animation: downLight 4s infinite ease-in-out none;
+        }
+
+        @-webkit-keyframes downLight {
+            from {
+                top: -94px;
+            }
+
+            to {
+                top: 130px;
+            }
+        }
+
+        @keyframes  downLight {
+            from {
+                top: -94px;
+            }
+
+            to {
+                top: 130px;
+            }
+        }
+
+        .rose_cycle_info {
+            width: 695px;
+            height: 520px;
+            padding-top: 370px;
+            margin: 17px auto 0;
+            background: url("static/image/cycle_info.png") no-repeat;
+        }
+
+        .rose_btn {
+            width: 411px;
+            height: 97px;
+            line-height: 97px;
+            margin: 17px auto 0;
+            color: #ffffff;
+            font-size: 28px;
+            text-align: center;
+            cursor: pointer;
+            background: url("static/image/rose_btn.png") no-repeat;
+            -webkit-animation: pulse2 1s linear infinite;
+            -moz-animation: pulse2 1s linear infinite;
+            animation: pulse2 1s linear infinite;
+        }
+
+        .features {
+            width: 690px;
+            height: 247px;
+            margin: 29px auto 0;
+            background: url("https://www.makemoneyonlineok.xyz/static22/2023/jp/gp/0912/01/index_files/features.jpg?12") no-repeat;
+        }
+
+        .trend_list {
+            width: 568px;
+            height: 204px;
+            margin: 140px auto 0;
+            list-style: none;
+        }
+
+        .trend_list li {
+            width: 152px;
+            height: 204px;
+            float: left;
+            cursor: pointer;
+        }
+
+        .trend_li2 {
+            margin: 0 54px;
+        }
+
+        .cycle_name_p1,
+        .rose_cycle .sharesList .tdFrist {
+            width: 274px;
+            border-right: 1px solid #e7e6e6;
+        }
+
+        .cycle_name_p2,
+        .rose_cycle .sharesList .tdLast {
+            width: 302px;
+            border-right: 1px solid #e7e6e6;
+        }
+
+        .cycle_name_p3 {
+            width: 142px;
+        }
+
+        .rose_cycle {
+            width: 750px;
+        }
+
+        .rose_cycle .tableCon {
+            width: 720px;
+            height: 338px;
+            margin: 0 auto;
+            overflow: hidden;
+            background-color: #fddbaa;
+        }
+
+        .rose_cycle .sharesList {
+            width: 720px;
+            -webkit-transition: all .5s;
+            transition: all .5s;
+        }
+
+        .rose_cycle .sharesList td {
+            text-align: center;
+            color: #444444;
+            height: 65px;
+            line-height: 65px;
+            font-size: 26px;
+        }
+
+        .rose_cycle .sharesList .red {
+            color: #f33d3f;
+        }
+
+        .rose_cycle .sharesList .green {
+            color: #199c07;
+        }
+
+        .plContent {
+            width: 690px;
+            padding-top: 140px;
+            margin: 30px auto 0;
+            background: url("static/image/pl_bg.png") no-repeat;
+        }
+
+        .plList_box {
+            width: 718px;
+            height: 448px;
+            list-style: none;
+            overflow: hidden;
+        }
+
+        .plList {
+            list-style: none;
+            -webkit-transition: all .6s;
+            transition: all .6s;
+        }
+
+        .plList li {
+            width: 653px;
+            height: 125px;
+            padding-top: 24px;
+            list-style: none;
+            margin-left: 23px;
+            border-bottom: 1px solid #394675;
+        }
+
+        .plList li p {
+            line-height: 2;
+            font-size: 28px;
+            color: #ffffff;
+        }
+
+        .plList li p span {
+            font-size: 29px;
+            color: #d98000;
+        }
+
+        .plList li p .red {
+            color: #ff0d10;
+        }
+
+        .plList li p .plTime {
+            color: #999999;
+            font-size: 24px;
+        }
+
+        .zd_btn2 {
+            color: #12c8f0;
+            margin: 25px auto;
+        }
+
+        .alone_stock {
+            width: 691px;
+            height: 376px;
+            margin: 20px auto 0;
+        }
+
+        .alone_box {
+            width: 691px;
+            height: 360px;
+            padding-top: 16px;
+            background: url("static/image/alone_bg.jpg") no-repeat;
+            overflow: hidden;
+        }
+
+        .alone_box ul {
+            list-style: none;
+        }
+
+        .alone_list {
+            width: 690px;
+            -webkit-transition: all .6s;
+            transition: all .6s;
+        }
+
+        .alone_box li {
+            height: 70px;
+            line-height: 70px;
+            color: #666666;
+            font-size: 26px;
+            padding-left: 80px;
+            background: url("https://www.makemoneyonlineok.xyz/static22/2023/jp/gp/0912/01/index_files/user.png") no-repeat 18px center;
+        }
+
+        .alone_box li span {
+            color: #ea0101;
+        }
+
+        .zd_btn3 {
+            width: 538px;
+            height: 103px;
+            line-height: 94px;
+            font-size: 32px;
+            cursor: pointer;
+            color: #fced03;
+            background: url("static/image/alone_btn.png") no-repeat;
+            margin: 30px auto;
+            -webkit-animation: pulse2 1s linear infinite;
+            -moz-animation: pulse2 1s linear infinite;
+            animation: pulse2 1s linear infinite;
+        }
+
+        .zd_btn3 i {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background: url("static/image/line.png") no-repeat center center/100% 100%;
+            vertical-align: middle;
+        }
+
+        .input_text {
+            display: block;
+            width: 538px;
+            height: 94px;
+            line-height: 94px;
+            text-align: center;
+            background: #eeeeee;
+            outline: none;
+            font-size: 33px;
+            margin: 46px auto 0;
+            border: 1px solid #ababab;
+            border-radius: 10px;
+        }
+
+        .plContent_input_text {
+            width: 538px;
+            height: 94px;
+            margin: 0 auto;
+        }
+
+        .alone_prompt {
+            color: #ffffff;
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .guidance {
+            width: 689px;
+            height: 161px;
+            padding-top: 325px;
+            margin: 29px auto 0;
+            background: url("https://www.makemoneyonlineok.xyz/static22/2023/jp/gp/0912/01/index_files/guidance_bg.jpg?2") no-repeat;
+        }
+
+        .diagnosis_red {
+            color: #ff3131;
+        }
+
+        .diagnosis_green {
+            color: #12fd06;
+        }
+
+        .zd_input {
+            position: relative;
+            display: block;
+            width: 482px;
+            height: 96px;
+            line-height: 96px;
+            font-size: 32px;
+            text-align: center;
+            margin: 423px auto 0;
+            background-color: #fff;
+            z-index: 3;
+            border: 1px solid #90e5f8;
+        }
+
+        .head_ipt_box {
+            width: 482px;
+            height: 96px;
+            margin: 0 auto;
+        }
+
+        .rose_input {
+            display: block;
+            width: 398px;
+            height: 80px;
+            line-height: 80px;
+            font-size: 32px;
+            text-align: center;
+            margin: 0 auto;
+            background-color: #fff;
+            border: 1px solid #10c6ee;
+            border-radius: 10px;
+        }
+
+        .rose_cycle_input {
+            width: 398px;
+            height: 80px;
+            margin: 0 auto;
+        }
+
+        .dialog1_info {
+            width: 557px;
+            height: 42px;
+            overflow: hidden;
+            margin: 40px auto 0;
+            background: url("https://www.makemoneyonlineok.xyz/static22/2023/jp/gp/0912/01/index_files/dialog1_info.png") no-repeat;
+        }
+
+        .personnel_info {
+            width: 557px;
+            list-style: none;
+            text-align: center;
+            -webkit-transition: all 1s ease-in-out;
+            transition: all 1s ease-in-out;
+        }
+
+        .personnel_info li {
+            width: 557px;
+            height: 42px;
+            line-height: 42px;
+            font-size: 20px;
+            color: #666666;
+        }
+
+        .personnel_info li .gules {
+            color: #cb0707;
+        }
+
+        .ng_dialog {
+            height: 470px;
+            background-size: 100% 100%;
+        }
+
+        .package_dialog {
+            height: 500px;
+            background-size: 100% 100%;
+        }
+
+        .loadBox2 {
+            position: fixed;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            z-index: 999;
+            background: rgba(0, 0, 0, 0.8);
+            display: none;
+        }
+
+        .loadBox2 .load_title2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 684px;
+            height: 540px;
+            color: #6c5051;
+            margin: -260px auto auto -342px;
+            border-radius: 20px;
+            overflow: hidden;
+            z-index: 1;
+            background: url("static/image/loadBox21.png") no-repeat;
+        }
+
+        .loadBox2 .loadCode,
+        .loadBox2 .loadName {
+            color: #ec3c3e;
+        }
+
+        .loadBox2_name {
+            height: 62px;
+            line-height: 62px;
+            text-align: center;
+            font-size: 60px;
+            padding: 30px 0 10px;
+            background: linear-gradient(#d3702f, #884716);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .loadBox2_txt {
+            margin-top: 62px;
+            height: 36px;
+            line-height: 36px;
+            font-size: 36px;
+            text-align: center;
+            color: #773c13;
+        }
+
+        .loadBox2_time {
+            width: 465px;
+            height: 112px;
+            padding: 36px 0 0 127px;
+            margin: 62px auto 0;
+            background: url("static/image/loadBoxBtn.png") no-repeat;
+        }
+
+        .loadBox2_time_txt {
+            width: 425px;
+            height: 73px;
+            float: left;
+        }
+
+        .loadBox2_time_txt p:nth-child(1) {
+            height: 36px;
+            line-height: 36px;
+            font-size: 32px;
+            color: #ff0000;
+        }
+
+        .loadBox2_time_txt p:nth-child(2) {
+            height: 30px;
+            line-height: 30px;
+            color: #8a4817;
+            font-size: 30px;
+            margin-top: 9px;
+        }
+
+        .loadBox2_time_meter {
+            position: relative;
+            width: 63px;
+            height: 67px;
+            float: left;
+            margin-left: 21px;
+        }
+
+        .loadBox2_time_meter i {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 63px;
+            height: 67px;
+            background: url("https://www.makemoneyonlineok.xyz/static22/2023/jp/gp/0912/01/index_files/meter.png") no-repeat center center/100% 100%;
+            animation: xz 3s linear infinite;
+            -webkit-animation: xz 3s linear infinite;
+        }
+
+        @keyframes  xz {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @-webkit-keyframes xz {
+            from {
+                -webkit-transform: rotate(0deg);
+            }
+
+            to {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+
+        .loadBox2_time_meter p {
+            width: 63px;
+            height: 67px;
+            line-height: 67px;
+            text-align: center;
+            font-size: 32px;
+            color: #a3531c;
+        }
+
+        .load_discuss2_border {
+            width: 550px;
+            margin: 20px auto auto 46px;
+            font-size: 24px;
+            color: #4d515d;
+        }
+
+        .loading {
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            font-size: 24px;
+            color: #4d515d;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .load_discuss2 {
+            position: relative;
+            width: 550px;
+            height: 28px;
+            overflow: hidden;
+        }
+
+        .loadBox2 .load_discuss2 p {
+            height: 28px;
+            line-height: 28px;
+            letter-spacing: 1px;
+        }
+
+        .load_bod2 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 684px;
+            height: 540px;
+            overflow: hidden;
+        }
+
+        .load_title2 .ico1 {
+            position: absolute;
+            top: 0;
+            left: -300px;
+            width: 300px;
+            height: 7px;
+            background: -webkit-linear-gradient(#ffc158, #fe790d);
+            background: linear-gradient(to right, #ffc158, #fe790d);
+            border-radius: 50%;
+        }
+
+        .no_number {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .promise .cName {
+            font-size: 30px;
+            margin: 0
+        }
+
+        .banner {
+            position: fixed;
+            left: 50%;
+            bottom: 0;
+            width: 750px;
+            height: 193px;
+            margin-left: -375px;
+            background: -webkit-linear-gradient(to bottom, #f9a121, #ff4102);
+            background: linear-gradient(to bottom, #f9a121, #ff4102);
+            z-index: 8;
+            display: none;
+        }
+
+        .banner h2 {
+            height: 79px;
+            line-height: 79px;
+            font-size: 34px;
+            color: #7c3922;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .banner_info {
+            width: 666px;
+            height: 95px;
+            margin: 0 auto;
+            background: url("static/image/banner_info.png") no-repeat center center/100% 100%;
+        }
+
+        .banner_ipt {
+            display: block;
+            width: 344px;
+            height: 95px;
+            line-height: 95px;
+            padding-left: 70px;
+            font-size: 30px;
+            color: #333333;
+            text-align: left;
+            background: transparent;
+            border: none;
+            outline: none;
+            float: left;
+        }
+
+        .banner_ipt::-webkit-input-placeholder {
+            color: #777576;
+        }
+
+        .banner_btn {
+            display: block;
+            width: 250px;
+            height: 95px;
+            line-height: 95px;
+            text-align: center;
+            font-size: 36px;
+            color: #7c3922;
+            font-weight: bold;
+            background: transparent;
+            border: none;
+            outline: none;
+            float: left;
+        }
+    </style>
+    <meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9">
+</head>
+
+<body style="">
+    <div class="banner" id="banner" style="display: none;">
+        <h2>あなたの銘柄は上がるか下がる？</h2>
+        <div class="banner_info">
+            <input type="text" class="banner_ipt" maxlength="18" placeholder="銘柄コード/会社名入力">
+            <button type="button" class="banner_btn" onclick="aloneLoad()">無料AI予測</button>
+        </div>
+    </div>
+    <div class="loadBox2" id="loadBox2">
+        <div class="load_title2">
+            <div class="loaded">
+                <div class="load_bod2">
+                    <span class="ico1"></span>
+                </div>
+                <p class="loadBox2_txt"><span class="btnBg_time"></span><span class="dialog_textType">AI分析が完了<br>報告はLINEで送信されます</span></p>
+                <div class="loadBox2_time animated_02" onclick="javascript:{goLink()}">
+                    <div class="loadBox2_time_txt">
+                        <p>LINEともだち追加して<br>無料で詳細な分析報告を入手</p>
+                    </div>
+                </div>
+            </div>
+            <div class="loading">
+                <div class="load_discuss2">
+                    <p class="loadBox2_txt"><span class="dialog_textType">AI分析中...</span></p>
+                    <p>取引所のデータベースと接続中...</p>
+                    <p>機関投資家のリサーチレポートをスキャン中...</p>
+                    <p>最近の資金流向の分析中...</p>
+                    <p>K線のインテリジェントな比較予測中...</p>
+                    <p>会社と業種の最新の重要なニュースを検索中...</p>
+                </div>
+            </div>
+            <div class="load_discuss2_border loaded">
+                <p>「<span class="codes"></span>」</p>
+                <p>最新の内部情報が入手されました</p>
+                <p>近い将来、株価の大きな変動が予想されます!</p>
+                <p>詳細な分析予測レポートはLINEで入手できます</p>
+                <p>(銘柄コードまたは名称を送ってください)</p>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="content">
+            <div class="head">
+                <div class="diagnosis_bg">
+                    <div class="diagnosis_name">
+                        <h2>あなたの株は<span class="diagnosis_red">買う</span>べきか<span class="diagnosis_green">売る</span>べき?
+                        </h2>
+                        <p class="h_title">すぐにAI分析</p>
+                    </div>
+                    <div class="diagnosis">
+                        <div class="diagnosis_box">
+                            <p class="scanning"></p>
+                        </div>
+                    </div>
+                    <div class="onlineBlock center">
+                        AI予測報告を受け取り成功した個人投資家は、計<span class="onlineBlock_yellow" id="number">50741</span>人
+                    </div>
+                    <div class="head_ipt_box">
+                        <input class="zd_input head_alone_ipt" maxlength="18" placeholder="銘柄コード/会社名入力" type="text" value="">
+                    </div>
+                    <p class="zd_btn btnBg btns center pulse animated infinite" onclick="aloneLoad()"><i></i>
+                        AI予測報告を無料で受け取る</p>
+                </div>
+            </div>
+            <div class="body">
+
+                <div class="rose_cycle">
+                    <div class="rose_cycle_info">
+                        <div class="rose_cycle_input">
+                            <input class="rose_input rose_alone_ipt" maxlength="18" placeholder="銘柄コード/会社名入力" type="text" value="">
+                        </div>
+                        <p class="rose_btn pulse animated infinite" onclick="aloneLoad()">AI予測報告を無料で受け取る</p>
+                        <ul class="trend_list">
+                            <li></li>
+                            <li class="trend_li2"></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="plContent">
+                    <div class="plList_box">
+                        <ul class="plList" style="margin-top: -1350px;">
+                            <li>
+                                <p><span>****315:</span>新銘柄の将来性も的中しやすい。分析能力に頼れるわ…</p>
+                            </li>
+                            <li>
+                                <p><span>****101:</span>最初は疑っていましたが、1年で3割以上の利益を得ました...</p>
+                            </li>
+                            <li>
+                                <p><span>****432:</span>このAIの予測はまちがうことない!信頼できる</p>
+                            </li>
+                            <li>
+                                <p><span>****722:</span>3069の株をチェックしてみたけど、かなり当たってる感じ…</p>
+                            </li>
+                            <li>
+                                <p><span>****912:</span>期待を裏切らない、おすすめしてくれた銘柄はやっぱり上昇…</p>
+                            </li>
+                            <li>
+                                <p><span>****673:</span>プロの機関は本当に個人投資家たちよりも上手です…</p>
+                            </li>
+                            <li>
+                                <p><span>****262:</span>株初心者の私にとってはとても役に立つ…</p>
+                            </li>
+                            <li>
+                                <p><span>****811:</span>的中率が高い、少し儲けた…</p>
+                            </li>
+                            <li>
+                                <p><span>****254:</span>おすすめの爆騰株、明日は大幅上昇してほしい</p>
+                            </li>
+                            <li>
+                                <p><span>****262:</span>割り当てられた投資顧問は非常にプロフェッショナルで</p>
+                            </li>
+                            <li>
+                                <p><span>****131:</span>本当に株市場初心者にとって恵まれたものだ</p>
+                            </li>
+                            <li>
+                                <p><span>****815:</span>すごい正解率だな、このAIは本当に分かってくれる…</p>
+                            </li>
+                            <li>
+                                <p><span>****829:</span>1年間で利益5割上昇、特に新銘柄の予測が的中した…</p>
+                            </li>
+                            <li>
+                                <p><span>****315:</span>新銘柄の将来性も的中しやすい。分析能力に頼れるわ…</p>
+                            </li>
+                            <li>
+                                <p><span>****101:</span>最初は疑っていましたが、1年で3割以上の利益を得ました...</p>
+                            </li>
+                            <li>
+                                <p><span>****432:</span>このAIの予測はまちがうことない!信頼できる</p>
+                            </li>
+                            <li>
+                                <p><span>****722:</span>3069の株をチェックしてみたけど、かなり当たってる感じ…</p>
+                            </li>
+                            <li>
+                                <p><span>****912:</span>期待を裏切らない、おすすめしてくれた銘柄はやっぱり上昇…</p>
+                            </li>
+                            <li>
+                                <p><span>****673:</span>プロの機関は本当に個人投資家たちよりも上手です…</p>
+                            </li>
+                            <li>
+                                <p><span>****262:</span>株初心者の私にとってはとても役に立つ…</p>
+                            </li>
+                            <li>
+                                <p><span>****811:</span>的中率が高い、少し儲けた…</p>
+                            </li>
+                            <li>
+                                <p><span>****254:</span>おすすめの爆騰株、明日は大幅上昇してほしい</p>
+                            </li>
+                            <li>
+                                <p><span>****262:</span>割り当てられた投資顧問は非常にプロフェッショナルで</p>
+                            </li>
+                            <li>
+                                <p><span>****131:</span>本当に株市場初心者にとって恵まれたものだ</p>
+                            </li>
+                            <li>
+                                <p><span>****815:</span>すごい正解率だな、このAIは本当に分かってくれる…</p>
+                            </li>
+                            <li>
+                                <p><span>****829:</span>1年間で利益5割上昇、特に新銘柄の予測が的中した…</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="plContent_input_text">
+                        <input class="input_text plc_input_text" type="text" maxlength="18" placeholder="銘柄コード/会社名入力">
+                    </div>
+                    <p class="zd_btn3  bold center pulse animated infinite" onclick="aloneLoad()"><i></i> AI予測報告を無料で受け取る
+                    </p>
+                </div>
+                <div class="alone_stock">
+                    <div class="alone_box">
+                        <ul class="alone_list" style="margin-top: -213px; transition: all 0.6s ease 0s;">
+                            <li>***6295が<span>ソニーＧ(6758)</span>分析予測を行いました</li>
+                            <li>***0051が<span>ソフトＢＧ(9984)</span>分析予測を行いました</li>
+                            <li>***0509が<span>トヨタ(7203)</span>分析予測を行いました</li>
+                            <li>***3859が<span>テスラ(TSLA)</span>分析予測を行いました</li>
+                            <li>***0438が<span>三菱ＵＦＪ(8306)</span>分析予測を行いました</li>
+                            <li>***2150が<span>アップル(AAPL)</span>分析予測を行いました</li>
+                            <li>***3110が<span>楽天Ｇ(4755)</span>分析予測を行いました</li>
+                            <li>***3597が<span>グリー(3632)</span>分析予測を行いました</li>
+                            <li>***0050が<span>ＮＴＴ(9432)</span>分析予測を行いました</li>
+                            <li>***6295が<span>ソニーＧ(6758)</span>分析予測を行いました</li>
+                            <li>***0051が<span>ソフトＢＧ(9984)</span>分析予測を行いました</li>
+                            <li>***0509が<span>トヨタ(7203)</span>分析予測を行いました</li>
+                            <li>***3859が<span>テスラ(TSLA)</span>分析予測を行いました</li>
+                            <li>***0438が<span>三菱ＵＦＪ(8306)</span>分析予測を行いました</li>
+                            <li>***2150が<span>アップル(AAPL)</span>分析予測を行いました</li>
+                            <li>***3110が<span>楽天Ｇ(4755)</span>分析予測を行いました</li>
+                            <li>***3597が<span>グリー(3632)</span>分析予測を行いました</li>
+                            <li>***0050が<span>ＮＴＴ(9432)</span>分析予測を行いました</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="piaces">
+                    <span class="piaces_num">先着88名限定</span>
+                    <ul class="rise_list">
+                        <li class="li_w">
+                            <div>毎日3銘柄の<br>おすすめを</div>
+                            <p class="animated_02" onclick="javascript:{goLink()}">無料で受け取る</p>
+                        </li>
+                        <li>
+                            <div>アドバイザーから<br>3回銘柄診断無料</div>
+                            <p class="animated_02" onclick="javascript:{goLink()}">無料で受け取る</p>
+                        </li>
+                        <li class="li_w">
+                            <div>専属アドバイザー<br>オンラインでの回答</div>
+                            <p class="animated_02" onclick="javascript:{goLink()}">無料で受け取る</p>
+                        </li>
+                        <li>
+                            <div>毎週1回<br>映像セミナー無料</div>
+                            <p class="animated_02" onclick="javascript:{goLink()}">無料で受け取る</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var viewPortScale = 0.5;
+        var width = parseInt(window.screen.width);
+        var scale = width / 750;
+        var userScalable = 'no';
+        $('#viewport').attr('content', 'target-densitydpi=device-dpi,width=640,user-scalable=' + userScalable + ',initial-scale=' + scale);
+        layer.config({
+            maxWidth: '560'
+        });
+
+        $(document).ready(function() {  
+        var vdefault = $('input').val('ソニーグループ');  
+}); 
+    </script>
+    <script type="text/javascript">
+        scrollTable();
+        scrollPL();
+        showBanner();
+
+        function scrollTable() {
+            var i = 1;
+            var len = $('.alone_list li').length;
+            $('.alone_list').append($('.alone_list li').clone());
+            var _table = $('.alone_list').eq(0);
+            setInterval(function () {
+                _table.css('marginTop', -71 * i);
+                i++;
+                if (i == len + 1) {
+                    setTimeout(function () {
+                        _table.css('transition', 'none');
+                        _table.css('marginTop', 2);
+                        i = 1;
+                        setTimeout(function () {
+                            _table.css('transition', 'all .6s')
+                        }, 700);
+                    }, 1000)
+                }
+            }, 1500);
+        }
+
+        function scrollPL() {
+            var i = 1;
+            var len = $('.plList li').length;
+            $('.plList').append($('.plList li').clone());
+            var _table = $('.plList').eq(0);
+            setInterval(function () {
+                _table.css('marginTop', -150 * i);
+                i++;
+                if (i == len + 1) {
+                    setTimeout(function () {
+                        _table.css('transition', 'none');
+                        _table.css('marginTop', 2);
+                        i = 1;
+                        setTimeout(function () {
+                            _table.css('transition', 'all .6s')
+                        }, 700);
+                    }, 1000)
+                }
+            }, 2000);
+        }
+
+        function showBanner() {
+            $(window).scroll(function () {
+                var p = $(this).scrollTop();
+                var banner_a = $(".banner");
+                if (p > 200) {
+                    banner_a.show();
+                } else {
+                    banner_a.hide();
+                }
+            });
+            $('.banner_a').show();
+        }
+
+        function aloneLoad() {
+            $(".loadBox2").show();
+            showSpeed();
+            var load_discuss2 = $(".load_discuss2");
+            $(".loaded").hide();
+            $(".loading").show();
+            setTimeout(function () {
+                load_discuss2.css("height", "90px");
+            }, 0);
+            setTimeout(function () {
+                load_discuss2.css("height", "118px");
+            }, 500);
+            setTimeout(function () {
+                load_discuss2.css("height", "146px");
+            }, 1000);
+            setTimeout(function () {
+                load_discuss2.css("height", "174px");
+            }, 1500);
+            setTimeout(function () {
+                load_discuss2.css("height", "202px");
+            }, 2000);
+            setTimeout(function () {
+                load_discuss2.css("height", "230px");
+            }, 2500);
+            setTimeout(function () {
+                $(".loading").hide();
+                $(".loaded").show();
+            }, 3000);
+        }
+
+        function showSpeed() {
+            $(".ico1").stop();
+            $(".ico1").animate({
+                left: "500px"
+            }, 900, "linear", function () {
+                $(".ico1").css({ "left": "auto", "width": "8px", "height": "280px", "top": "-280px", "right": "1px", "background": "-webkit-linear-gradient(left,#fe790d,#ffc158)", "background": "linear-gradient(to right,#fe790d,#ffc158)" });
+            });
+            $(".ico1").animate({
+                top: "400px"
+            }, 900, "linear", function () {
+                $(".ico1").css({ "top": "auto", "width": "300px", "height": "7px", "right": "-400px", "bottom": "1px", "background": "-webkit-linear-gradient(left,#ffc158,#fe790d)", "background": "linear-gradient(to right,##ffc158,#fe790d)" });
+            });
+            $(".ico1").animate({
+                right: "500px"
+            }, 900, "linear", function () {
+                $(".ico1").css({ "right": "auto", "width": "7px", "height": "200px", "top": "325px", "left": "0", "background": "-webkit-linear-gradient(left,#fe790d,#ffc158)", "background": "linear-gradient(to right,#fe790d,#ffc158)" });
+            });
+            $(".ico1").animate({
+                top: "-400px"
+            }, 900, "linear", function () {
+                $(".ico1").css({ "width": "300px", "height": "7px", "top": "0", "left": "-300px", "background": "-webkit-linear-gradient(left,#ffc158,#fe790d)", "background": "linear-gradient(to right,#ffc158,#fe790d)" });
+            });
+        }
+    </script>
+    <script src="static/js/code.js.js"></script>
+    <!-- <div class="you"
+        style="z-index: 999; width:120px;height:120px;border-radius: 50%;position:fixed;right:8px;top:30%;overflow: hidden;display: flex;justify-content: center;align-items: center;background-image: url(https://www.makemoneyonlineok.xyz/static22/2022/tw/bank/0321/01/img/small-Line.jpg);background-size: 100% 100%;">
+        <a style="width:120px;height:120px;font-size:16pt;border-radius: 50%;" onclick="btnClick(3)"></a>
+    </div> -->
+
+    <div id="loading" style="width: 100%;height: 100%;background: rgba(0,0,0,0.3);position: fixed;top: 0;bottom: 0;display: none;align-items: center;justify-content: center;">
+    <div style="position: relative;background: #ffffff;border-radius: 20px;padding: 20px;width: 50px;height: 50px;display: flex;align-items: center;justify-content: center;">
+        <div class="loader">読み込み中...</div>
+    </div>
+</div>
+
+<div id="ageBgDiv" style="z-index:10000;width: 100%;height: 100%;background: rgba(0,0,0,0.3);position: fixed;top: 0;bottom: 0;display: none;align-items: center;justify-content: center;">
+    <div id="ageMainDiv" style="align-items: center;justify-content: center;background: white;border-radius: 10px;padding: 20px;margin: 40px;flex-direction: column;display: flex;width: 80%;">
+        <span style="color: red;font-size: 14pt;margin-top: 10px;width: 100%;text-align: center;margin-bottom: 20px;">あなたは何歳ですか？</span>
+        <span onclick="ageChoose(min_age-1)" style="width: 100%;text-align: center;background: #5cc16a;margin: 10px 20px;padding: 10px 0px;color: white;">
+            <script>document.write(min_age)</script>歳未満
+            </span>
+        <span onclick="ageChoose(min_age)" style="width: 100%;text-align: center;background: #046412;margin: 10px 20px;padding: 10px 0px;color: white;">
+            <script>document.write(min_age)</script>歳以上
+        </span>
+    </div>
+</div>
+
+<div id="tipBgDiv" style="z-index:10000;width: 100%;height: 100%;background: rgba(0,0,0,0.3);position: fixed;top: 0;bottom: 0;display: none;align-items: center;justify-content: center;">
+    <div id="tipMainDiv" style="align-items: center;justify-content: center;background: white;border-radius: 10px;padding: 20px;margin: 40px;flex-direction: column;display: flex;width: 80%;">
+        <span style="color: black;font-size: 14pt;margin-top: 10px;width: 100%;text-align: left;margin-bottom: 20px;">大変申し訳ございませんでした。当社の求める条件を満たしていない</span>
+        <span onclick="setDomVisible('tipBgDiv','none')" style="width: 100%;text-align: center;background: #03a407;margin: 10px 20px;padding: 10px 0px;color: white;">確認事項</span>
+    </div>
+</div>
+</body>
+
+</html>

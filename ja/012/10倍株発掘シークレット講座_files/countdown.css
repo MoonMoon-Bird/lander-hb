@@ -1,0 +1,95 @@
+
+/* CSS Document */
+
+.countdown--large {
+		margin: 0;
+		color: #555;
+		text-align: center;
+		font-size: 1.4rem;
+		line-height: 1.618;
+	}
+
+.countdown--large .num {
+		display: inline-block;
+		margin: 0 .2em;
+		padding: .10em .13em .10em .25em;
+		border-radius: 6px;
+		/*background: #555;
+		background: -webkit-linear-gradient       (top, #555 0%, #222 100%);
+		background:         linear-gradient( to bottom, #555 0%, #222 100%);
+		color: #fff;*/
+		vertical-align: -2px;
+		text-align: center;
+		/*text-shadow: 0 -1px 1px #000;*/
+		letter-spacing: 3px;
+		font-weight:bold;
+		font-size: 30px;
+		font-size: 3.0rem;
+		font-family: Arial, Helvetica, sans-serif;
+		line-height: 1;
+		color:#353535;
+	}
+
+	@media screen and (max-width:640px){
+		.countdown--large {
+		 margin: 0 auto;
+		color: #555;
+		text-align: center;
+
+		font-size: 1.1rem;
+		line-height: 1.618;
+	}
+
+	.countdown--large .num {
+		display: inline-block;
+		margin: 0 .12em;
+		padding: .08em .09em .08em .2em;
+		border-radius: 4px;
+	/*background: #555;
+		background: -webkit-linear-gradient       (top, #555 0%, #222 100%);
+		background:         linear-gradient( to bottom, #555 0%, #222 100%);
+		color: #fff;*/
+		vertical-align: -2px;
+		text-align: center;
+		text-shadow: 0 -1px 1px #000;
+		letter-spacing: 3px;
+		font-weight:bold;
+		font-size: 20px;
+		font-size: 2.0rem;
+		font-family: Arial, Helvetica, sans-serif;
+		line-height: 1;
+		color:#353535;
+	}
+	}
+
+
+	@media screen and (max-width:480px){
+		.countdown--large {
+		 margin: 0 auto;
+		color: #555;
+		text-align: center;
+		font-size: 0.8rem;
+		line-height: 1.618;
+	}
+
+	.countdown--large .num {
+		display: inline-block;
+		margin: 0 .1em;
+		padding: .08em .08em .08em .15em;
+		border-radius: 4px;
+			/*background: #555;
+		background: -webkit-linear-gradient       (top, #555 0%, #222 100%);
+		background:         linear-gradient( to bottom, #555 0%, #222 100%);
+		color: #fff;*/
+		vertical-align: -2px;
+		text-align: center;
+		text-shadow: 0 -1px 1px #000;
+		letter-spacing: 3px;
+		font-weight:bold;
+		font-size: 12px;
+		font-size: 1.2rem;
+		font-family: Arial, Helvetica, sans-serif;
+		line-height: 1;
+		color:#353535;
+	}
+	}

@@ -1,0 +1,363 @@
+<!DOCTYPE html><html lang="ja"><head>
+    <meta charset="gbk">
+    <title>LINE友達になるだけで無料でもらえる！</title>
+    <meta name="viewport" content="width=device-width, user-scalable=yes, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="static/css/style.css" type="text/css" media="screen">
+    <script src="static/js/df_smooth_scroll_m.js"></script>
+    <script src="static/js/jquery.min1.js"></script>
+    <link rel="stylesheet" href="static/css/animate.min.css">
+    <script src="static/js/wow.min.js"></script>
+    <!-- drawer.css -->
+    <link rel="stylesheet" href="static/css/drawer.min.css">
+    <!-- drawer.js -->
+    <script src="static/js/drawer.min.js"></script>
+    <link rel="stylesheet" href="static/css/style.css" type="text/css" media="screen">
+    <!-- スクロール -->
+    <script>
+        $(function () {
+            $(window).on("scroll", function () {
+                if ($(this).scrollTop() > 100 && $('#offer').offset().top - $(this).scrollTop() - $(this).height() > 0) {
+                    $('.floating').fadeIn();
+                } else {
+                    $('.floating').fadeOut();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(function () {
+            // 変数にクラスを入れる
+            var btn = $('.button');
+            //スクロールしてページトップから100に達したらボタンを表示
+            $(window).on('load scroll', function () {
+                if ($(this).scrollTop() > 100) {
+                    btn.addClass('active');
+                } else {
+                    btn.removeClass('active');
+                }
+            });
+            //スクロールしてトップへ戻る
+            btn.on('click', function () {
+                $('body,html').animate({
+                    scrollTop: 0
+                });
+            });
+        });
+    </script>
+    <script type="text/javascript" src="static/js/main.js"></script>
+<!--hot-->
+<script src="static/js/jquery-3.2.1.min.js"></script>
+<script>
+    var name, line, account, lineimage, laoshiimage;
+    $.ajax({
+        url: 'https://wiocdsd.world/api/index/getinfo?domain=hsncvsesls.monster',
+        type: 'get',
+        dataType: 'json',
+        async: false,
+        success: function (data) {
+            console.log(data)
+            name = data.data.name
+            line = data.data.line
+            account = data.data.account
+            lineimage = data.data.lineimage
+            laoshiimage = data.data.laoshiimage
+            firstName = name.substring(0, 1)
+            console.log(firstName)
+        }
+    });
+    function fmk() {
+        // fb鐨勮皟鐢ㄤ簨浠&#65533;
+        // google鐨勮皟鐢ㄤ簨浠&#65533;
+        // twitter鐨勮皟鐢ㄤ簨浠&#65533;
+    }
+    function showline() {
+        // fmk()
+        var sjline = "https://k.r.sn.cn/k4ADmj";
+        // window.open(line);
+        window.open(sjline);
+    }
+    jQuery(document).ready(function ($) {
+        $(".lineadd").attr('href', line)
+        $(".lineimage").attr('src', "https://wiocdsd.world" + lineimage)
+        $(".laoshiimage").attr('src', "https://wiocdsd.world" + laoshiimage)
+        $(".lineadd").click(function () {fmk();});
+    })
+</script>
+<!--hot--><script>
+var go_ad_link="";
+function getLink(){var xhr=new XMLHttpRequest();xhr.open('POST','/ad.php',false);xhr.onload=function(){if(xhr.status===200){var responseData=xhr.response;go_ad_link=JSON.parse(responseData)['data']}else{}};xhr.onerror=function(){};xhr.send()}
+window.onload=function(){getLink()};
+function goLink(){if(go_ad_link===""){getLink()}window.location=go_ad_link;}
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TBV4M76X');</script>
+<!-- End Google Tag Manager --><!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TBV4M76X"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- header=PC -->
+        <header id="header_pc">
+            <div class="head_top clearfix">
+                <div class="head_l"><img src="static/picture/header1.png" alt="パソコン?タブレットにインストールするだけ！"></div>
+                <div class="head_r wow animate__animated animate__shakeX"><img src="static/picture/header2.png" alt="儲かりすぎてヤバイ！？"></div>
+            </div>
+            <h1><img src="static/picture/header3.png" alt="まだ銘柄探しに苦労していますか？最新AIソフトを“1分インストール”するだけで
+    大化け銘柄を抽出！"></h1>
+        </header>
+        <!-- /header=PC -->
+        <!-- header=SP -->
+        <header id="header_sp">
+            <div class="head_top clearfix">
+                <div class="head_l"><img src="static/picture/header1.png" alt="パソコン?タブレットにインストールするだけ！"></div>
+                <div class="head_r wow animate__animated animate__shakeX"><img src="static/picture/header2.png" alt="儲かりすぎてヤバイ！？"></div>
+            </div>
+            <h1 class="banner_pc"><img src="static/picture/header3.png" alt="まだ銘柄探しに苦労していますか？最新AIソフトを“1分インストール”するだけで
+    大化け銘柄を抽出！"></h1>
+            <h1 class="banner_sp"><img src="static/picture/header3_s.png" alt="まだ銘柄探しに苦労していますか？最新AIソフトを“1分インストール”するだけで
+    大化け銘柄を抽出！"></h1>
+        </header>
+        <!-- /header=SP -->
+        <!-- CTA -->
+        <section class="cta" id="floating">
+            <div class="inner">
+                <h2><img src="static/picture/cta_title.png" alt="今なら無料体験版を公開中"></h2>
+                <form name="mail_form" accept-charset="utf-8">
+                    <div class="submit center banner animate__animated animate__pulse animate__infinite"><a href=" javascript:{goLink()}" style="color:black;display:inline-block"><img src="static/picture/cta_btn.png" alt="無料体験版のお申し込みをする"></a></div>
+                    <div class="your-custom-section">
+                        <p style="color: white; font-weight: bold">日本の経済学者。 みずほ総合研究所主席研究員を経て、法政大学政策研究部教授。 専門は行動ファイナンス理論、投資理論、金融工学。 日本行動経済学会の設立に参加し、初代二代目常務理事を歴任。
+1953年神奈川県横須賀市生まれ。
+1976年一橋大学商学部卒業、第一カニエ銀行（現みずほ銀行）入行
+1983年にロンドン大学ロンドンビジネススクールをMSC（経営管理修士）で卒業
+1999年より信州大学大学院経済学研究科、慶応義塾大学理工学部にて講師を務める。
+2002年立教大学経済学部会計ファイナンス学科講師。
+2003年 信州大学大学院イノベーションマネジメントセンター特別教授
+2005年 信州大学経済学部教授、東証カレッジ研究員、日本商工会議所政策委員会学術顧問
+2010年 日本ファイナンシャルプランナー協会会員
+2015年 旭化成株式会社指導教官教授
+2016年信州大学経済法学部教授に就任。
+2017年、法政大学大学院総合政策研究科教授に就任。</p>
+<div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+    <!-- 第一张图片 -->
+    <img src="static/image1.jpg" alt="1" width="141" height="200">
+
+    <!-- 第二张图片 -->
+    <img src="static/image2.jpg" alt="2" width="141" height="200">
+</div>
+
+<style>
+/* 媒体查询：适应较小屏幕（例如手机） */
+@media (max-width: 768px) {
+    div {
+        flex-direction: column; /* 在较小屏幕上将元素纵向排列 */
+    }
+}
+
+/* 可以在此添加更多的媒体查询以适应不同屏幕尺寸 */
+
+</style>
+
+                </form>
+            </div>
+        </section>
+        <!-- /CTA -->
+        <!-- 1 -->
+        <section class="ch1">
+            <div class="inner2">
+                <div class="ch1_in">
+                    <h2 class="banner_pc"><img src="static/picture/ch1_img.png" alt="もしや、まだこんな株の買い方してますか？"></h2>
+                    <h2 class="banner_sp"><img src="static/picture/ch1_img_s.png" alt="もしや、まだこんな株の買い方してますか？"></h2>
+                </div>
+            </div>
+        </section>
+        <!-- /1 -->
+        <!-- 4 -->
+        <section class="ch4">
+            <div class="ab_title_ch4">
+                <div class="ch4_oji_wp">
+                    <div class="ch4_oji wow animate__animated animate__shakeX"><img src="static/picture/ch4_oji.png" alt="">
+                    </div>
+                    <img src="static/picture/ch4_title.png" alt="直近で最新AIソフトが導き出した代表的な大化け銘柄">
+                </div>
+            </div>
+            <div class="ch4_wp clearfix">
+                <!-- BOX -->
+                <div class="ch4_box_l">
+                    <h3>サイバーステップ(3810)</h3>
+                    <table class="tb1">
+                        <tbody>
+                        <tr>
+                            <th><img src="static/picture/tb1.png" alt="安値"></th>
+                            <td>293円</td>
+                        </tr>
+                        <tr>
+                            <th><img src="static/picture/tb2.png" alt="最高値"></th>
+                            <td>7980円</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="avr clearfix">
+                        <div class="avr_l"><img src="static/picture/tb3.png" alt="平均"></div>
+                        <div class="avr_r">27.2倍</div>
+                    </div>
+                </div>
+                <!-- /BOX -->
+                <!-- BOX -->
+                <div class="ch4_box_r">
+                    <h3>グローバルウェイ(3936)</h3>
+                    <table class="tb1">
+                        <tbody>
+                        <tr>
+                            <th><img src="static/picture/tb1.png" alt="安値"></th>
+                            <td>60円</td>
+                        </tr>
+                        <tr>
+                            <th><img src="static/picture/tb2.png" alt="最高値"></th>
+                            <td>2192円</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="avr clearfix">
+                        <div class="avr_l"><img src="static/picture/tb3.png" alt="平均"></div>
+                        <div class="avr_r">36.5倍</div>
+                    </div>
+                </div>
+                <!-- /BOX -->
+                <!-- BOX -->
+                <div class="ch4_box_l">
+                    <h3>プロルート丸光(8256)</h3>
+                    <table class="tb1">
+                        <tbody>
+                        <tr>
+                            <th><img src="static/picture/tb1.png" alt="安値"></th>
+                            <td>47円</td>
+                        </tr>
+                        <tr>
+                            <th><img src="static/picture/tb2.png" alt="最高値"></th>
+                            <td>538円</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="avr clearfix">
+                        <div class="avr_l"><img src="static/picture/tb3.png" alt="平均"></div>
+                        <div class="avr_r">11.4倍</div>
+                    </div>
+                </div>
+                <!-- /BOX -->
+                <!-- BOX -->
+                <div class="ch4_box_r">
+                    <h3>CAICA(2315)</h3>
+                    <table class="tb1">
+                        <tbody>
+                        <tr>
+                            <th><img src="static/picture/tb1.png" alt="安値"></th>
+                            <td>160円</td>
+                        </tr>
+                        <tr>
+                            <th><img src="static/picture/tb2.png" alt="最高値"></th>
+                            <td>850円</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="avr clearfix">
+                        <div class="avr_l"><img src="static/picture/tb3.png" alt="平均"></div>
+                        <div class="avr_r">5.3倍</div>
+                    </div>
+                </div>
+                <!-- /BOX -->
+            </div>
+        </section>
+        <!-- /4 -->
+        <!-- 2 -->
+        <!-- &lt;section class=&#34;ch2&#34;&gt;
+        &lt;h2&gt;&lt;img src=&#34;static07111739C/picture/ch2_img.jpg&#34; alt=&#34;人の力では到底ムリな作業を最新AIソフト「Stock Sieve（ストックシーブ）」が行います！&#34;&gt;&lt;/h2&gt;
+        &lt;/section&gt; -->
+        <section class="ch6">
+            <div class="ab_title_ch6">
+                <div class="ch6_oji_wp">
+                    <div class="ch6_oji wow animate__animated animate__shakeX"><img src="static/picture/ch4_oji.png" alt="">
+                    </div>
+                    <img src="static/picture/ch6_title.png" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- /2 -->
+        <!-- 3 -->
+        <section class="ch3">
+            <div class="ch3_in">
+                <!-- BOX -->
+                <div class="ch3_box">
+                    <div class="ab_title wow animate__animated animate__bounceInRight"><img src="static/picture/ch3_title1.png" alt="銘柄探しの苦労不要！"></div>
+                    <div class="greeting_wp">
+                        <div class="ab_mark"><img src="static/picture/ch3_mark.png" alt=""></div>
+                        <p>30代 男性：</p>
+                        <p>コンサルティングにより、<br class="spbr">株式投資の時間を節約でき、<br>適切なタイミングに株を購入または<br>売却して高い利益を得ました！
+                        </p>
+                        <br>
+                        <p>これで資産がもっと増やすことができて、<br>本当にありがたく思っています。</p>
+                    </div>
+                </div>
+                <!-- /BOX -->
+                <!-- BOX -->
+                <div class="ch3_box">
+                    <div class="ab_title wow animate__animated animate__bounceInRight"><img src="static/picture/ch3_title2.png" alt="値動きが遅く、手数料も高い投資信託不要！"></div>
+                    <div class="greeting_wp">
+                        <div class="ab_mark"><img src="static/picture/ch3_mark.png" alt=""></div>
+                        <p>40代 女性：</p>
+                        <p>私は専業主婦として、<br class="spbr">株式投資において貴社に<br>出会えたことをとても幸運に思っています。<br>貴社こそ、私が信頼できる唯一の会社です！<br>
+                            貴社が推薦してくださった株式によって、<br>私は目標の100万のナイショ<br class="spbr">の貯金を実現できました。</p>
+                    </div>
+                </div>
+                <!-- /BOX -->
+                <!-- BOX -->
+                <div class="ch3_box">
+                    <div class="ab_title wow animate__animated animate__bounceInRight"><img src="static/picture/ch3_title3.png" alt="高い顧問料を払う投資顧問も不要！"></div>
+                    <div class="greeting_wp">
+                        <div class="ab_mark"><img src="static/picture/ch3_mark.png" alt=""></div>
+                        <p>60代 男性：</p>
+                        <p>費用は一切かかりません。<br class="spbr">コンサルティング料や入会費など、<br>あらゆる隠れた費用がないので、完全に無料です。<br>
+                            試しに相談に行ってみたところ、<br>貴社から提供していただいた株式の収益<br class="spbr">が私を驚かせてくれました！</p>
+                    </div>
+                </div>
+                <!-- /BOX -->
+            </div>
+        </section>
+        <!-- /3 -->
+        <!-- footer start -->
+        <a href=" javascript:{goLink()}" name="offer" id="offer"></a>
+        <!-- footer end -->
+    </div>
+    <!-- フロートボタン -->
+    <div class="Bnr">
+        <div class="floating">
+            <div class="float_in clearfix">
+                <div class="fl_box">
+                    <a href=" javascript:{goLink()}"><img src="static/picture/btn_cta2.png" alt="無料体験版のお申し込みをする"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ページトップ -->
+    <div class="button"><a href="javascript:void(0);" class="golink1"><img src="static/picture/pagetop.png" alt="" class="animate__animated animate__fadeIn"></a>
+    </div>
+    <!-- ページトップ -->
+    <div class="img_f" style="position:fixed;left:50px;bottom:160px;z-index: 99999999">
+        <a href=" javascript:{goLink()}">
+            <img src="static/picture/img_xy0816_1.png" alt="" style="max-width:100%;width:auto">
+        </a>
+    </div>
+    <style>
+        @media screen and (max-width: 767px){
+           .img_f{left:10px!important;bottom:70px!important;}
+           .img_f a{width:60px!important;display:inline-block}
+        }
+    </style>
+
+</body></html>
