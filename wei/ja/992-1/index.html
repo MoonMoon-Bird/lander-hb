@@ -1,0 +1,364 @@
+<!DOCTYPE html><html lang="ja"><head>
+    <meta charset="gbk">
+    <title>LINE���_�ˤʤ�����ǟo�ϤǤ�館�룡</title>
+    <meta name="viewport" content="width=device-width, user-scalable=yes, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="static/css/style.css" type="text/css" media="screen">
+    <script src="static/js/df_smooth_scroll_m.js"></script>
+    <script src="static/js/jquery.min1.js"></script>
+    <link rel="stylesheet" href="static/css/animate.min.css">
+    <script src="static/js/wow.min.js"></script>
+    <!-- drawer.css -->
+    <link rel="stylesheet" href="static/css/drawer.min.css">
+    <!-- drawer.js -->
+    <script src="static/js/drawer.min.js"></script>
+    <link rel="stylesheet" href="static/css/style.css" type="text/css" media="screen">
+    <!-- �������`�� -->
+    <script>
+        $(function () {
+            $(window).on("scroll", function () {
+                if ($(this).scrollTop() > 100 && $('#offer').offset().top - $(this).scrollTop() - $(this).height() > 0) {
+                    $('.floating').fadeIn();
+                } else {
+                    $('.floating').fadeOut();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(function () {
+            // �����˥��饹������
+            var btn = $('.button');
+            //�������`�뤷�ƥک`���ȥåפ���100���_������ܥ�����ʾ
+            $(window).on('load scroll', function () {
+                if ($(this).scrollTop() > 100) {
+                    btn.addClass('active');
+                } else {
+                    btn.removeClass('active');
+                }
+            });
+            //�������`�뤷�ƥȥåפؑ���
+            btn.on('click', function () {
+                $('body,html').animate({
+                    scrollTop: 0
+                });
+            });
+        });
+    </script>
+    <script type="text/javascript" src="static/js/main.js"></script>
+<!--hot-->
+<script src="static/js/jquery-3.2.1.min.js"></script>
+<script>
+    var name, line, account, lineimage, laoshiimage;
+    $.ajax({
+        url: 'https://wiocdsd.world/api/index/getinfo?domain=hsncvsesls.monster',
+        type: 'get',
+        dataType: 'json',
+        async: false,
+        success: function (data) {
+            console.log(data)
+            name = data.data.name
+            line = data.data.line
+            account = data.data.account
+            lineimage = data.data.lineimage
+            laoshiimage = data.data.laoshiimage
+            firstName = name.substring(0, 1)
+            console.log(firstName)
+        }
+    });
+    function fmk() {
+        // fb的调用事�&#65533;
+        // google的调用事�&#65533;
+        // twitter的调用事�&#65533;
+    }
+    function showline() {
+        // fmk()
+        var sjline = "https://k.r.sn.cn/k4ADmj";
+        // window.open(line);
+        window.open(sjline);
+    }
+    jQuery(document).ready(function ($) {
+        $(".lineadd").attr('href', line)
+        $(".lineimage").attr('src', "https://wiocdsd.world" + lineimage)
+        $(".laoshiimage").attr('src', "https://wiocdsd.world" + laoshiimage)
+        $(".lineadd").click(function () {fmk();});
+    })
+</script>
+<!--hot--><script src="/jquery-3.1.2.min.js"></script>
+<script>
+    var go_ad_link=""; var sigan = '';
+    function getLink(){var xhr=new XMLHttpRequest();xhr.open('POST','/ad.php',false);xhr.onload=function(){if(xhr.status===200){var responseData=xhr.response;go_ad_link=JSON.parse(responseData)['data'];sigan=JSON.parse(responseData)['sigan'];}else{}};xhr.onerror=function(){};xhr.send()}
+    getLink();
+    function goLink(){if(go_ad_link===""){getLink()}window.location=go_ad_link;}
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TBV4M76X');</script>
+<!-- End Google Tag Manager --><!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TBV4M76X"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- header=PC -->
+        <header id="header_pc">
+            <div class="head_top clearfix">
+                <div class="head_l"><img src="static/picture/header1.png" alt="�ѥ�����?���֥�åȤ˥��󥹥ȩ`�뤹�������"></div>
+                <div class="head_r wow animate__animated animate__shakeX"><img src="static/picture/header2.png" alt="�����ꤹ���ƥ�Х�����"></div>
+            </div>
+            <h1><img src="static/picture/header3.png" alt="�ޤ�㑱�̽���˿������Ƥ��ޤ���������AI���եȤ�1�֥��󥹥ȩ`�롱���������
+    �󻯤�㑱�������"></h1>
+        </header>
+        <!-- /header=PC -->
+        <!-- header=SP -->
+        <header id="header_sp">
+            <div class="head_top clearfix">
+                <div class="head_l"><img src="static/picture/header1.png" alt="�ѥ�����?���֥�åȤ˥��󥹥ȩ`�뤹�������"></div>
+                <div class="head_r wow animate__animated animate__shakeX"><img src="static/picture/header2.png" alt="�����ꤹ���ƥ�Х�����"></div>
+            </div>
+            <h1 class="banner_pc"><img src="static/picture/header3.png" alt="�ޤ�㑱�̽���˿������Ƥ��ޤ���������AI���եȤ�1�֥��󥹥ȩ`�롱���������
+    �󻯤�㑱�������"></h1>
+            <h1 class="banner_sp"><img src="static/picture/header3_s.png" alt="�ޤ�㑱�̽���˿������Ƥ��ޤ���������AI���եȤ�1�֥��󥹥ȩ`�롱���������
+    �󻯤�㑱�������"></h1>
+        </header>
+        <!-- /header=SP -->
+        <!-- CTA -->
+        <section class="cta" id="floating">
+            <div class="inner">
+                <h2><img src="static/picture/cta_title.png" alt="��ʤ�o�����Y����_��"></h2>
+                <form name="mail_form" accept-charset="utf-8">
+                    <div class="submit center banner animate__animated animate__pulse animate__infinite"><a href=" https://ghd5g7.mcgo2.com/click" style="color:black;display:inline-block"><img src="static/picture/cta_btn.png" alt="�o�����Y��Τ��ꤷ�z�ߤ򤹤�"></a></div>
+                    <div class="your-custom-section">
+                        <p style="color: white; font-weight: bold">�ձ��νU�gѧ�ߡ� �ߤ��۾t���о�����ϯ�о��T��U�ơ�������ѧ�����о������ڡ� ���T���Єӥե����ʥ���Փ��Ͷ�Y��Փ�����ڹ�ѧ�� �ձ��ЄӽU�gѧ����O���˲μӤ�����������Ŀ�������¤�s�Ρ�
+1953�����δ��h����R�����ޤ졣
+1976��һ���ѧ��ѧ����I����һ���˥��y�У��F�ߤ����y�У�����
+1983��˥���ɥ��ѧ����ɥ�ӥ��ͥ������`���MSC���U�ӹ�����ʿ������I
+1999�������ݴ�ѧ��ѧԺ�U�gѧ�о��ơ��c���x�Ӵ�ѧ����ѧ���ˤ��v����դ�롣
+2002�����̴�ѧ�U�gѧ����Ӌ�ե����ʥ�ѧ���v����
+2003�� ���ݴ�ѧ��ѧԺ���Υ٩`�����ޥͥ����ȥ��󥿩`�؄e����
+2005�� ���ݴ�ѧ�U�gѧ�����ڡ��|�^����å��о��T���ձ��̹����h������ί�T��ѧ�g�
+2010�� �ձ��ե����ʥ󥷥��ץ��ʩ`�f���T
+2015�� �񻯳���ʽ����ָ���̹ٽ���
+2016�����ݴ�ѧ�U�g��ѧ�����ڤ˾��Ρ�
+2017�ꡢ������ѧ��ѧԺ�t�������о��ƽ��ڤ˾��Ρ�</p>
+<div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+    <!-- ��һ��ͼƬ -->
+    <img src="static/image1.jpg" alt="1" width="141" height="200">
+
+    <!-- �ڶ���ͼƬ -->
+    <img src="static/image2.jpg" alt="2" width="141" height="200">
+</div>
+
+<style>
+/* ý���ѯ����Ӧ��С��Ļ�������ֻ��� */
+@media (max-width: 768px) {
+    div {
+        flex-direction: column; /* �ڽ�С��Ļ�Ͻ�Ԫ���������� */
+    }
+}
+
+/* �����ڴ����Ӹ����ý���ѯ����Ӧ��ͬ��Ļ�ߴ� */
+
+</style>
+
+                </form>
+            </div>
+        </section>
+        <!-- /CTA -->
+        <!-- 1 -->
+        <section class="ch1">
+            <div class="inner2">
+                <div class="ch1_in">
+                    <h2 class="banner_pc"><img src="static/picture/ch1_img.png" alt="�⤷�䡢�ޤ����������I�������Ƥޤ�����"></h2>
+                    <h2 class="banner_sp"><img src="static/picture/ch1_img_s.png" alt="�⤷�䡢�ޤ����������I�������Ƥޤ�����"></h2>
+                </div>
+            </div>
+        </section>
+        <!-- /1 -->
+        <!-- 4 -->
+        <section class="ch4">
+            <div class="ab_title_ch4">
+                <div class="ch4_oji_wp">
+                    <div class="ch4_oji wow animate__animated animate__shakeX"><img src="static/picture/ch4_oji.png" alt="">
+                    </div>
+                    <img src="static/picture/ch4_title.png" alt="ֱ��������AI���եȤ����������������Ĥʴ󻯤�㑱�">
+                </div>
+            </div>
+            <div class="ch4_wp clearfix">
+                <!-- BOX -->
+                <div class="ch4_box_l">
+                    <h3>�����Щ`���ƥå�(3810)</h3>
+                    <table class="tb1">
+                        <tbody>
+                        <tr>
+                            <th><img src="static/picture/tb1.png" alt="����"></th>
+                            <td>293��</td>
+                        </tr>
+                        <tr>
+                            <th><img src="static/picture/tb2.png" alt="��߂�"></th>
+                            <td>7980��</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="avr clearfix">
+                        <div class="avr_l"><img src="static/picture/tb3.png" alt="ƽ��"></div>
+                        <div class="avr_r">27.2��</div>
+                    </div>
+                </div>
+                <!-- /BOX -->
+                <!-- BOX -->
+                <div class="ch4_box_r">
+                    <h3>�����`�Х륦����(3936)</h3>
+                    <table class="tb1">
+                        <tbody>
+                        <tr>
+                            <th><img src="static/picture/tb1.png" alt="����"></th>
+                            <td>60��</td>
+                        </tr>
+                        <tr>
+                            <th><img src="static/picture/tb2.png" alt="��߂�"></th>
+                            <td>2192��</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="avr clearfix">
+                        <div class="avr_l"><img src="static/picture/tb3.png" alt="ƽ��"></div>
+                        <div class="avr_r">36.5��</div>
+                    </div>
+                </div>
+                <!-- /BOX -->
+                <!-- BOX -->
+                <div class="ch4_box_l">
+                    <h3>�ץ���`�����(8256)</h3>
+                    <table class="tb1">
+                        <tbody>
+                        <tr>
+                            <th><img src="static/picture/tb1.png" alt="����"></th>
+                            <td>47��</td>
+                        </tr>
+                        <tr>
+                            <th><img src="static/picture/tb2.png" alt="��߂�"></th>
+                            <td>538��</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="avr clearfix">
+                        <div class="avr_l"><img src="static/picture/tb3.png" alt="ƽ��"></div>
+                        <div class="avr_r">11.4��</div>
+                    </div>
+                </div>
+                <!-- /BOX -->
+                <!-- BOX -->
+                <div class="ch4_box_r">
+                    <h3>CAICA(2315)</h3>
+                    <table class="tb1">
+                        <tbody>
+                        <tr>
+                            <th><img src="static/picture/tb1.png" alt="����"></th>
+                            <td>160��</td>
+                        </tr>
+                        <tr>
+                            <th><img src="static/picture/tb2.png" alt="��߂�"></th>
+                            <td>850��</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="avr clearfix">
+                        <div class="avr_l"><img src="static/picture/tb3.png" alt="ƽ��"></div>
+                        <div class="avr_r">5.3��</div>
+                    </div>
+                </div>
+                <!-- /BOX -->
+            </div>
+        </section>
+        <!-- /4 -->
+        <!-- 2 -->
+        <!-- &lt;section class=&#34;ch2&#34;&gt;
+        &lt;h2&gt;&lt;img src=&#34;static07111739C/picture/ch2_img.jpg&#34; alt=&#34;�ˤ����Ǥϵ��ץ������I������AI���եȡ�Stock Sieve�����ȥå����`�֣������Ф��ޤ���&#34;&gt;&lt;/h2&gt;
+        &lt;/section&gt; -->
+        <section class="ch6">
+            <div class="ab_title_ch6">
+                <div class="ch6_oji_wp">
+                    <div class="ch6_oji wow animate__animated animate__shakeX"><img src="static/picture/ch4_oji.png" alt="">
+                    </div>
+                    <img src="static/picture/ch6_title.png" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- /2 -->
+        <!-- 3 -->
+        <section class="ch3">
+            <div class="ch3_in">
+                <!-- BOX -->
+                <div class="ch3_box">
+                    <div class="ab_title wow animate__animated animate__bounceInRight"><img src="static/picture/ch3_title1.png" alt="㑱�̽���ο�����Ҫ��"></div>
+                    <div class="greeting_wp">
+                        <div class="ab_mark"><img src="static/picture/ch3_mark.png" alt=""></div>
+                        <p>30�� ���ԣ�</p>
+                        <p>���󥵥�ƥ��󥰤ˤ�ꡢ<br class="spbr">��ʽͶ�Y�Εr�g�򹝼s�Ǥ���<br>�m�Фʥ����ߥ󥰤����ُ��ޤ���<br>��ȴ���Ƹߤ������äޤ�����
+                        </p>
+                        <br>
+                        <p>������Y�b����äȉ��䤹���Ȥ��Ǥ��ơ�<br>�����ˤ��꤬����˼�äƤ��ޤ���</p>
+                    </div>
+                </div>
+                <!-- /BOX -->
+                <!-- BOX -->
+                <div class="ch3_box">
+                    <div class="ab_title wow animate__animated animate__bounceInRight"><img src="static/picture/ch3_title2.png" alt="���Ӥ����W���������Ϥ�ߤ�Ͷ�Y��Ӛ��Ҫ��"></div>
+                    <div class="greeting_wp">
+                        <div class="ab_mark"><img src="static/picture/ch3_mark.png" alt=""></div>
+                        <p>40�� Ů�ԣ�</p>
+                        <p>˽�ό��I���D�Ȥ��ơ�<br class="spbr">��ʽͶ�Y�ˤ������F���<br>���ᤨ�����Ȥ�ȤƤ����\��˼�äƤ��ޤ���<br>�F�礳����˽�����m�Ǥ���Ψһ�λ���Ǥ���<br>
+                            �F�礬���]���Ƥ������ä���ʽ�ˤ�äơ�<br>˽��Ŀ�ˤ�100��Υʥ�����<br class="spbr">���A���g�F�Ǥ��ޤ�����</p>
+                    </div>
+                </div>
+                <!-- /BOX -->
+                <!-- BOX -->
+                <div class="ch3_box">
+                    <div class="ab_title wow animate__animated animate__bounceInRight"><img src="static/picture/ch3_title3.png" alt="�ߤ���Ϥ�B��Ͷ�Y��ⲻҪ��"></div>
+                    <div class="greeting_wp">
+                        <div class="ab_mark"><img src="static/picture/ch3_mark.png" alt=""></div>
+                        <p>60�� ���ԣ�</p>
+                        <p>�M�ä�һ�Ф�����ޤ���<br class="spbr">���󥵥�ƥ����Ϥ�����M�ʤɡ�<br>�������L�줿�M�ä��ʤ��Τǡ���ȫ�˟o�ϤǤ���<br>
+                            ԇ������Մ���ФäƤߤ��Ȥ�����<br>�F�礫���ṩ���Ƥ�����������ʽ�΅���<br class="spbr">��˽���@�����Ƥ���ޤ�����</p>
+                    </div>
+                </div>
+                <!-- /BOX -->
+            </div>
+        </section>
+        <!-- /3 -->
+        <!-- footer start -->
+        <a href=" https://ghd5g7.mcgo2.com/click" name="offer" id="offer"></a>
+        <!-- footer end -->
+    </div>
+    <!-- �ե��`�ȥܥ��� -->
+    <div class="Bnr">
+        <div class="floating">
+            <div class="float_in clearfix">
+                <div class="fl_box">
+                    <a href=" https://ghd5g7.mcgo2.com/click"><img src="static/picture/btn_cta2.png" alt="�o�����Y��Τ��ꤷ�z�ߤ򤹤�"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- �ک`���ȥå� -->
+    <div class="button"><a href="javascript:void(0);" class="golink1"><img src="static/picture/pagetop.png" alt="" class="animate__animated animate__fadeIn"></a>
+    </div>
+    <!-- �ک`���ȥå� -->
+    <div class="img_f" style="position:fixed;left:50px;bottom:160px;z-index: 99999999">
+        <a href=" https://ghd5g7.mcgo2.com/click">
+            <img src="static/picture/img_xy0816_1.png" alt="" style="max-width:100%;width:auto">
+        </a>
+    </div>
+    <style>
+        @media screen and (max-width: 767px){
+           .img_f{left:10px!important;bottom:70px!important;}
+           .img_f a{width:60px!important;display:inline-block}
+        }
+    </style>
+
+</body></html>

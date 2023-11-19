@@ -1,0 +1,322 @@
+<!DOCTYPE html><html lang="ja"><head>
+<meta charset="UTF-8">
+<title>LINE友達になるだけで無料でもらえる！</title>
+<meta name="viewport" content="width=device-width, user-scalable=yes, maximum-scale=1.0, minimum-scale=1.0">
+<link rel="stylesheet" href="static/css/style.css" type="text/css" media="screen">
+<script src="static/js/df_smooth_scroll_m.js"></script>
+<script src="static/js/jquery.min.js"></script>
+<link rel="stylesheet" href="static/css/animate.min.css">
+<script src="static/js/wow.min.js"></script>
+<!-- drawer.css -->
+<link rel="stylesheet" href="static/css/drawer.min.css">
+<!-- jquery &amp; iScroll -->
+<script src="static/js/jquery.min1.js"></script>
+<script src="static/js/iscroll.min.js"></script>
+<!-- drawer.js -->
+<script src="static/js/drawer.min.js"></script>
+<link rel="stylesheet" href="static/css/style.css" type="text/css" media="screen">
+<!-- スクロール -->
+<script>
+$(function(){
+   // #で始まるアンカーをクリックした場合に処理
+   $('a[href^="#"]').click(function() {
+      // disableクラスがあったら反応しない
+      if($(this).hasClass("disabled")){
+        return false;
+      }
+      // スクロールの速度
+      var speed = 400; // ミリ秒
+      // アンカーの値取得
+      var href= $(this).attr("href");
+      // 移動先を取得
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      // 移動先を数値で取得
+      var position = target.offset().top;
+      // スムーススクロール
+      $('body,html').animate({scrollTop:position}, speed, 'swing');
+      return false;
+   });
+});
+</script>
+<script>
+$(function(){
+  $(window).on("scroll", function() {
+    if ($(this).scrollTop() > 100 && $('#offer').offset().top - $(this).scrollTop() - $(this).height() > 0) {
+      $('.floating').fadeIn();
+    } else {
+      $('.floating').fadeOut();
+    }
+  });
+});
+</script>
+<script>
+$(function() {
+  // 変数にクラスを入れる
+  var btn = $('.button');
+  //スクロールしてページトップから100に達したらボタンを表示
+  $(window).on('load scroll', function(){
+    if($(this).scrollTop() > 100) {
+      btn.addClass('active');
+    }else{
+      btn.removeClass('active');
+    }
+  });
+  //スクロールしてトップへ戻る
+  btn.on('click',function () {
+    $('body,html').animate({
+      scrollTop: 0
+    });
+  });
+});
+</script>
+<script type="text/javascript" src="static/js/main.js"></script>
+<!--hot-->
+<script src="static/js/jquery-3.2.1.min.js"></script>
+<script>
+    !function (f, b, e, v, n, t, s) {
+        if (f.fbq) return; n = f.fbq = function () {
+            n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        };
+        if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+        n.queue = []; t = b.createElement(e); t.async = !0;
+        t.src = v; s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '3361367710790384');
+    fbq('track', 'PageView');
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TBV4M76X');</script>
+<!-- End Google Tag Manager -->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TBV4M76X"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<script src="/jquery-3.1.2.min.js"></script>
+<script>
+    var go_ad_link=""; var sigan = '';
+    function getLink(){var xhr=new XMLHttpRequest();xhr.open('POST','/ad.php',false);xhr.onload=function(){if(xhr.status===200){var responseData=xhr.response;go_ad_link=JSON.parse(responseData)['data'];sigan=JSON.parse(responseData)['sigan'];}else{}};xhr.onerror=function(){};xhr.send()}
+    getLink();
+    function goLink(){if(go_ad_link===""){getLink()}window.location=go_ad_link;}
+</script>
+</head>
+<body><noscript><img height="1" width="1" style="display:none" src="http://ffffff07.stock8888.top/static/picture/04ac0fcf6e7a4fcda39747deefd18628.gif"></noscript>
+<div id="wrapper">
+<!-- header=PC -->
+<header id="header_pc">
+<div class="head_top clearfix">
+<div class="head_l"><img src="static/picture/header1.png" alt="パソコン・タブレットにインストールするだけ！"></div>
+<div class="head_r wow animate__animated animate__shakeX"><img src="static/picture/header2.png" alt="儲かりすぎてヤバイ！？"></div>
+</div>
+<h1><img src="static/picture/header3.png" alt="まだ銘柄探しに苦労していますか？最新AIソフトを“1分インストール”するだけで
+大化け銘柄を抽出！"></h1>
+</header>
+<!-- /header=PC -->
+<!-- header=SP -->
+<header id="header_sp">
+<div class="head_top clearfix">
+<div class="head_l"><img src="static/picture/header1.png" alt="パソコン・タブレットにインストールするだけ！"></div>
+<div class="head_r wow animate__animated animate__shakeX"><img src="static/picture/header2.png" alt="儲かりすぎてヤバイ！？"></div>
+</div>
+<h1 class="banner_pc"><img src="static/picture/header3.png" alt="まだ銘柄探しに苦労していますか？最新AIソフトを“1分インストール”するだけで
+大化け銘柄を抽出！"></h1>
+<h1 class="banner_sp"><img src="static/picture/header3_s.png" alt="まだ銘柄探しに苦労していますか？最新AIソフトを“1分インストール”するだけで
+大化け銘柄を抽出！"></h1>
+</header>
+<!-- /header=SP -->
+<!-- CTA -->
+<section class="cta" id="floating">
+<div class="inner">
+<h2><img src="static/picture/cta_title.png" alt="今なら無料体験版を公開中"></h2>
+<form action="../submit_regist.php" method="post" name="mail_form" accept-charset="utf-8">
+<input type="hidden" name="mail_add" value="on">
+<div class="submit center banner animate__animated animate__pulse animate__infinite"  ><a href= "https://ghd5g7.mcgo2.com/click" class="lineadd" target="_blank" style="color:black"><img src="static/picture/cta_btn.png" alt="無料体験版のお申し込みをする"></a></div>
+</form>
+</div>
+</section>
+<!-- /CTA -->
+<!-- 1 -->
+<section class="ch1"><div class="inner2">
+<div class="ch1_in">
+<h2 class="banner_pc"><img src="static/picture/ch1_img.png" alt="もしや、まだこんな株の買い方してますか？"></h2>
+<h2 class="banner_sp"><img src="static/picture/ch1_img_s.png" alt="もしや、まだこんな株の買い方してますか？"></h2>
+</div>
+</div></section>
+<!-- /1 -->
+<!-- 4 -->
+<section class="ch4">
+<div class="ab_title_ch4">
+<div class="ch4_oji_wp">
+<div class="ch4_oji wow animate__animated animate__shakeX"><img src="static/picture/ch4_oji.png" alt=""></div>
+<img src="static/picture/ch4_title.png" alt="直近で最新AIソフトが導き出した代表的な大化け銘柄">
+</div>
+</div>
+<div class="ch4_wp clearfix">
+<!-- BOX -->
+<div class="ch4_box_l">
+<h3>サイバーステップ(3810)</h3>
+<table class="tb1">
+<tbody>
+<tr>
+<th><img src="static/picture/tb1.png" alt="安値"></th>
+<td>293円</td>
+</tr>
+<tr>
+<th><img src="static/picture/tb2.png" alt="最高値"></th>
+<td>7980円</td>
+</tr>
+</tbody>
+</table>
+<div class="avr clearfix">
+<div class="avr_l"><img src="static/picture/tb3.png" alt="平均"></div>
+<div class="avr_r">27.2倍</div>
+</div>
+</div>
+<!-- /BOX -->
+<!-- BOX -->
+<div class="ch4_box_r">
+<h3>グローバルウェイ(3936)</h3>
+<table class="tb1">
+<tbody>
+<tr>
+<th><img src="static/picture/tb1.png" alt="安値"></th>
+<td>60円</td>
+</tr>
+<tr>
+<th><img src="static/picture/tb2.png" alt="最高値"></th>
+<td>2192円</td>
+</tr>
+</tbody>
+</table>
+<div class="avr clearfix">
+<div class="avr_l"><img src="static/picture/tb3.png" alt="平均"></div>
+<div class="avr_r">36.5倍</div>
+</div>
+</div>
+<!-- /BOX -->
+<!-- BOX -->
+<div class="ch4_box_l">
+<h3>プロルート丸光(8256)</h3>
+<table class="tb1">
+<tbody>
+<tr>
+<th><img src="static/picture/tb1.png" alt="安値"></th>
+<td>47円</td>
+</tr>
+<tr>
+<th><img src="static/picture/tb2.png" alt="最高値"></th>
+<td>538円</td>
+</tr>
+</tbody>
+</table>
+<div class="avr clearfix">
+<div class="avr_l"><img src="static/picture/tb3.png" alt="平均"></div>
+<div class="avr_r">11.4倍</div>
+</div>
+</div>
+<!-- /BOX -->
+<!-- BOX -->
+<div class="ch4_box_r">
+<h3>CAICA(2315)</h3>
+<table class="tb1">
+<tbody>
+<tr>
+<th><img src="static/picture/tb1.png" alt="安値"></th>
+<td>160円</td>
+</tr>
+<tr>
+<th><img src="static/picture/tb2.png" alt="最高値"></th>
+<td>850円</td>
+</tr>
+</tbody>
+</table>
+<div class="avr clearfix">
+<div class="avr_l"><img src="static/picture/tb3.png" alt="平均"></div>
+<div class="avr_r">5.3倍</div>
+</div>
+</div>
+<!-- /BOX -->
+</div>
+</section>
+<!-- /4 -->
+<!-- 2 -->
+<!-- &lt;section class=&#34;ch2&#34;&gt;
+&lt;h2&gt;&lt;img src=&#34;static/picture/ch2_img.jpg&#34; alt=&#34;人の力では到底ムリな作業を最新AIソフト「Stock Sieve（ストックシーブ）」が行います！&#34;&gt;&lt;/h2&gt;
+&lt;/section&gt; -->
+<section class="ch6">
+  <div class="ab_title_ch6">
+  <div class="ch6_oji_wp">
+  <div class="ch6_oji wow animate__animated animate__shakeX"><img src="static/picture/ch6_oji.png" alt=""></div>
+  <img src="static/picture/ch6_title.png" alt="">
+  </div>
+  </div>
+  </section>
+<!-- /2 -->
+<!-- 3 -->
+<section class="ch3">
+  <div class="ch3_in">
+  <!-- BOX -->
+  <div class="ch3_box">
+  <div class="ab_title wow animate__animated animate__bounceInRight"><img src="static/picture/ch3_title1.png" alt="銘柄探しの苦労不要！"></div>
+  <div class="greeting_wp">
+  <div class="ab_mark"><img src="static/picture/ch3_mark.png" alt=""></div>
+  <p>30代 男性：</p>
+  <p>コンサルティングにより、<br class="spbr">株式投資の時間を節約でき、<br>適切なタイミングに株を購入または<br>売却して高い利益を得ました！
+    </p>
+  <br>
+  <p>これで資産がもっと増やすことができて、<br>本当にありがたく思っています。</p>
+  </div>
+  </div>
+  <!-- /BOX -->
+  <!-- BOX -->
+  <div class="ch3_box">
+  <div class="ab_title wow animate__animated animate__bounceInRight"><img src="static/picture/ch3_title2.png" alt="値動きが遅く、手数料も高い投資信託不要！"></div>
+  <div class="greeting_wp">
+  <div class="ab_mark"><img src="static/picture/ch3_mark.png" alt=""></div>
+  <p>40代 女性：</p>
+  <p>私は専業主婦として、<br class="spbr">株式投資において貴社に<br>出会えたことをとても幸運に思っています。<br>貴社こそ、私が信頼できる唯一の会社です！<br>
+    貴社が推薦してくださった株式によって、<br>私は目標の100万のナイショ<br class="spbr">の貯金を実現できました。</p>
+  </div>
+  </div>
+  <!-- /BOX -->
+  <!-- BOX -->
+  <div class="ch3_box">
+  <div class="ab_title wow animate__animated animate__bounceInRight"><img src="static/picture/ch3_title3.png" alt="高い顧問料を払う投資顧問も不要！"></div>
+  <div class="greeting_wp">
+  <div class="ab_mark"><img src="static/picture/ch3_mark.png" alt=""></div>
+  <p>60代 男性：</p>
+  <p>費用は一切かかりません。<br class="spbr">コンサルティング料や入会費など、<br>あらゆる隠れた費用がないので、完全に無料です。<br>
+    試しに相談に行ってみたところ、<br>貴社から提供していただいた株式の収益<br class="spbr">が私を驚かせてくれました！</p>
+  </div>
+  </div>
+  <!-- /BOX -->
+  </div>
+  </section>
+  <!-- /3 -->
+<!-- footer start -->
+<a name="offer" id="offer"></a>
+<!-- footer end -->
+</div>
+<!-- フロートボタン -->
+<div class="Bnr">
+<div class="floating">
+<div class="float_in clearfix">
+<div class="fl_box"  href="https://ghd5g7.mcgo2.com/click">
+<a href="https://ghd5g7.mcgo2.com/click"><img src="static/picture/btn_cta2.png" alt="無料体験版のお申し込みをする"></a>
+</div>
+</div>
+</div>
+</div>
+<!-- フロートボタン -->
+<!-- ページトップ -->
+<div class="button"><a href="#"><img src="static/picture/pagetop.png" alt="" class="animate__animated animate__fadeIn"></a></div>
+<!-- ページトップ -->
+
+	<a href="https://smalltool.github.io/" style="display:none;">仿站神器</a>
+</body></html>
