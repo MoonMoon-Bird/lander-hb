@@ -1,0 +1,403 @@
+
+
+/* ****************************************************
+Title: style.css
+Created: 2013‒05-17
+Last Modified: 2013‒05-17
+Editor(s): HK
+***************************************************** */
+
+.anc {
+	position: relative;
+}
+.ancIn {
+	position: absolute;
+	top: -31px;
+}
+.colRed01 {
+	color: #e60012;
+	font-weight: bold;
+}
+.bgYel01 {
+	background-color: #fff100;
+}
+
+
+/*-----------------------------------------------------
+	header
+------------------------------------------------------*/
+
+#headerWrap {
+	/*border-top: 3px solid #e52a29;*/
+}
+#header {
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+/*-----------------------------------------------------
+	main
+------------------------------------------------------*/
+
+.main01Wrap {
+	background-image: url("https://toshopay.com/img/mainvisual_bg_left.gif")/*tpa=https://kabu-systemtrade.com/kabuhomerun/img/mainvisual_bg_left.gif*/;
+	background-repeat: repeat-x;
+	background-position: left top;
+	position: relative;
+}
+.main01BgRight {
+	background-image: url("https://toshopay.com/img/mainvisual_bg_right.gif")/*tpa=https://kabu-systemtrade.com/kabuhomerun/img/mainvisual_bg_right.gif*/;
+	background-repeat: repeat-x;
+	background-position: left top;
+	width: 50%;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height: 726px;
+}
+
+.main01 {
+	position: relative;
+	background-image: url("https://toshopay.com/img/mainvisual_wrap.jpg")/*tpa=https://kabu-systemtrade.com/kabuhomerun/img/mainvisual_wrap.jpg*/;
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 546px;
+}
+.main02 {
+	position: relative;
+	background-image: url("https://toshopay.com/img/mainvisual02_wrap.jpg")/*tpa=https://kabu-systemtrade.com/kabuhomerun/img/mainvisual02_wrap.jpg*/;
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+.cont01Box01 {
+	background-color: #dbdbdb;
+	background-image: url("https://toshopay.com/img/cont01_img02_wrap.jpg")/*tpa=https://kabu-systemtrade.com/kabuhomerun/img/cont01_img02_wrap.jpg*/;
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 290px;
+}
+
+.cont01PWrap01 {
+	position: absolute;
+	left: 80px;
+	top: 325px;
+	font-size: 16px;
+	line-height: 28px;
+	text-align: left;
+	width: 810px;
+}
+.cont01PWrap01 p {
+	padding-bottom: 1em;
+}
+.cont01Box02 {
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+}
+
+.contactWrap01 {
+	background-color: #e6e8d1;
+	background-image: url("https://toshopay.com/img/contact_bg01.jpg")/*tpa=https://toshopay.com/img/contact_bg01.jpg*/;
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 200px;
+}
+.contactBtn01 {
+	text-align: center;
+	padding-top: 28px;
+}
+
+.cont02PWrap01 {
+	font-size: 20px;
+	line-height: 28px;
+	text-align: left;
+	position: absolute;
+	left: 10px;
+	top: 520px;
+	width:600px;
+}
+.cont02PWrap01 p {
+	padding-bottom: 1em;
+}
+
+.cont02Box01Wrap {
+	background-image: url("https://toshopay.com/img/cont02_img03_bg.jpg")/*tpa=https://kabu-systemtrade.com/kabuhomerun/img/cont02_img03_bg.jpg*/;
+	background-repeat: repeat-x;
+	background-position: left top;
+	height: 180px;
+}
+.cont02Box01 {
+	background-image: url("https://toshopay.com/img/cont02_img03_wrap.jpg")/*tpa=https://kabu-systemtrade.com/kabuhomerun/img/cont02_img03_wrap.jpg*/;
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 180px;
+}
+.cont02Box01In {
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+}
+.cont02P01 {
+	font-size: 16px;
+	line-height: 22px;
+	text-align: left;
+	width: 530px;
+	position: absolute;
+	left: 240px;
+	top: 60px;
+}
+
+.cont02Box02 {
+	background-color: #001c58;
+	background-image: url("https://toshopay.com/img/cont02_img05_wrap.jpg")/*tpa=https://kabu-systemtrade.com/kabuhomerun/img/cont02_img05_wrap.jpg*/;
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 480px;
+	text-align: center;
+}
+
+.cont02Box03Wrap {
+	background-image: url("https://toshopay.com/img/cont02_img06_bg_left.gif")/*tpa=https://kabu-systemtrade.com/kabuhomerun/img/cont02_img06_bg_left.gif*/;
+	background-repeat: repeat-x;
+	background-position: left top;
+	height: 388px;
+	position: relative;
+}
+.cont02Box03BgRight {
+	background-image: url("https://toshopay.com/img/cont02_img06_bg_right.gif")/*tpa=https://kabu-systemtrade.com/kabuhomerun/img/cont02_img06_bg_right.gif*/;
+	background-repeat: repeat-x;
+	background-position: left top;
+	height: 388px;
+	width: 50%;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+.cont02Box03 {
+	position: relative;
+	background-image: url("https://toshopay.com/img/cont02_img06_wrap.jpg")/*tpa=https://kabu-systemtrade.com/kabuhomerun/img/cont02_img06_wrap.jpg*/;
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 388px;
+	text-align: center;
+}
+
+.cont02Block01 {
+	padding-top: 36px;
+	padding-bottom: 100px;
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.cont02Block01Left {
+	font-size: 16px;
+	line-height: 28px;
+	text-align: left;
+	width: 490px;
+	float: left;
+}
+.cont02Block01Left p {
+	padding-bottom: 1em;
+}
+.cont02Block01Right {
+	padding-top: 4px;
+	float: right;
+}
+.cont02P02 {
+	font-size: 16px;
+	line-height: 28px;
+	text-align: left;
+	width: 810px;
+	position: absolute;
+	left: 80px;
+	top: 178px;
+}
+.cont02Box04 {
+	padding-bottom: 18px;
+}
+
+.cont03Tit01 {
+	background-color: #000000;
+	height: 40px;
+	text-align: center;
+}
+
+.cont03Block01 {
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-bottom: 70px;
+}
+
+.contH301 {
+	padding-top: 28px;
+	padding-bottom: 38px;
+}
+.cont03Box01 {
+	padding-bottom: 24px;
+}
+
+.cont03Box02 {
+	position: relative;
+}
+.cont03P01 {
+	font-size: 14px;
+	line-height: 24px;
+	color: #ffffff;
+	text-align: center;
+	width: 150px;
+	position: absolute;
+	left: 114px;
+	top: 66px;
+}
+.cont03P01 .span01 {
+	font-size: 38px;
+	font-weight: bold;
+}
+.cont03P01 .span02 {
+	font-weight: bold;
+}
+.cont03P02 {
+	text-align: left;
+	font-size: 16px;
+	line-height: 28px;
+	width: 630px;
+	position: absolute;
+	left: 284px;
+	top: 38px;
+}
+
+.cont03Box03 {
+	background-color: #dbdbdb;
+	background-image: url("https://toshopay.com/img/cont03_tit02_img04_wrap.jpg")/*tpa=https://kabu-systemtrade.com/kabuhomerun/img/cont03_tit02_img04_wrap.jpg*/;
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 320px;
+}
+.cont03Box04 {
+	padding-bottom: 90px;
+}
+
+.cont03Box05 {
+	background-color: #bce2e8;
+}
+
+.cont03Box06Wrap {
+	background-image: url("https://toshopay.com/img/cont03_tit02_img07_bg_left.gif")/*tpa=https://kabu-systemtrade.com/kabuhomerun/img/cont03_tit02_img07_bg_left.gif*/;
+	background-repeat: repeat-x;
+	background-position: left top;
+	height: 792px;
+	position: relative;
+	margin-bottom: 48px;
+}
+.cont03Box06 {
+	background-image: url("https://toshopay.com/img/cont03_tit02_img07_wrap.jpg")/*tpa=https://kabu-systemtrade.com/kabuhomerun/img/cont03_tit02_img07_wrap.jpg*/;
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 792px;
+	position: relative;
+	text-align: center;
+}
+.cont03Box06BgRight {
+	background-image: url("https://toshopay.com/img/cont03_tit02_img07_bg_right.gif")/*tpa=https://kabu-systemtrade.com/kabuhomerun/img/cont03_tit02_img07_bg_right.gif*/;
+	background-repeat: repeat-x;
+	background-position: left top;
+	height: 792px;
+	width: 50%;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+.cont04 {
+	padding: 5px 0px 70px 0px;
+	width: 960px;
+	margin: 50px auto;
+}
+.cont04Box01 {
+	border: 1px solid #cccccc;
+	padding: 10px;
+}
+.cont04H301 {
+	font-size: 24px;
+	line-height: 24px;
+	color: #ffffff;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 50px;
+	text-align: left;
+	background-color: #999999;
+}
+.cont04Box01In {
+	padding-top: 30px;
+	padding-right: 46px;
+	padding-left: 50px;
+	font-size: 14px;
+	line-height: 22px;
+	text-align: left;
+}
+.cont04Box01P01 {
+	padding-bottom: 20px;
+}
+.cont04Box01 .cont04Box01In dl {
+	padding-bottom: 20px;
+}
+.cont04Box01 .cont04Box01In dt {
+	color: #cc0000;
+	font-weight: bold;
+}
+
+
+/*-----------------------------------------------------
+	footer
+------------------------------------------------------*/
+
+#footerWrap {
+	background-color: #efefef;
+	background-image: url("https://toshopay.com/img/footer_line_bg.gif")/*tpa=https://kabu-systemtrade.com/kabuhomerun/img/footer_line_bg.gif*/;
+	background-repeat: repeat-x;
+	background-position: left top;
+}
+
+.footer {
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	text-align: center;
+	background-color: #efefef;
+	background-image: url("https://toshopay.com/img/footer_line_bg.gif")/*tpa=https://kabu-systemtrade.com/kabuhomerun/img/footer_line_bg.gif*/;
+	background-repeat: repeat-x;
+	background-position: left top;
+}
+.footerNaviWrap {
+	font-size: 12px;
+	line-height: 12px;
+	color: #002065;
+}
+.footerNaviWrap li {
+	display: inline-block;
+	padding: 0px 12px;
+}
+
+.footerNaviWrap li a:link {	color: #002065;	text-decoration: none;}
+.footerNaviWrap li a:visited {	color: #002065;	text-decoration: none;}
+.footerNaviWrap li a:hover {	color:#002065;	text-decoration: underline;}
+.footerNaviWrap li a:active {	color:#002065;	text-decoration: none;}
+
+
+.base {
+	width: 950px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}

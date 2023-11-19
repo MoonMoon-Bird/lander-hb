@@ -1,0 +1,22 @@
+/*
+ * The Typekit service used to deliver this font or fonts for use on websites
+ * is provided by Adobe and is subject to these Terms of Use
+ * http://www.adobe.com/products/eulas/tou_typekit. For font license
+ * information, see the list below.
+ *
+ * luxus-brut:
+ *   - http://typekit.com/eulas/00000000000000007735ba01
+ *
+ * © 2009-2023 Adobe Systems Incorporated. All Rights Reserved.
+ */
+/*{"last_published":"2021-06-15 07:28:55 UTC"}*/
+
+@import url("p.css");
+
+@font-face {
+font-family:"luxus-brut";
+src:url("https://ecqazbufvvipro.xyz/static08301147a/font/l.woff2") format("woff2"),url("../font/d.woff") format("woff"),url("../font/d.woff") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+}
+
+.tk-luxus-brut { font-family: "luxus-brut",cursive; }

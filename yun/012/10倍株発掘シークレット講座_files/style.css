@@ -1,0 +1,1372 @@
+
+/* CSS Document */
+body {
+	color: #545454;
+	font-family: fot-tsukuardgothic-std, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+	/*overflow: hidden;*/
+}
+
+
+
+/*=========================================================================
+
+CONTENTS
+
+===========================================================================*/
+
+#contents {
+	max-width: 1000px;
+	margin: 0 auto;
+	background-color: #FFF;
+	box-shadow: 0px 0px 10px #e6eced;
+    text-align: center;
+}
+
+h2 {
+	text-align: center;
+	font-size: 2.5rem;
+	color: #FFFFFF;
+	background-color: #292929;
+	padding: 2rem;
+}
+
+
+.text {
+    max-width: 88%;
+    margin: 0 auto;
+	white-space: pre-line;
+}	
+
+.text2 {
+	color: red;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+p {
+    white-space: pre-line;
+}
+
+.box1 {
+	border: solid 1px #f22;
+    padding: 1em;
+    background: #fffee5;
+    display: block;
+}
+
+.back-line {
+	background-color: #FFFF99
+}
+
+.text_all {
+	text-align: left;
+}
+
+.inline {
+    text-align: left;
+    display: inline-block;
+    max-width: 400px;
+    margin: 2rem 5rem;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    line-height: 1.7rem;
+}
+
+@media screen and (min-width: 480px) {
+
+    .pc_none,
+    .pcnone {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .sp_none,
+    .spnone {
+        display: none;
+    }
+	
+	
+.inline {
+    text-align: left;
+    display: inline-block;
+    max-width: 700px;
+    margin: 0 2rem;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    line-height: 2rem;
+}
+}
+
+#contents_01 {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #f6f6f6;
+}
+
+#contents_02 {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #a1000a;
+}
+
+#contents_03 {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #fff8f8;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+
+
+/********************フェードイン*************************************************/
+
+.fade {
+  transition: all 1200ms;
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(0px, 50px);
+}
+
+.fadein {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0px, 0px);
+} 
+
+#fixed {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    width: 14%;
+    transition: .3s;
+    z-index: 999;
+}
+
+@media screen and (max-width:480px) { 
+#fixed {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    width: 30%;
+    transition: .3s;
+    z-index: 999;
+}
+}
+
+#fixed:hover {
+  transform: translate3d(0, 10px, 0);
+  color: #007db9;;
+  filter: none;
+  opacity: 0.5;
+}
+
+
+/*----------------------------------------------------
+
+▼ファーストビュー
+
+----------------------------------------------------*/
+ 
+.fv {
+	position: relative;
+}
+
+.btn_wrap {
+	padding-top: 10px;
+}
+
+@media screen and (max-width:480px) { 
+.btn_wrap {
+	padding-top: 0px;
+}
+}
+
+
+
+.pc_cta_btn {
+    position: absolute;
+    top: 75%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 80%;
+	filter: drop-shadow(0px 10px 5px #680004);
+	  transition: .3s;
+}
+
+.sp_cta_btn {
+    position: absolute;
+    top: 71%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 90%;
+    filter: drop-shadow(0px 10px 5px #8c0005);
+    transition: .3s;
+}
+
+.pc_cta_btn:hover {
+  transform: translate3d(0, 10px, 0);
+  color: #007db9;;
+  filter: none;
+}
+
+.sp_cta_btn:active {
+  transform: translate3d(0, 10px, 0);
+  color: #007db9;;
+  filter: none;
+}
+
+.fadeUp{
+animation-name:fadeUpAnime;
+animation-duration:1s;
+animation-fill-mode:forwards;
+opacity:0;
+}
+
+@keyframes fadeUpAnime{
+  from {
+    opacity: 0;
+  transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+  transform: translateY(0);
+  }
+}
+
+
+/*----------------------------------------------------
+
+▼　2022年、あなたは以下の急騰株を1つでも買うことができましたか？
+
+----------------------------------------------------*/
+
+
+
+
+/*----------------------------------------------------
+
+▼急騰株を獲得した方たちのお声
+
+----------------------------------------------------*/
+
+.pc_movie_title {
+	width: 80%;
+	margin: 4rem 0 3rem 0;
+}
+
+.sp_movie_title {
+	width: 100%;
+    margin: 0rem 0 1rem 0;
+}
+
+.padding-left {
+	padding-left:0;
+}
+
+.pc_result {
+	margin-top: 1rem;
+}
+
+.sp_result {
+	margin-top: 1rem;
+}
+
+/*----------------------------------------------------
+
+▼CTA
+
+----------------------------------------------------*/
+
+
+
+.cta_2 {
+	position: relative;
+}
+
+.pc_cta_2 {
+	margin-top: -1px;
+}
+
+.sp_cta_2 {
+	margin-top: -1.6rem;
+}
+
+.pc_cta_btn_2 {
+	position: absolute;
+    top: 52%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 70%;
+    filter: drop-shadow(0px 10px 5px #680004);
+    transition: .3s;
+}
+
+.sp_cta_btn_2 {
+    position: absolute;
+    top: 58%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 90%;
+    filter: drop-shadow(0px 10px 5px #8c0005);
+    transition: .3s;
+}
+
+.pc_cta_btn_2:hover {
+  transform: translate3d(0, 10px, 0);
+  color: #007db9;;
+  filter: none;
+}
+
+.sp_cta_btn_2:active {
+  transform: translate3d(0, 10px, 0);
+  color: #007db9;;
+  filter: none;
+}
+
+
+
+
+/*----------------------------------------------------
+
+▼下げ相場でも急騰株がなぜ見つかるのか？
+
+----------------------------------------------------*/
+ 
+.pc_why {
+    width: 100%;
+	margin: 2rem 0 1rem 0;
+}
+
+.sp_why {
+    width: 100%;
+	margin: 1rem 0 2rem 0;
+}
+	
+
+/*----------------------------------------------------
+
+ウルフ村田の投資戦略
+
+----------------------------------------------------*/	
+.strategy {
+	margin: 0 auto;
+}
+
+
+.text_all_2 {
+	text-align: center;
+}
+
+.inline_2 {
+    text-align: center;
+    display: inline-block;
+    max-width: 450px;
+    margin: 3rem 1rem 0rem 1rem;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    line-height: 2rem;
+    color: #fff;
+}
+
+
+.pc_cta_btn_3 {
+    width: 70%;
+	right: 0;
+	left: 0;
+    filter: drop-shadow(0px 10px 5px #680004);
+    transition: .3s;
+    margin: 0rem 0 3rem 0;
+}
+
+.sp_cta_btn_3 {
+    width: 90%;
+    filter: drop-shadow(0px 10px 5px #8c0005);
+    transition: .3s;
+	margin: -2rem 0 2rem 0;
+}
+
+.pc_cta_btn_3:hover {
+  transform: translate3d(0, 10px, 0);
+  color: #007db9;;
+  filter: none;
+}
+
+.sp_cta_btn_3:active {
+  transform: translate3d(0, 10px, 0);
+  color: #007db9;;
+  filter: none;
+}
+
+
+/*----------------------------------------------------
+
+学べること
+
+----------------------------------------------------*/	
+.sp_contents {
+	margin-top: -1px;
+}
+	
+
+
+
+/*----------------------------------------------------
+
+フォーム１
+
+----------------------------------------------------*/	
+
+
+.pc_form_top {
+	width: 80%;
+	margin: 2rem 3.5rem 2rem 0;
+}
+	
+.sp_form_top {
+    width: 90%;
+    margin: 1rem 0 0rem 0;
+}
+
+
+.form_wrapper {
+    padding: 2rem 2rem;
+    width: 73%;
+    border-radius: 2px;
+    margin: -1rem auto 0rem auto;
+}
+
+
+.submit_btn {
+    filter: drop-shadow(0px 10px 5px #c9c9c9);
+    position: relative;
+    padding: 1rem 2rem;
+    border-radius: 100px;
+    color: #FFF;
+    font-size: 2.5vw;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-decoration: none;
+    border: none;
+    width: 75%;
+    line-height: 2.5rem;
+    margin-bottom: 2rem;
+    display: inline-block;
+	transition: 0.3s;
+    background-image: linear-gradient(90deg, rgba(172, 133, 69, 1), rgba(207, 162, 88, 1) 50%, rgba(172, 133, 69, 1));
+}
+
+.submit_btn:hover {
+  transform: translate3d(0, 10px, 0);
+  filter: none;
+}
+
+@media screen and (max-width:480px) {	
+	
+.form_wrapper {
+    padding: 2rem 2rem;
+    width: 73%;
+    border-radius: 2px;
+    margin: -1rem auto 0rem auto;
+}
+
+	
+.submit_btn {
+    position: relative;
+    padding: 1rem 0rem;
+    border-radius: 52px;
+    color: #FFF;
+    font-size: 6vw;
+    font-weight: 700;
+    text-decoration: none;
+    border: none;
+    width: 90%;
+    line-height: 2.5rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+	
+.submit_btn:active {
+  transform: translate3d(0, 10px, 0);
+  filter: none;
+}
+
+
+}
+
+
+/*-----最大文字サイズ-----*/	
+@media screen and (min-width:1000px) {
+  
+.submit_btn {
+    font-size: 30px;
+}
+}
+	
+
+
+#scroll {
+    height: 100px;
+    overflow: auto;
+    padding: 16px;
+    border: 1px solid #fff;
+    background: #ffffff;
+    border-radius: 10px;
+    margin: 0px 0% 2rem 0%;
+	}
+
+@media screen and (max-width: 480px) {
+#scroll {
+    height: 100px;
+    overflow: auto;
+    font-size: 0.8rem;
+    padding: 16px;
+    border: 1px solid #fff;
+    background: #fff;
+    border-radius: 10px;
+    margin: 1.5em 6%;
+	}
+	
+}
+
+.privacy {
+	color: #838383;
+}
+
+
+/*----------------------------------------------------
+
+▼　よくある質問
+
+----------------------------------------------------*/
+
+.qa_wrapper {
+	padding-bottom: 3rem;
+}
+
+.qa_title {
+	text-align: left;
+}
+
+.pc_qa{
+    width: 17%;
+margin: 3rem 0 2rem 6rem;
+}
+
+@media screen and (max-width:480px) { 
+	
+.qa_wrapper {
+	padding-bottom: 2rem;
+}
+	
+.pc_qa {
+    width: 30%;
+    margin: 2rem 0 2rem 1rem;
+}
+
+}
+
+
+.cp_qa *, .cp_qa *:after, .cp_qa *:before {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.cp_qa .cp_actab {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	margin: 0 0 1em 0;
+	color: #1b2538;
+	text-align: left;
+}
+.cp_qa .cp_actab input {
+	position: absolute;
+	opacity: 0;
+}
+/* 質問 */
+.cp_qa .cp_actab label {
+	font-weight: bold;
+	line-height: 1.6em;
+	position: relative;
+	display: block;
+	margin: 0 10%;
+	padding: 1em 3em 1em 2.5em;
+	cursor: pointer;
+	text-indent: 1em;
+	border-radius: 0.5em;
+	background: rgba(27,37,56,0.1);
+	text-align: left;
+}
+.cp_qa .cp_actab label::before {
+	font-family: serif;
+	font-size: 1.5em;
+	margin-left: -2em;
+	padding-right: 0.5em;
+	content: 'Q';
+}
+.cp_qa .cp_actab label:hover {
+	transition: all 0.3s;
+	color: #b61c22;
+}
+/* --質問の＋アイコン */
+.cp_qa .cp_actab label::after {
+	font-size: 1.7em;
+	font-weight: bold;
+	line-height: 2em;
+	position: absolute;
+	top: 0;
+	right: 0;
+	content: '＋';
+	display: inline-block;
+	width: 2em;
+	height: 2em;
+	-webkit-transition: transform 0.4s;
+	        transition: transform 0.4s;
+}
+/* 答え */
+.cp_qa .cp_actab .cp_actab-content {
+	position: relative;
+	overflow: hidden;
+	max-height: 0;
+	padding: 0 0 0 2.5em;
+	-webkit-transition: max-height 0.2s;
+	        transition: max-height 0.2s;
+	border-radius: 0 0 0.5em 0.5em;
+	margin: 0 10%;
+}
+.cp_qa .cp_actab .cp_actab-content::before {
+	font-family: serif;
+	font-size: 1.5em;
+	position: absolute;
+	margin: 0.4em 0 0 -1em;
+	padding: 0;
+	content: 'A';
+}
+.cp_qa .cp_actab .cp_actab-content p {
+	margin: 1em 1em 1em 0;
+	text-align: left;
+}
+/* 質問を開いた時の仕様 */
+/* --答えの高さ */
+.cp_qa .cp_actab input:checked ~ .cp_actab-content {
+	max-height: 40em;
+	border: 10px solid rgba(27,37,56,0.1);
+}
+/* 質問をクリックした時のアイコンの動き */
+.cp_qa .cp_actab input:checked ~ label {
+	color: #00838f;
+	border-radius: 0.5em 0.5em 0 0;
+}
+/* 質問をクリックした時の+の動き */
+.cp_qa .cp_actab input[type=checkbox]:checked + label::after {
+	-webkit-transform: rotateZ(45deg);
+	transform: rotateZ(45deg);
+	-webkit-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+}
+
+.btn3 a {
+    display: inline-block;
+    background-color: #ff9409;
+    box-shadow: 0 8px 0 #ab6100;
+    text-shadow: 0 -1px #ab6100;
+    border-radius: 5px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    box-sizing: border-box;
+    width: 50%;
+    border-radius: 60px;
+    font-size: 2.5vw;
+    line-height: 2em;
+    padding: 0.3em;
+	margin-top: 1em; 
+}
+
+.btn3 a:hover {
+  box-shadow: none;
+  transform: translate3d(0, 8px, 0);
+  transition-duration: 0.3s;
+  opacity: 0.8;
+}
+
+.ttl4 {
+    text-decoration: none;
+    font-size: 2.3vw;
+    color: #ff9409;   
+    font-weight: bold;
+    line-height: 1.5em;
+    margin-top: 1em;
+}
+
+@media screen and (max-width:750px) { 
+.btn3 a{
+    font-size: 5.5vw;
+    padding: 0.3rem 1em;
+    width: 80%;
+}
+}
+
+@media screen and (max-width:480px) { 
+.btn3 a{
+    width: 80%;
+    font-size: 6.5vw;
+    padding: 0.3rem 1em;
+    line-height: 3em;
+	box-shadow: 0 4px 0 #ab6100;
+}
+}
+
+
+/*-----最大文字サイズ-----*/	
+@media screen and (min-width:1000px) {
+  
+.btn3 a {
+	font-size: 30px;
+}
+}
+
+/*-----最大文字サイズ-----*/	
+@media screen and (min-width:1000px) {
+  
+.ttl4 {
+	font-size: 20px;
+}
+}
+
+
+/*----------------------------------------------------
+
+▼CTA3
+
+----------------------------------------------------*/
+
+.cta_3 {
+	background-color: #1d2d76;
+	margin: 3rem 0 0 0;
+}
+
+.cta_3_copy {
+	margin: 3rem 0 2rem 0;
+    width: 63%;
+}
+
+.attention_text_2 {
+    color: #fff;
+    margin: 2rem 0 1rem 0;
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+@media screen and (max-width:480px) { 
+.cta_3 {
+	background-color: #1d2d76;
+}
+
+.cta_3_copy {
+	margin: 3rem 0 2rem 0;
+    width: 80%;
+}
+	
+.cta_btn {
+    width: 91%;
+    margin: 0 0 1.5rem 0;
+}
+	
+.attention_text {
+    color: #fff;
+    margin: 0 0 2rem 0;
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+}
+	
+.attention_text_2 {
+    color: #fff;
+    margin: 2rem 0 1rem 0;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    text-align: center;
+    font-weight: 700;
+}
+}
+
+/*----------------------------------------------------
+
+▼会社紹介
+
+----------------------------------------------------*/
+
+
+
+
+/*=========================================================================
+
+　　　　↓フォーム↓
+
+===========================================================================*/
+
+
+.pc_form_ttl {
+	margin: 3rem 0 -2rem 0;
+	width: 86%;
+}
+
+.sp_form_ttl {
+	margin: 2rem 0 -2rem 0;
+    width: 85%;
+}
+
+.date_select {
+	position: relative;
+    padding-bottom: 5rem;
+}
+
+
+select {
+	/*position: absolute!important;
+    top: 35vw!important;
+    left: 11%!important;*/
+    padding: 1em 1rem!important;
+    margin: 9px 0px!important;
+    border-radius: 10px!important;
+    width: 71%;
+    background-color: #fff2f9;
+}
+	
+@media screen and (min-width:1000px) { 
+select {
+	top: 39%!important;
+}
+}
+
+@media screen and (max-width:1000px) { 
+select {
+    width: 90%;
+    padding: 1rem;
+    border: solid 1px #444444;
+}
+}
+
+
+#sphone, #semail, #scustname {
+    box-sizing: border-box;
+    width: 71%;
+    border-radius: 7px;
+    margin: -13px 0 2% 0;
+    padding: 0.3rem;
+    background-color: #fff;
+    border-color: #717171;
+    border-width: 1.5px;
+    line-height: 1.6rem;
+}
+
+.form_cont {
+    padding-left: 16%;
+    line-height: 1.5rem;
+}
+
+.form_date {
+    padding-left: 11%;
+	padding-bottom: 5rem;
+	line-height: 1.5rem;
+}
+
+
+.form_btn a {
+    position: absolute;
+    top: 47%;
+    right: 0;
+    left: 0;
+    margin: auto;
+    display: inline-block;
+    background-color: #f08800;
+    box-shadow: 0 6px 0 #b95b32;
+    text-shadow: 0 -1px #ab6100;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+    width: 80%;
+    border-radius: 11px;
+    font-size: 4vw;
+    line-height: 130%;
+    padding: 1.3rem;
+}
+
+.form_btn:hover {
+	position: absolute;
+    box-shadow: none;
+    transform: translate3d(0, 6px, 0);
+    transition-duration: 0.3s;
+    opacity: 0.8;
+	top: 47%;
+	width: 100%;
+}
+
+
+@media screen and (max-width: 480px) {
+
+	
+.form_btn a {
+    position: absolute;
+    top: 48vw;
+    margin: 1rem auto 2rem auto;
+    display: inline-block;
+    background-color: #f08800;
+    box-shadow: 0 6px 0 #b95b32;
+    text-shadow: 0 -1px #ab6100;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+    width: 80%;
+    border-radius: 11px;
+    font-size: 6vw;
+    line-height: 131%;
+    padding: 1.2rem;
+}
+	
+.form_wrapper {
+    padding: 1rem 0rem;
+    width: 100%;
+    border-radius: 0px;
+    margin: 0rem auto 0rem auto;
+}
+
+}
+
+/*====== 最大文字サイズ ======*/
+
+
+@media screen and (min-width: 800px) {
+
+	
+.form_btn a {
+    font-size: 33px
+}
+
+}
+
+
+@media screen and (max-width:480px) { 
+.form_cont {
+    font-size: 1.2rem;
+    padding-left: 9%;
+}
+	
+#sphone, #semail, #scustname {
+    width: 90%;
+}
+
+
+	
+}
+
+.form_attention {
+    text-align: left;
+    font-weight: 200;
+    font-size: 1rem;
+    margin: 0.6rem 0;
+}
+
+.cta_btn_4 {
+    border: none;
+    width: 72%;
+    margin: 0rem 0 3rem 0;
+}
+
+@media screen and (max-width: 435px) {
+
+.cta_btn_4 {
+    border: none;
+    width: 98%;
+    margin: -1rem 0 3rem 0;
+}
+
+}
+
+input {
+    padding: 7px 8px;
+    font-size: 100%;
+    margin: 8px 0 6px;
+    border-radius: 5px;
+    border: solid 1px #A2A2A2;
+}
+
+input[type="image"] {
+    border: none;
+    max-width: 100%;
+}
+
+
+
+	
+	
+.btn05 {
+    position: relative;
+    padding: 1rem 2rem;
+    border-radius: 22px;
+    color: #FFF;
+    font-size: 7vw;
+    font-weight: 700;
+    text-decoration: none;
+    border: none;
+    width: 90%;
+    line-height: 2.5rem;
+	margin-bottom: 1rem;
+    display: inline-block;
+}
+
+
+	
+
+/*-----最大文字サイズ---*/	
+@media screen and (min-width:1000px) {
+  
+.submit_icon {
+    font-size: 29px!important;
+}
+.btn07 {
+    font-size: 29px!important;
+}
+.btn06 {
+    font-size: 29px!important;
+}
+}
+
+
+
+/*=========================================================================
+
+　　　　↓テーブル↓
+
+===========================================================================*/
+
+caption {
+    background: #3e3e3e;
+    color: #fff;
+    padding: .5em;
+    border-radius: 5px 5px 0 0;
+}
+
+table tr {
+    border-bottom: solid 1px #ddd;
+}
+
+table th {
+    border-right: solid 1px #ddd;
+    font-weight: 400;
+    background: #3E3E3E;
+    padding: 1em 1em;
+    color: #fff;
+    width: 23%;
+}
+
+table td {
+    padding: 0.5em;
+    border: none;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 0;
+}
+
+@media screen and (max-width: 435px) {
+
+    /* 表示領域が435px以下の場合に適用するスタイル */
+    table:not(.table_ichiran),
+    table:not(.table_ichiran) tr,
+    table:not(.table_ichiran) th,
+    table:not(.table_ichiran) td,
+    table:not(.table_ichiran) tbody,
+    caption {
+        width: 100%;
+        display: block;
+        box-sizing: border-box;
+		border: none;
+    }
+
+    table th {
+        padding: .5em;
+        border: 0;
+    }
+
+}
+
+#send-table {
+    border-left: 1px solid #dcdcc1;
+    border-top: 1px solid #dcdcc1;
+    font-size: 100%;
+}
+
+#send-table th {
+    background-color: #656565;
+    text-align: left;
+    border-right: 1px solid #dcdcc1;
+    border-bottom: 1px solid #dcdcc1;
+    color: #fff;
+}
+
+#send-table td {
+    background-color: #fff;
+    border-right: 1px solid #dcdcc1;
+    border-bottom: 1px solid #dcdcc1;
+}
+
+#send-table caption {
+    background: #7FBFFF;
+    padding: 8px 12px;
+    margin: 5px 0;
+    color: #fff;
+    font-size: 130%;
+    font-weight: 700;
+}
+
+.hissu {
+    background: #fffc80;
+    border-radius: 3px;
+    padding: 0 3px;
+    font-size: 80%;
+    color: #080808;
+}
+
+
+/*----------------------------------------------------
+
+▼　よくある質問
+
+----------------------------------------------------*/
+.cp_qa *, .cp_qa *:after, .cp_qa *:before {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.cp_qa .cp_actab {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	margin: 0 0 1em 0;
+	color: #1b2538;
+}
+.cp_qa .cp_actab input {
+	position: absolute;
+	opacity: 0;
+}
+/* 質問 */
+.cp_qa .cp_actab label {
+    font-weight: bold;
+    line-height: 1.6em;
+    position: relative;
+    display: block;
+    margin: 0 10%;
+    padding: 1em 3em 1em 3.5em;
+    cursor: pointer;
+    text-indent: 1em;
+    border-radius: 0.5em;
+    background-color: #fff;
+    text-align: left;
+}
+
+@media screen and (max-width: 435px) {
+
+.cp_qa .cp_actab label {
+	font-weight: bold;
+	line-height: 1.6em;
+	position: relative;
+	display: block;
+	margin: 0 4.5%;
+	padding: 1em 3em 1em 2.5em;
+	cursor: pointer;
+	text-indent: 1em;
+	border-radius: 0.5em;
+    background-color: #fff;
+	text-align: left;
+}
+	
+}
+
+.cp_qa .cp_actab label::before {
+	font-family: serif;
+	font-size: 1.5em;
+	margin-left: -2em;
+	padding-right: 0.5em;
+	content: 'Q';
+}
+.cp_qa .cp_actab label:hover {
+	transition: all 0.3s;
+	color: #b61c22;
+}
+/* --質問の＋アイコン */
+.cp_qa .cp_actab label::after {
+	font-size: 1.9em;
+	font-weight: bold;
+	line-height: 2em;
+	position: absolute;
+	top: 0;
+	right: 0;
+	content: '＋';
+	display: inline-block;
+	width: 2em;
+	height: 2em;
+	-webkit-transition: transform 0.4s;
+	        transition: transform 0.4s;
+}
+/* 答え */
+.cp_qa .cp_actab .cp_actab-content {
+	position: relative;
+	overflow: hidden;
+	max-height: 0;
+	padding: 0 0 0 2.5em;
+	-webkit-transition: max-height 0.2s;
+	        transition: max-height 0.2s;
+	border-radius: 0 0 0.5em 0.5em;
+	margin: 0 10%;
+}
+
+@media screen and (max-width:480px) { 
+.cp_qa .cp_actab .cp_actab-content {
+	position: relative;
+	overflow: hidden;
+	max-height: 0;
+	padding: 0 0 0 2.5em;
+	-webkit-transition: max-height 0.2s;
+	        transition: max-height 0.2s;
+	border-radius: 0 0 0.5em 0.5em;
+	margin: 0 4.5%;
+}
+
+}
+.cp_qa .cp_actab .cp_actab-content::before {
+	font-family: serif;
+	font-size: 1.5em;
+	position: absolute;
+	margin: 0.4em 0 0 -1em;
+	padding: 0;
+	content: 'A';
+}
+.cp_qa .cp_actab .cp_actab-content p {
+	margin: 1em 1em 1em 0;
+}
+/* 質問を開いた時の仕様 */
+/* --答えの高さ */
+.cp_qa .cp_actab input:checked ~ .cp_actab-content {
+	max-height: 40em;
+	border: 10px solid #FFF;
+	background-color: #fff;
+}
+/* 質問をクリックした時のアイコンの動き */
+.cp_qa .cp_actab input:checked ~ label {
+	color: #b61c22;
+	border-radius: 0.5em 0.5em 0 0;
+}
+/* 質問をクリックした時の+の動き */
+.cp_qa .cp_actab input[type=checkbox]:checked + label::after {
+	-webkit-transform: rotateZ(45deg);
+	transform: rotateZ(45deg);
+	-webkit-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+}
+
+p {
+    display: inline-block;
+    text-align: left;
+}
+
+
+/*----------------------------------------------------
+
+▼お問い合わせ
+
+----------------------------------------------------*/
+.wrapper {
+	text-align: center;
+}
+
+.contact {
+    background-color: #F2F2F2;
+    padding: 2rem 2rem;
+    width: 73%;
+    border-radius: 30px;
+    margin: -1rem auto 0 auto;
+}
+
+.blue {
+	color: #0022B2;
+}
+
+.contact_text {
+    white-space: pre-line;
+    text-align: left;
+    margin: 0 5rem;
+}
+	
+@media screen and (max-width: 435px) {
+
+.contact_text {
+    white-space: pre-line;
+    text-align: center;
+    margin: 0rem;
+}
+
+}
+
+/*----------------------------------------------------
+
+▼フッター
+
+----------------------------------------------------*/
+
+.footer_logo {
+    width: 12%;
+    margin: 0rem 0rem 2rem 0rem;
+}
+
+@media screen and (max-width: 435px) {
+
+.footer_logo {
+    width: 30%;
+    margin: 0rem 0rem 2rem 0rem;
+}
+
+}
+
+footer {
+	box-sizing: border-box;
+    width: 100%;
+    padding: 35px 0 10px;
+    font-size: 80%;
+    color: #fff;
+    padding: 3em 2em 3em 2em;
+    background: #3f3f3f;
+}
+
+.footer_in {
+	max-width: 1040px;
+	margin: 0 auto;
+	padding: 0 1em;
+}
+
+.ft {
+	color: #fff;
+}
+
+.ft:hover {
+	color: #B7B7B7;
+}
