@@ -1,0 +1,329 @@
+
+
+/* ---------------------------------------------------
+ * base
+/* ---------------------------------------------------*/
+
+html {
+  font-size: 62.5%; /*適宜変更お願いします*/
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  font-size: 10px;
+  font-family: "Noto Sans JP", YuGothic, "Yu Gothic", "ヒラギノ角ゴシック", "Hiragino Sans", sans-serif;
+  color: #000000;
+  line-height: 1.75;
+  width: 100%;
+  background-color: #fff;
+  font-weight: 400; /*適宜変更お願いします*/
+  font-feature-settings: "palt" 1; /*自動カーニング*/
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: #fff;
+}
+
+#footer {
+  text-align: center;
+  font-size: 1.5em;
+  padding: 1em;
+}
+#footer a {
+  color: #000;
+}
+
+/*CTA*/
+.form_box {
+  position: absolute;
+  z-index: 99;
+  width: 67%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 18%;
+}
+
+.form_box_2 {
+  position: absolute;
+  z-index: 99;
+  width: 67%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 26%;
+}
+
+.btn_box_pc {
+  position: relative;
+  width: 100%;
+}
+
+.btn_box_sp {
+  position: relative;
+  height: 100px;
+  width: 100%;
+  margin: 35px auto 0;
+}
+
+.btn_pc {
+  position: absolute;
+  margin-top: -3.5em;
+}
+
+.btn_pc_2 {
+  position: absolute;
+  margin-top: -0.5em;
+}
+
+.anime {
+  animation: yureru-s 2s infinite;
+}
+
+@keyframes yureru-s {
+  0% {
+    transform: translate(4px, 0px);
+  }
+  5% {
+    transform: translate(-4px, 0px);
+  }
+  10% {
+    transform: translate(4px, 0px);
+  }
+  15% {
+    transform: translate(-4px, 0px);
+  }
+  20% {
+    transform: translate(4px, 0px);
+  }
+  25% {
+    transform: translate(-4px, 0px);
+  }
+  30% {
+    transform: translate(0px, 0px);
+  }
+}
+
+.wrap {
+  width: 2000px;
+  max-width: 100%;
+}
+
+#container {
+  position: relative;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*背景画像を指定*/
+section#section-1 {
+  background: url(../image/section_1.png) no-repeat top center;
+  height: px;
+}
+section#section-2 {
+  background: url(../image/section_2.png) no-repeat top center;
+  height: px;
+}
+section#section-3 {
+  background: url(../image/section_3.png) no-repeat top center;
+  height: px;
+}
+section#cta {
+  background: url(../image/cta.png) no-repeat top center;
+  height: px;
+}
+section#cta_2 {
+  background: url(../image/cta_2.png) no-repeat top center;
+  height: px;
+}
+section#section-4 {
+  background: url(../image/section_4.png) no-repeat top center;
+  height: px;
+}
+section#section-5 {
+  background: url(../image/section_5.png) no-repeat top center;
+  height: px;
+}
+section#section-6 {
+  background: url(../image/section_6.png) no-repeat top center;
+  height: px;
+}
+section#section-7 {
+  background: url(../image/section_7.png) no-repeat top center;
+  height: px;
+}
+section#section-8 {
+  background: url(../image/section_8.png) no-repeat top center;
+  height: px;
+}
+section#section-9 {
+  background: url(../image/section_9.png) no-repeat top center;
+  height: px;
+}
+section#section-10 {
+  background: url(../image/section_10.png) no-repeat top center;
+  height: px;
+}
+section#section-11 {
+  background: url(../image/section_11.png) no-repeat top center;
+  height: px;
+}
+section#section-12 {
+  background: url(../image/section_12.png) no-repeat top center;
+  height: px;
+}
+section#section-13 {
+  background: url(../image/section_13.png) no-repeat top center;
+  height: px;
+}
+section#section-14 {
+  background: url(../image/section_14.png) no-repeat top center;
+  height: px;
+}
+section#section-15 {
+  background: url(../image/section_15.png) no-repeat top center;
+  height: px;
+}
+section#section-16 {
+  background: url(../image/section_16.png) no-repeat top center;
+  height: px;
+}
+section#section-17 {
+  background: url(../image/section_17.png) no-repeat top center;
+  height: px;
+}
+section#section-18 {
+  background: url(../image/section_18.png) no-repeat top center;
+  height: px;
+}
+section#section-19 {
+  background: url(../image/section_19.png) no-repeat top center;
+  height: px;
+}
+section#section-20 {
+  background: url(../image/section_20.png) no-repeat top center;
+  height: px;
+}
+
+.-pc {
+  display: block;
+}
+
+.-sp {
+  display: none;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit; /*親要素のbox-sizingを継承*/
+}
+
+ul.include-accordion {
+  text-align: center;
+  padding: 50px 20px;
+}
+ul.include-accordion li {
+  list-style: none;
+}
+ul.include-accordion ul {
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  margin: 0;
+}
+.accrdion_speace {
+  margin: 20px 0;
+}
+
+/*-----------------スマホサイズ-----------------------*/
+
+@media screen and (max-width: 600px) {
+  .-pc {
+    display: none;
+  }
+  .-sp {
+    display: block;
+  }
+  body {
+    font-size: 4.2vw;
+  }
+  .wrap {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  input[type="image"] {
+    width: 100%;
+  }
+
+  .btn_sp {
+    margin-top: 1em;
+  }
+
+  .btn_sp_2 {
+    margin-top: 1em;
+  }
+
+  #footer {
+    text-align: center;
+    font-size: 0.8em;
+    padding: 1em;
+  }
+  #footer a {
+    color: #000000;
+  }
+  section#section-1,
+  section#section-2,
+  section#section-3,
+  section#section-4,
+  section#section-5,
+  section#section-6,
+  section#section-7,
+  section#section-8,
+  section#section-9,
+  section#section-10,
+  section#section-11,
+  section#section-12,
+  section#section-13,
+  section#section-14,
+  section#section-15,
+  section#section-16,
+  section#section-17,
+  section#section-18,
+  section#section-19,
+  section#section-20 {
+    background: none !important;
+  }
+
+  .form_box {
+    position: absolute;
+    z-index: 99;
+    width: 90%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 17%;
+  }
+  .form_box_2 {
+    position: absolute;
+    z-index: 99;
+    width: 90%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 28%;
+  }
+}
+/*----------------------------------------*/
