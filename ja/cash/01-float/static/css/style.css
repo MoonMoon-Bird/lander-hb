@@ -1,0 +1,18 @@
+
+/*
+	Theme Name: diver_child
+	Template: diver
+	Description:  Diverの子テーマです。
+	Theme URI: http://tan-taka.com/diver/
+	Author: Takato Takagi
+ */
+
+
+ .post-meta .cat-tag {
+    display: none;
+}
+
+
+.page_title {
+  display:none;
+}
