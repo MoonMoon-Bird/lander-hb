@@ -1412,7 +1412,8 @@
 											alt="クチコミ" width="850" height="244"
 											class="aligncenter size-large wp-image-72 lazyload"
 											data-srcset="https://openshares.net/wp-content/uploads/2023/11/IMG_2600-1024x294.jpg 1024w, https://openshares.net/wp-content/uploads/2023/11/IMG_2600-300x86.jpg 300w, https://openshares.net/wp-content/uploads/2023/11/IMG_2600-768x220.jpg 768w, https://openshares.net/wp-content/uploads/2023/11/IMG_2600.jpg 1179w"
-											data-sizes="(max-width: 850px) 100vw, 850px"></span></div>
+											data-sizes="(max-width: 850px) 100vw, 850px"></span>
+								</div>
 								<p style="text-align: right;"><span
 										style="font-size: 8pt; color: #808080; font-family: 'arial black', sans-serif;">※個人の感想であり、本サービスの内容の再現性や投資効果を保証するものではありません。</span>
 								</p>
@@ -1424,7 +1425,8 @@
 											alt="クチコミ" width="850" height="789"
 											class="aligncenter size-large wp-image-70 lazyload"
 											data-srcset="https://openshares.net/wp-content/uploads/2023/11/IMG_2598-1024x950.jpg 1024w, https://openshares.net/wp-content/uploads/2023/11/IMG_2598-300x278.jpg 300w, https://openshares.net/wp-content/uploads/2023/11/IMG_2598-768x713.jpg 768w, https://openshares.net/wp-content/uploads/2023/11/IMG_2598.jpg 1179w"
-											data-sizes="(max-width: 850px) 100vw, 850px"></span></div>
+											data-sizes="(max-width: 850px) 100vw, 850px"></span>
+								</div>
 								<p style="text-align: right;"><span
 										style="font-size: 8pt; color: #808080; font-family: 'arial black', sans-serif;">※個人の感想であり、本サービスの内容の再現性や投資効果を保証するものではありません。</span>
 								</p>
@@ -1436,7 +1438,8 @@
 											alt="クチコミ" width="850" height="634"
 											class="aligncenter size-large wp-image-71 lazyload"
 											data-srcset="https://openshares.net/wp-content/uploads/2023/11/IMG_2599-1024x764.jpg 1024w, https://openshares.net/wp-content/uploads/2023/11/IMG_2599-300x224.jpg 300w, https://openshares.net/wp-content/uploads/2023/11/IMG_2599-768x573.jpg 768w, https://openshares.net/wp-content/uploads/2023/11/IMG_2599.jpg 1179w"
-											data-sizes="(max-width: 850px) 100vw, 850px"></span></div>
+											data-sizes="(max-width: 850px) 100vw, 850px"></span>
+								</div>
 								<p style="text-align: right;"><span
 										style="font-size: 8pt; color: #808080; font-family: 'arial black', sans-serif;">※個人の感想であり、本サービスの内容の再現性や投資効果を保証するものではありません。</span>
 								</p>
@@ -1590,6 +1593,11 @@
 	<div id="header_search" class="lity-hide">
 	</div>
 
+	<div style="position:fixed;bottom: 10px;z-index: 10000;width: 80%;left: 0;display: flex;flex-direction: column;align-items: center;right: 0;margin: 0 auto;">
+		<div style="color: red;font-weight: bold;font-size: 5vw;">残されたチャンス：<span id="countdown-num"></span></div>
+		<img src="./static/image/btn.jpg" alt="">
+	</div>
+	<div style="height: 5vh;width: 100%;"></div>
 	<style>
 		@media screen and (max-width:599px) {
 			.grid_post-box {
@@ -2187,3 +2195,32 @@
 </html>
 <style>
 </style>
+
+<script>
+	let countdownNum = 1630;
+
+	const minCountdownNum = 5;
+
+	function updateCountdown() {
+		const countdownNumElement = document.getElementById('countdown-num');
+		if (countdownNumElement) {
+
+			const decreaseAmount = Math.floor(Math.random() * 3) + 3;
+
+			if (countdownNum - decreaseAmount >= minCountdownNum) {
+				countdownNum -= decreaseAmount;
+			}
+
+			countdownNumElement.textContent = countdownNum;
+
+			if (countdownNum > 0) {
+				setTimeout(updateCountdown, 2000);
+			} else {
+				countdownNumElement.textContent = '0';
+			}
+		}
+	}
+
+	updateCountdown();
+
+</script>
