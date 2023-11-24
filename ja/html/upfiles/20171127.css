@@ -1,0 +1,39 @@
+
+
+
+
+/*================================================
+	2017.11.27 修正
+=================================================*/
+.chart-area {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.chart-area p {
+    /* width: 900px; */
+    padding: 0px 40px;
+}
+
+.chart-area .emphasis {
+    text-align: center;
+    padding: 20px;
+    font-size: 35px;
+    color: black;
+}
+
+.chart-area-sp {
+  padding: 10px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.chart-area-sp .emphasis {
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    color: black;
+}

@@ -1,0 +1,328 @@
+<style type="text/css">
+
+
+/*================================================
+	reset css
+=================================================*/
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+
+
+
+/*================================================
+	���ʁA�����p
+=================================================*/
+
+body {
+	font-size: 16px;
+	font-family: "���C���I","Meiryo", "Osaka", "MS P�S�V�b�N", "MS�S�V�b�N", "�q���M�m�p�S Pro W6", Helvetica, verdana, arial;
+	color: #333;
+	line-height: 1.5;
+}
+
+/* color */
+.red {color: #c00;}
+
+/* float */
+.fl {float: left;}
+.fr {float: right;}
+
+/* a */
+a {color: #ff6600;}
+
+/* text-align */
+.al-c {text-align: center;}
+.al-l {text-align: left;}
+.al-r {text-align: right;}
+
+/* margin */
+.mgt-5 {margin-top: 5px;}
+.mgt-10 {margin-top: 10px;}
+.mgt-15 {margin-top: 15px;}
+.mgt-20 {margin-top: 20px;}
+.mgt_30 {margin-top: 30px;}
+
+.mgb-5 {margin-bottom: 5px;}
+.mgb-10 {margin-bottom: 10px;}
+.mgb-15 {margin-bottom: 15px;}
+.mgb-20 {margin-bottom: 20px;}
+.mgb-30 {margin-bottom: 30px;}
+
+/* padding */
+.pd-10 {padding: 10px;}
+.pdt-10 {padding-top: 10px; padding-bottom: 10px;}
+.pds-10 {padding-left: 10px; padding-right: 10px;}
+.pd-b-10 {
+	padding-bottom:20px}
+
+
+
+
+/*================================================
+	�����p
+=================================================*/
+.mgb-10 {margin-bottom: 10px;}
+.mgb-20 {margin-bottom: 20px;}
+.mgb-30 {margin-bottom: 30px;}
+.mgb-40 {margin-bottom: 40px;}
+.mgb-50 {margin-bottom: 50px;}
+
+/*================================================
+	�R���e���c
+=================================================*/
+.wrapper {
+	width: 1000px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+line-height:0;
+}
+.wrapper_1 {
+	width: 1000px;
+	margin-top: -30px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+/*================================================
+�@�@�@�w�b�_�[
+=================================================*/
+div#header-line {
+	background-image: url([png:298]);
+	background-repeat: repeat-x;
+}
+
+div#header {
+	background-color: white;
+	height: 86px;
+	background-image: url([png:299]);
+	width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+div#header-logo {
+    float: left;
+}
+
+div#header-text {
+    float: right;
+    text-align: right;
+    font-size: 12px;
+    padding-top: 20px;
+	line-height: 1.5;
+}
+
+/*================================================
+	���C��
+=================================================*/
+
+div#main-banner-back {
+	background-image: url(lp5/lp001_03_back.jpg);
+	background-repeat: repeat-x;
+	background-position: center 0;
+}
+
+
+/*================================================
+			form
+=================================================*/
+.form-banner {
+}
+
+.form-wrapper {
+	height: 335px;
+}
+
+.form {
+	width: 1000px;
+	height: 330px;
+	position: relative;
+	z-index: 10;
+	background-image: url(20170808_03.jpg);
+	background-repeat: no-repeat;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+		}
+
+.top-group .form {
+	margin-top: -120px;
+		}
+
+.form .input-item,
+.form .form-action {
+	position: absolute;
+	width: 400px;
+	height: 108px;
+		}
+
+		.form input[type="text"] {
+	width: 405px;
+	height: 53px;
+	padding: 10px 10px 10px 10px;
+	border: 1px solid #000000;
+	/* border-radius: 6px; */
+			/* -webkit-border-radius: 4px; */
+			font-size: 26px;
+	/* color: #999; */
+			background-color: #F3F3F3;
+		}
+
+.form .input-item {
+	top: 77px;
+	left: 67px;
+}
+
+.form .input-item.checkbox {
+	top: 152px;
+	width: 450px;
+}
+
+.form .input-item.checkbox p {
+    float: left;
+    font-size: 13px;
+    color: #fff;
+}
+
+.form .form-action {
+	top: 72px;
+	right: 73px;
+}
+
+
+.input-item.checkbox a {
+    color: #BF6322;
+}
+
+		.form-text-sm {
+			font-size:12px;
+		}
+
+		p.form-text-bt {
+			padding-top: 399px;
+			-top: 200px;
+			color: white;
+			padding-left: 20px;
+			padding-right: 20px;
+			font-size: 14px;
+		}
+
+.form-linkbox {
+    padding-top: 405px;
+    margin-left: 270px;
+}
+
+div#form-s-text {
+	padding-top: 370px;
+line-height: 80%;
+    /* font-size: 11px; */
+}
+
+
+/*================================================
+	�e����
+=================================================*/
+div#lp-01-b {
+	background-image: url(https://1376partners.com/upfiles/lp5/lp001_08_back.jpg);
+	background-repeat: repeat-x;
+	background-position: center 0;
+}
+
+div#lp-02-b {
+	background-image: url(lp5/lp001_03_back.jpg);
+	background-repeat: repeat-x;
+}
+
+div#lp-03-b {
+	background-image: url(lp5/lp001_19_back.jpg);
+	background-repeat: repeat-x;
+}
+
+div#lp-05-b {
+    background: url(https://1376partners.com/upfiles/lp5/lp-05-b.jpg) center 0 no-repeat;
+	background-color: #D5E9F0;
+}
+
+div#lp-08-b {
+	background-color: #626262;
+}
+
+/*================================================
+	footer
+=================================================*/
+
+/* .footer
+========================================================================== */
+.footer {
+	width: 100%;
+	min-height: 180px;
+	/* margin: 10px 0 0 0; */
+    font-size: 85%;
+	color: #e9e9e9;
+	background-color: #EFF3E2;
+}
+.footer .container {
+    padding: 1em;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer ul{
+margin-left: 140px;
+padding-bottom: 60px;
+}
+
+
+.footer li {
+    /* margin-bottom: 8px; */
+    font-size: 90%;
+    text-align: center;
+    float: left;
+    /* line-height: 40px; */
+    padding-top: 10px;
+    padding-right: 50px;
+    /* margin-left: 33px; */
+}
+
+.footer a{
+  color: #336699 !important;
+      text-decoration: none;
+	  text-decoration: underline;
+}
+
+.footer p {
+	font-size: 80%;
+	line-height: 2em;
+	color: #3C9D0D;
+	padding: 22px;
+}
+
+
+p.footer-text01 {
+	clear: both;
+}
+
+
+
+
+
+#copy {
+	background-color:#498416;
+	text-align:center;
+	font-size:10px;
+	color:#FFF;
+}
+
+input,select,textarea{
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	appearance:none;
+	background:#fff;
+	border:0px solid #ccc}
+
+</style>
