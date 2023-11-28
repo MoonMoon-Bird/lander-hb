@@ -1,0 +1,202 @@
+@media(max-width:1199px){
+    #courser_popup, #courser_popup-md {max-width:700px;width:100%;}
+    .wso-banner-header{padding:200px 0 90px 0;}   
+    .wso-scoll-down{margin-top:50px;}
+    .wso-why-three{font-size:23px;}
+    .wso-chart-ticker .ticker-title{font-size:45px;}
+    .chart-block .ticker-list p{font-size:16px;}
+    .str-work-process-content .row {display: flex;flex-wrap:wrap;}
+    .str-work-process-content .col-lg-3{width:25%;}
+    .wso-why-gurantee-section .vc_col-sm-6 {width: 100%;}
+    .tt-testimonial .testimonial .info-wrap .avatar {width:90px;height:90px;}
+    .testimonial-section .heading-title h2 {font-size: 36px;line-height: 50px;padding-top: 120px;}
+    .wso-thank-you2-text {padding: 0 100px;}
+    .recent-winners .vc_col-sm-6, .recent-winnder-full .col-md-6 { width: 100%;}
+    .counter-left-text > .vc_column-inner > .wpb_wrapper {  max-width: 970px;  margin-left: auto;  margin-right: auto;text-align:center;}
+    .recent-winners .heading-title h2{text-align:center;}
+    .wso-chart-ticker { max-width: 970px; margin: auto; float: none !important;}
+    .wso-chart-ticker .chart-block:nth-child(4) img{left:0; right:auto;}
+    .why-choose-block .heading-title h2 { margin-bottom: 50px !important;font-size: 36px;}
+    .ticker-right-bg > .vc_column-inner > .wpb_wrapper, .ticker-right-bg .wso-chart-ticker > .wpb_wrapper { max-width: 970px; margin-right: auto; margin-left: auto;}
+}
+
+@media(max-width:991px){
+    .wso-header-form h2 {font-size: 36px;line-height: 50px;}
+    .wso-header-form h3 {font-size: 19px;line-height: 28px;}
+    .heading-title h2 {font-size: 36px;line-height: 44px;}
+    #wso-timer {padding-top: 50px;padding-bottom: 40px;}
+    .str-feature-section .str-feature-icon-text .str-feature-icon{width:90px;height:90px;}
+    .str-feature-section .countdown .str-feature-box .count-days .time-count-text {font-size: 70px;line-height: 54px;}
+    .str-feature-section .countdown .str-feature-box .count-days span{font-size:24px;}
+    .str-feature-section .str-feature-icon-text{padding:40px 0;}
+    #video_player {margin-bottom: 0; height: auto;}
+    .wso-why-three strong {font-size: 20px;width: 40px; height: 40px;line-height: 40px; margin-right:10px;}
+    .wso-why-three {font-size: 18px;padding:15px;}
+    .wso-recent-top h3 {font-size:24px;line-height:36px;}
+    .wso-chart-ticker .wpb_wrapper{flex-wrap:wrap;}
+    .wso-chart-ticker .chart-block:nth-child(4) img {left: auto; right: 0;}
+    .wso-chart-ticker .chart-block:nth-child(6) img {left: 0; right: auto;}
+    .how-it-works-section{padding-top:40px; padding-bottom:0;}
+    .str-work-process-content .col-lg-3 { width: 50%; margin-bottom: 25px;}
+    .str-work-process-section .str-work-process-content .col-lg-3:nth-child(3) .str-work-icon-text::before{display:none;}
+    .wso-why-gurantee-section{padding:40px 0 25px 0;}
+    .testimonial-section .vc_col-sm-6 {width: 100%;}
+    .testimonial-section .heading-title h2 {font-size: 36px;line-height: 50px; padding-top: 0; text-align: center; margin-bottom: 55px !important; padding-right:0;}
+    .bottom-signup .vc_col-sm-12 > .vc_column-inner > .wpb_wrapper{padding:40px;}
+    .asseen-logo ul li{padding:0 5px;}
+    .footer-menu ul{flex-wrap:wrap;}
+    .four-trade{margin-bottom:25px;}
+    .right_sec {margin-top: 25px;}
+    .wso-thank-you2-text {padding: 0;}
+    .bottom-signup .wso-header-form h2 { font-size: 28px; line-height: 40px;}
+    .why-choose-block .heading-title h2 { font-size: 28px;}
+    .ticker-right-bg > .vc_column-inner > .wpb_wrapper, .ticker-right-bg .wso-chart-ticker > .wpb_wrapper{max-width:740px;}
+    .market-top-right {margin-top: 25px;}
+    .stocks-form .wso-header-form .widget {margin:0 0 25px 0 !important;}
+
+}
+
+@media(max-width:767px){
+    .playpause{display:block;}
+    #scroll-to video { height:285px;}
+    .wso-nav .container{flex-wrap:wrap;}   
+    .wso-logo { width: 100%;text-align: center;}
+    .wso-symbol { max-width: 269px; width: 100%;  margin: auto;}
+    .wso-nav{padding-top:15px; padding-bottom:0;}
+    .wso-header-form h2 {font-size: 25px;line-height: 36px;margin-bottom: 15px;}
+    .wso-header-form h3 { font-size: 16px; line-height: 24px; margin-bottom: 20px;}
+    .site-forms input[type="text"]{width:100%;}
+    .site-forms input[type="email"] {width: 100%;padding-right: 20px;margin: 10px 0;}
+    .site-forms input[type="submit"], .landing-1-form-block input[type="submit"] { position: inherit; width: 100%; right: 0; top: 0;}
+    .site-header .wso-symbol{display:none;}
+    .wso-banner-header {padding: 110px 0 90px 0;}
+    .wso-scoll-down {margin-top: 30px;}
+    .site-forms input[type="text"], .site-forms input[type="email"] {min-height:50px;}
+    .heading-title h2 br{display:none;}
+    .str-feature-section .str-feature-icon-text .str-feature-icon {width: 70px;height: 70px; margin-bottom:10px;}
+    .str-feature-section .countdown .str-feature-box .count-days .time-count-text {font-size: 44px; line-height: 36px;}
+    .str-feature-section .countdown .str-feature-box .count-days span {font-size: 16px;}
+    .str-feature-section .str-feature-icon-text { padding: 20px 0;}
+    .why-choose-block{padding:40px 0 45px 0;}
+    .why-choose-block .heading-title h2 {margin-bottom: 35px !important;}
+    .video-block-right > .vc_column-inner{padding-left:0 !important;}
+    .why-choose-left > .vc_column-inner{padding-right:0 !important;}
+    .wso-why-three { margin-bottom: 15px !important;}
+    .video-block-right .wpb_text_column.wpb_content_element.wpb_animate_when_almost_visible.wpb_fadeInRight.fadeInRight.wow.wpb_start_animation.animated {display: none;}
+    .str-work-text span{display:inline-block;}
+    .wso-gurantee ul li{font-size:17px;}
+    .bottom-signup .wso-header-form h4 {line-height: 24px; font-size: 16px;}
+    .bottom-signup .wso-header-form h4 br{display:none;}
+    .wso-footer-copyright{flex-wrap:wrap;text-align:center;}
+    body .social-navigation li{float:none; display:inline-block;}
+    .footer-social {width: 100%;margin-top: 10px;}
+    body .site-footer .social-navigation { margin-bottom: 0;}
+    .footer-menu li a{font-size:14px;}
+    .wsp-symbol-footer { display: block; margin-top: 20px !important;}
+    .wso-footer-copyright{margin-top:20px;}
+    .wso-banner-header.wso-banner-header-inner { padding-bottom: 50px;}
+    #primary {padding: 15px;}
+    .home #primary{padding:0;}
+    body #wpsm_accordion_90 .ac_open_cl_icon { margin-left: 0; font-size: 11px !important;width: 24px !important; float:left;}
+    body .entry-content #wpsm_accordion_90 .wpsm_panel-title .ac_title_class { font-size: 14px !important;float: left; width: 90%;}
+    .tv-feed-widget__scroll-wrapper{height:100%;}
+    #wpsm_accordion_90 .wpsm_panel-body{padding-left:35px;}
+    .wso-thank-you2-text h2{font-size:24px;}
+    .wso-thank-you2-text h4 {font-size: 16px;margin-bottom: 10px;line-height: 28px;}
+    .thank-you-overlay-t {font-size: 15px;line-height: 24px;}
+    .entry-header .entry-title{font-size:30px;}
+     .ticker-right-bg > .vc_column-inner > .wpb_wrapper, .ticker-right-bg .wso-chart-ticker > .wpb_wrapper{max-width:540px;}
+    .wso-chart-ticker .chart-block{width:100%;}
+    .stocks-form .wso-header-form .widget{padding:30px;}
+
+}
+
+@media(max-width:709px){
+    #courser_popup, #courser_popup-md {width: 96%; top:5%;}
+    #phone-img {width: 15%;}
+    #courser_popup .modal-body, #courser_popup-md .modal-body {font-size: 11px;line-height: 20px;}
+}
+@media(max-width:620px){
+
+}
+@media(max-width:600px){
+
+
+
+}
+@media(max-width:575px){
+    #iframeOffers {height: 1600px;}	
+    .wso-header-form h2 br{display:none;}
+    .heading-title h2 {font-size: 30px;line-height: 36px;}
+    .wso-chart-ticker .chart-block img{max-width:320px;}
+    .recent-winners{padding:40px 0 15px 0;}
+    .wso-recent-top h4{font-size:16px;}
+    .wso-recent-top h3 {font-size: 20px;line-height: 30px;}
+    .testimonial-section .heading-title h2 {font-size:30px;line-height:40px;padding-top:0;text-align:center;margin-bottom:55px !important;}
+    .tt-testimonial .testimonial .quote{display:none;}
+    .tt-testimonial .testimonial .info-wrap .name{font-size:18px;}
+    .bottom-signup .vc_col-sm-12 > .vc_column-inner > .wpb_wrapper{padding:30px;}
+    .footer-menu li a, .copyright, .copyright a{font-size:12px;}
+    .footer-menu li{padding:0 5px;}
+    .footer-bottom{padding-top:20px;}
+    .four-trade h2 {font-size: 24px;line-height: 36px;}
+    .goog-report{font-size:30px;}
+    .recent_news h2{font-size:30px;}
+    .findout-text h2 {font-size: 24px;line-height: 36px;}
+    .sign-up-pop form input[type="text"], .sign-up-pop form input[type="tel"]{padding-right:170px;}
+    .wso-header-form h2 { font-size: 20px; line-height: 30px; margin-bottom: 10px;}
+    .bottom-signup .wso-header-form h2 {font-size: 20px;line-height: 30px;}
+    #counter span{font-size:80px; line-height:90px;}
+    #counter span.bl-text-line {font-size: 100px;}
+    #counter{line-height:48px;}
+    .why-choose-block .heading-title h2 { font-size: 24px;}
+    .why-choose-block{padding:0 0 15px 0;}
+    .recent-light-bg{padding-top:70px;}
+}
+@media(max-width:520px){
+.wso-chart-ticker .chart-block {width:100%;}
+.str-work-process-section .str-work-process-content .col-lg-3:nth-child(2) .str-work-icon-text::before, .str-work-process-section .str-work-process-content .col-lg-3:nth-child(4) .str-work-icon-text::before{display:none;}    
+    .str-work-process-content .col-lg-3{width:100%;}    
+    .str-work-text span{display:block;}
+
+}
+@media(max-width:480px){
+.str-feature-section .str-feature-icon-text .str-feature-icon {width: 40px;height: 40px;}
+.str-feature-section .countdown .str-feature-box .count-days .time-count-text {font-size: 30px;line-height: 20px;}    
+.str-feature-section .countdown .str-feature-box .count-days span {font-size: 13px;}   
+    .str-feature-section .countdown .str-feature-box{width:24%;}   
+    #wso-timer {padding-top: 30px; padding-bottom: 0;}
+    .why-choose-left ul li {font-size:16px;line-height:24px;}
+    .sign-up-pop form input[type="submit"], .sign-up-pop form input[type="submit"]:hover{font-size:18px;padding:13px 15px;}
+    
+}
+@media(max-width:420px){
+
+    #courser_popup h4.modal-title, #courser_popup-md h4.modal-title {
+        font-size: 19px;
+        line-height: 24px;
+    }
+    #courser_popup .modal-body, #courser_popup-md .modal-body {
+        font-size: 10px;
+        line-height: 18px;
+        padding: 20px 20px 0;
+    }
+    #scroll-to video {height: 220px;}
+    .str-feature-section .countdown .str-feature-box .count-days span {font-size: 11px;}  
+    .str-feature-section .countdown .str-feature-box .count-days .time-count-text {font-size: 28px;line-height: 11px;}
+    .sign-up-pop form input[type="text"], .sign-up-pop form input[type="tel"] {padding-right: 140px;}
+    .sign-up-pop form input[type="submit"], .sign-up-pop form input[type="submit"]:hover{font-size:16px;padding:13px 10px;}
+    .sign-up-pop form input[type="tel"]{min-height: 56px;}
+    
+    
+}
+@media(max-width:380px){
+
+}
+@media(max-width:360px){
+
+    #scroll-to video{height: 178px;}
+}
+@media(max-width:320px){
+
+}

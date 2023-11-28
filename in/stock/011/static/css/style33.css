@@ -1,0 +1,483 @@
+
+.hero{
+    width: 100%;
+    background-image: url(https://www.casualcasino.top/theme/fan42/img/desktop-img/hero.webp);
+    padding:5% 2% 8% 2%;
+    background-position: center left;
+    background-size: cover;
+}
+.logo > img{
+    width: 410px
+}
+.hero-heading{
+    font-size:85px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 500;
+    margin-top: 2%;
+    font-family: 'DM Serif Display', serif;
+    margin-bottom: 0;
+    line-height: 1.1;
+    margin-bottom: 10px;
+}
+.sub-heading{
+    font-size:41px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 500;
+    margin-bottom: 3%;
+    font-family: 'DM Serif Display', serif;
+   
+}
+
+.hide-lg{
+    display: none;
+}
+.offer{
+    font-size:26px;
+    font-weight: light;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+}
+.fw-bold{
+    font-weight:700px !important;
+}
+
+.form-main-container{
+    background-color: rgb(255, 255, 255,.1); 
+    width: 790px; 
+    padding: 15px 18px 15px 18px;
+}
+.form-container {
+    background-color: white;
+    height: auto;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+}
+
+.input-icons img {
+    position: absolute;
+    margin-top: 12px;
+    margin-left: 5px;
+}
+
+.input-icons {
+    width: 100%;
+    margin-left: 40px;
+    margin-right: 20px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    border: none;
+   
+    padding-left: 35px;
+}
+
+.form-icon{
+    width:20px;
+    margin-top: 10px;
+}
+.signup-btn {
+    background-color: #2670da;
+    border-radius: 5px;
+    color: white !important;
+    padding: 10px 20px 10px 20px !important;
+    margin-right: 15px;
+    width: 230px;
+    margin-top: -5px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size:17px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.respect{
+    font-weight: 300;
+    font-size: 14.5px;
+    text-align: center;
+    color:#ffffff;
+    margin-top:2.5%;
+    font-family: 'Open Sans', sans-serif;
+}
+.input-field::-webkit-input-placeholder,
+.c-input::-webkit-input-placeholder,
+.c-input-message::-webkit-input-placeholder {
+    font-size: 18px !important;
+    font-weight: 300;
+    color:#404040;
+}
+
+.input-field::-moz-placeholder,
+.c-input::-moz-placeholder,
+.c-input-message::-moz-placeholder {
+    font-size: 18px !important;
+    font-weight: 300;
+    color:#404040;
+}
+
+.input-field:-ms-input-placeholder,
+.c-input::-ms-input-placeholder,
+.c-input-message:-ms-input-placeholder {
+    font-size: 18px !important;
+    font-weight: 300;
+    color:#404040;
+}
+
+.input-field:-moz-placeholder,
+.c-input:-moz-placeholder,
+.c-input-message:-moz-placeholder {
+    font-size: 18px !important;
+    font-weight: 300;
+    color:#404040;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.input-field::-webkit-input-placeholder,
+.c-input::-webkit-input-placeholder,
+.c-input-message::-webkit-input-placeholder {
+    font-size: 18px !important;
+    font-weight: 300;
+    color:#404040;
+    font-family: 'Open Sans', sans-serif;
+}
+.divider{
+    height: 1px;
+    background-color:  #cccccc;
+    width: 100%;
+    margin-top: 5px;
+}
+.our-picks > h1{
+    margin-top:2.5%;
+    font-weight: 700;
+    color:#202124 ;
+    font-size:41px;
+    font-family: 'DM Serif Display', serif;
+} 
+.our-picks > p{
+    color:#404040;
+    font-size:18px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+.pick-img-container{
+  
+}
+.pick-img-container > img{
+    width: 118px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top:10px;
+}
+#testimonials{
+    width: 100%;
+    background-image: url();
+    padding:5% 2% 3% 2%;
+    background-position: center center;
+    background-size: cover;
+}
+
+.testi-heading > h1{
+font-weight: bold;
+color:#202124 ;
+font-size:64px;
+margin-top:5px;
+font-family: 'DM Serif Display', serif;
+text-align: center;
+}
+.testi-subheading{
+    text-align: center;
+    color:#404040;
+    font-size:19.3px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.divider-yellow{
+    width: 80px;
+    height: 2px;
+    background-color: #2670da;
+}
+
+.cstm-card {
+    max-width: 250px;
+    background-color: #ffffff;
+    text-align: center !important;
+    padding: 18px 15px 15px 15px;
+    box-shadow: 4px 4px 4px #e2e4e5;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-right: 15px;
+    margin-top:20px;
+    background-color: #f7fcff;
+}
+
+.cstm-card-heading{
+    font-family: 'DM Serif Display', serif;
+    text-align: center;
+    font-size: 25px;
+}
+
+.cstm-card-gain{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-weight: 600;
+    font-size: 22px;
+    color: #2670da;
+}
+
+.cstm-card-text{
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.cstm-card-btn {
+    min-width: 150px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #4D4DCE;
+    padding: 10px;
+    font-size: 15px;
+    border: 0;
+    border-radius: 5px;
+   
+
+}
+
+.testi-card {
+    width: 280px;
+    background-color: #ffffff;
+    text-align: center !important;
+    padding: 30px 45px 25px 45px;
+    box-shadow: 4px 4px 4px #e2e4e5;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-right: 15px;
+    margin-top:20px;
+    background-color: #f7fcff;
+}
+.testi-card > img{
+    width:90px;
+}
+.testi-content{
+    font-size:13px;
+    color:#333333;
+    margin-top:15px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    font-weight: 600;
+}
+.testi-card > .name{
+    color:#202124 ;
+    font-weight: 700;
+    font-size:17px;
+    margin-top:15px;
+    font-family: 'DM Serif Display', serif;
+    line-height: 1.1;
+    
+}
+.address{
+    font-weight: 300;
+    color:#202124 ;
+    text-transform: uppercase;
+    font-size:13px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.sm-text{
+    font-size: 10px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    line-height: 1;
+    margin-top: 2%;
+}
+
+.hw-heading{
+    font-size:43px;
+    font-weight: 700;
+    color:#202124 ;
+    margin-top:70px;
+    font-family: 'DM Serif Display', serif;
+}
+
+.hw-img > img{
+    margin-top:30px;
+    width: 520px;
+    max-width: 100%;
+ 
+   
+}
+
+.faq-img > img{
+    margin-left: 50px;
+    margin-top:60px; 
+    width: 600px;
+}
+
+.hw-text > p{
+    color:#333333;
+    font-family: 'Open Sans', sans-serif;
+    font-size:18px;
+    
+}
+.hw-list{
+    margin-top:35px;
+}
+.hw-text{
+    padding-right:0px;
+}
+.faq-text{
+    padding-right:40px;  
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    color: #333333;
+}
+.list-content > p{
+    font-weight: 700;   
+    color:#202124;
+    font-size:20px;
+    margin-left:15px;
+    margin-top: -8px;
+    font-family: 'DM Serif Display', serif;
+}
+.hw-list-content {
+    margin-top:20px;
+}
+#faq{
+    background-color: #f5f7f8;
+}
+.faq-title{
+    font-weight: 700;
+    color:#202124;
+    font-size:21px;
+    margin-left:20px;
+    margin-top:-1px;
+    font-family: 'DM Serif Display', serif;
+    line-height: 1;
+    
+}
+.faq-content{
+    font-size:12px;
+    color:#333333;
+    margin-left:20px;
+    line-height: 17px;
+    margin-top:-10px;
+    font-family: 'Open Sans', sans-serif;
+}
+.faq-list > img{
+    width: 26px;
+}
+.faq-list{
+    margin-top: 10px;
+}
+.mobile-faq{
+    display: none;
+}
+#form-banner{
+    width: 100%;
+    background-image: url(https://www.casualcasino.top/theme/fan42/img/desktop-img/form-banner.webp);
+   
+    background-position: center left;
+    background-size: cover;    
+}
+.form-banner-heading{
+    color:#ffffff;
+    font-weight: 500;
+    font-size:55px;
+    margin-left:20px;   
+    text-align: center;
+    font-family: 'DM Serif Display', serif;
+}
+.form-banner-logo{
+    width: 110px;
+}
+footer{
+    background-color: #0a2751 ;
+    padding: 30px 0 14px 0;
+}
+
+.copyright{
+    color:#ffffff;
+    font-weight: 600;
+    font-size:15px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+.footer-links > a{
+    text-decoration: none;
+    color:#ffffff;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: 600;
+    font-size:15px;
+    font-family: 'Open Sans', sans-serif;
+    
+
+}
+.pp-heading{
+    color:#202124 ;
+    text-align: center;
+    font-weight: bold;
+    font-size:45px;
+    margin-top:10px;
+    font-family: 'DM Serif Display', serif;
+}
+.pp-title{
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'DM Serif Display', serif;
+}
+
+.privacy-policy-container>p{
+    
+    font-family: 'Open Sans', sans-serif;
+}
+
+.form-contact-us {
+    width: 100%;
+    padding-bottom: 150px
+}
+
+.form-contact-us-container {
+    margin-top: 80px;
+    padding-right: 8%;
+    padding-left: 8%
+}
+
+.c-input {
+    padding: 15px;
+    border-radius: 15px;
+    color: #babcbd
+}
+
+.c-input-message {
+    height: 250px;
+    color: #babcbd
+}
+
+.btn-send-message {
+    background-color: #2670da;
+    color: #ffffff;
+    border-radius: 25px;
+   font-weight: 800;
+    padding: 10px 20px 10px 20px;
+    margin-top: 40px;
+    float: right;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.mb-banner{
+    display: none;
+}
+
+.cstm-card{
+    background-color: #f5fafd;
+    position:relative;
+
+}

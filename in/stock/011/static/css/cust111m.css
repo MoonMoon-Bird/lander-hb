@@ -1,0 +1,1657 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-input-placeholder {
+    /* Edge */
+    color: #9e9e9e;
+    opacity: 1;
+    font-family: var(--font);
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #9e9e9e;
+    opacity: 1;
+    font-family: var(--font);
+}
+
+::placeholder {
+    color: #9e9e9e;
+    opacity: 1;
+    font-family: var(--font);
+}
+
+:root {
+    --blue-color: #fa8c2b;
+    --font: 'Inter', sans-serif;
+}
+
+.blue-color {
+    color: var(--blue-color);
+}
+
+.font-300 {
+    font-weight: 300;
+}
+
+.font-400 {
+    font-weight: 400;
+}
+
+.font-500 {
+    font-weight: 500;
+}
+
+.font-600 {
+    font-weight: 600;
+}
+
+.font-700 {
+    font-weight: 700;
+}
+
+.font-800 {
+    font-weight: 800;
+}
+
+.font-900 {
+    font-weight: 900;
+}
+
+.pos-r {
+    position: relative;
+}
+
+.padl5 {
+    padding-left: 5px;
+}
+
+.padl10 {
+    padding-left: 10px;
+}
+
+.padl15 {
+    padding-left: 15px;
+}
+
+.padl20 {
+    padding-left: 20px;
+}
+
+.padl25 {
+    padding-left: 25px;
+}
+
+.padl30 {
+    padding-left: 30px;
+}
+
+.padl35 {
+    padding-left: 35px;
+}
+
+.padl40 {
+    padding-left: 40px;
+}
+
+.padl45 {
+    padding-left: 45px;
+}
+
+.padl50 {
+    padding-left: 50px;
+}
+
+.padr5 {
+    padding-right: 5px;
+}
+
+.padrl0 {
+    padding-right: 10px;
+}
+
+.padr15 {
+    padding-right: 15px;
+}
+
+.padr20 {
+    padding-right: 20px;
+}
+
+.padr25 {
+    padding-right: 25px;
+}
+
+.padr30 {
+    padding-right: 30px;
+}
+
+.padr35 {
+    padding-right: 35px;
+}
+
+.padr40 {
+    padding-right: 40px;
+}
+
+.padr45 {
+    padding-right: 45px;
+}
+
+.padr50 {
+    padding-right: 50px;
+}
+
+.padt5 {
+    padding-top: 5px;
+}
+
+.padt10 {
+    padding-top: 10px;
+}
+
+.padt15 {
+    padding-top: 15px;
+}
+
+.padt20 {
+    padding-top: 20px;
+}
+
+.padt25 {
+    padding-top: 25px;
+}
+
+.padt30 {
+    padding-top: 30px;
+}
+
+.padt35 {
+    padding-top: 35px;
+}
+
+.padt40 {
+    padding-top: 40px;
+}
+
+.padt45 {
+    padding-top: 45px;
+}
+
+.padt50 {
+    padding-top: 50px;
+}
+
+.padt80 {
+    padding-top: 80px;
+}
+
+.padb5 {
+    padding-bottom: 5px;
+}
+
+.padbl0 {
+    padding-bottom: 10px;
+}
+
+.padb15 {
+    padding-bottom: 15px;
+}
+
+.padb20 {
+    padding-bottom: 20px;
+}
+
+.padb25 {
+    padding-bottom: 25px;
+}
+
+.padb30 {
+    padding-bottom: 30px;
+}
+
+.padb35 {
+    padding-bottom: 35px;
+}
+
+.padb40 {
+    padding-bottom: 40px;
+}
+
+.padb45 {
+    padding-bottom: 45px;
+}
+
+.padb50 {
+    padding-bottom: 50px;
+}
+
+.padb80 {
+    padding-bottom: 80px;
+}
+
+.marl5 {
+    margin-left: 5px;
+}
+
+.marl10 {
+    margin-left: 10px;
+}
+
+.marl15 {
+    margin-left: 15px;
+}
+
+.marl20 {
+    margin-left: 20px;
+}
+
+.marl25 {
+    margin-left: 25px;
+}
+
+.marl30 {
+    margin-left: 30px;
+}
+
+.marl35 {
+    margin-left: 35px;
+}
+
+.marl40 {
+    margin-left: 40px;
+}
+
+.marl45 {
+    margin-left: 45px;
+}
+
+.marl50 {
+    margin-left: 50px;
+}
+
+.marr5 {
+    margin-right: 5px;
+}
+
+.marr10 {
+    margin-right: 10px;
+}
+
+.marr15 {
+    margin-right: 15px;
+}
+
+.marr20 {
+    margin-right: 20px;
+}
+
+.marr25 {
+    margin-right: 25px;
+}
+
+.marr30 {
+    margin-right: 30px;
+}
+
+.marr35 {
+    margin-right: 35px;
+}
+
+.marr40 {
+    margin-right: 40px;
+}
+
+.marr45 {
+    margin-right: 45px;
+}
+
+.marr50 {
+    margin-right: 50px;
+}
+
+.mart5 {
+    margin-top: 5px;
+}
+
+.mart10 {
+    margin-top: 10px;
+}
+
+.mart15 {
+    margin-top: 15px;
+}
+
+.mart20 {
+    margin-top: 20px;
+}
+
+.mart25 {
+    margin-top: 25px;
+}
+
+.mart30 {
+    margin-top: 30px;
+}
+
+.mart35 {
+    margin-top: 35px;
+}
+
+.mart40 {
+    margin-top: 40px;
+}
+
+.mart45 {
+    margin-top: 45px;
+}
+
+.mart50 {
+    margin-top: 50px;
+}
+
+.marb5 {
+    margin-bottom: 5px;
+}
+
+.marb10 {
+    margin-bottom: 10px;
+}
+
+.marb15 {
+    margin-bottom: 15px;
+}
+
+.marb20 {
+    margin-bottom: 20px;
+}
+
+.marb25 {
+    margin-bottom: 25px;
+}
+
+.marb30 {
+    margin-bottom: 30px;
+}
+
+.marb35 {
+    margin-bottom: 35px;
+}
+
+.marb40 {
+    margin-bottom: 40px;
+}
+
+.marb45 {
+    margin-bottom: 45px;
+}
+
+.marb50 {
+    margin-bottom: 50px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.align-item-center {
+    align-items: center;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a, a:hover, button, button:hover, div, div:hover, input[type="submit"], input[type="submit"]:hover {
+    transition: all 0.5s ease-out 0s;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 400;
+    background: #fff;
+    color: #000;
+}
+
+
+.container {
+    max-width: 1270px;
+    margin: auto;
+    padding: 0 15px;
+    position: relative;
+}
+
+
+/* header */
+
+.to-banner-alert {
+    background: url(https://www.casualcasino.top/theme/fan42/img/banner-top.jpg) no-repeat center top;
+    background-size: cover;
+    text-align: center;
+    padding: 50px 0;
+    box-shadow: 0 20px 60px #e8e8e8;
+}
+
+.top-form-text {
+    padding-top: 100px;
+}
+
+.top-form-text h1 {
+    font-size: 66px;
+    font-weight: 600;
+    letter-spacing: -5px;
+    line-height: 80px;
+    margin: 0;
+  }
+
+.top-form-text h3 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.top-form-text h1 span {
+    display: inline-block;
+}
+
+.signupform {
+    max-width: 840px;
+    margin: auto;
+}
+
+.signupform form {
+    position: relative;
+}
+
+.signupform input[type="text"], .signup-right input[type="text"] {
+    border: 3px solid #000;
+    min-height: 80px;
+    font-size: 20px;
+    color: #646464;
+    width: 100%;
+    border-radius: 40px;
+    padding: 0 45px;
+}
+
+.signupform input[type="submit"], .signup-right input[type="submit"] {
+    border-radius: 40px;
+    font-size: 26px;
+    font-weight: 600;
+    color: #fff;
+    background: var(--blue-color);
+    border: none;
+    padding: 17px 40px 16px 40px;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+}
+
+.signupform input[type="submit"]:hover, .signup-right input[type="submit"]:hover {
+    background: #000;
+}
+
+.signupform p {
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.four-steps-icon {
+    max-width: 840px;
+    margin: auto;
+}
+
+.four-steps-icon ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.four-steps-icon ul li {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 20px 50px #dfdfdf;
+    width: 23%;
+}
+
+.four-steps-icon ul li img {
+    width: 70px;
+}
+
+.four-steps-icon ul li h4 {
+    margin: 15px 0 0 0;
+}
+
+/* timer */
+
+.timer-block {
+    padding: 80px 0;
+}
+
+.timer-block .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.timer-content {
+    background: #1f2128;
+    width: 42%;
+    padding: 60px 0;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.timer-content h2 {
+    font-size: 34px;
+    padding: 0 30px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.timer-content h2 span {
+    font-weight: 800;
+}
+
+.timer-content h3 {
+    font-size: 30px;
+    padding: 0 30px;
+    font-weight: 500;
+    margin: 20px 0;
+}
+
+.timer-content h4 {
+    font-size: 30px;
+    padding: 14px 30px;
+    font-weight: 500;
+    margin: 0;
+    background: var(--blue-color);
+    position: relative;
+}
+
+.timer-content h4:after {
+    left: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.timer-content h4:after {
+    border-color: rgba(136, 183, 213, 0);
+    border-left-color: var(--blue-color);
+    border-width: 32px;
+    margin-top: -32px;
+}
+
+.timer-right {
+    width: 52%;
+}
+
+.timer-right .countdown.callback {
+    border: 1px solid #4b5163;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.time-dt-box.big {
+    position: relative;
+    text-align: center;
+}
+
+.time-dt-box.big .d-name {
+    font-size: 220px;
+    font-weight: 500;
+    color: #0e1133;
+    display: block;
+    letter-spacing: -5px;
+    line-height: 266px;
+}
+
+.time-dt-box-left, .time-dt-box-right {
+    width: 50%;
+}
+
+.time-dt-box.big .time-text {
+    font-size: 40px;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    background: #4b5163;
+    display: inline-block;
+    padding: 3px 15px;
+}
+
+.time-dt-box-right .time-dt-box {
+    border-bottom: 1px solid #4b5163;
+    background: #1f2128;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.time-dt-box-right .time-dt-box:last-child {
+    border-bottom: none;
+}
+
+.time-dt-box-right .d-name {
+    font-size: 50px;
+    font-weight: 500;
+    background: #292e3c;
+    border-right: 1px solid #4b5163;
+    padding: 23px 20px 23px 20px;
+    width: 31%;
+}
+
+.time-dt-box-right .time-text {
+    font-size: 36px;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 0 15px;
+}
+
+/* featured */
+
+.featured-top {
+    text-align: center
+}
+
+.featured-top h2 {
+    margin-top: 0;
+}
+
+.featured-top ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.featured-top ul li {
+    width: 15%;
+}
+
+
+
+/* why choose */
+
+.why-choose {
+    /*margin-top: 80px;*/
+    margin-bottom: 40px;
+    background: url() no-repeat center bottom;
+    background-size: cover;
+}
+
+.site-title h2 {
+    font-size: 50px;
+    letter-spacing: -4px;
+    color: #0e1133;
+    font-weight: 600;
+    line-height: 66px;
+    margin: 0 0 30px 0;
+}
+
+.site-title h4 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #505056;
+    line-height: 36px;
+    margin: 0 0 40px 0;
+}
+
+.why-choose ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.why-choose ul li {
+    box-shadow: 0 20px 50px #dfdfdf;
+    border-radius: 6px;
+    background: #fff;
+    padding: 40px 5px;
+    width: 19%;
+    text-align: center;
+}
+
+.why-choose ul li h2 {
+    color: #0e1133;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+}
+
+.why-choose ul li p {
+    line-height: 22px;
+    font-size: 14px;
+    color: #505056;
+    padding: 0 10px;
+    margin: 0;
+}
+
+/* five things */
+
+.five-things {
+    margin-top: 80px;
+    position: relative;
+}
+
+.five-things .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.five-left {
+    width: 50%;
+}
+
+.five-right img {
+    border: 25px solid #fff;
+    border-radius: 30px 0 0 30px;
+    box-shadow: 0 40px 100px #dadadb;
+    border-right: none;
+    width: 100%;
+}
+
+.five-left li {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.five-left li h3 {
+    color: #0e1133;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+    margin: 0;
+}
+
+.five-left li p {
+    color: #505056;
+    font-size: 15px;
+    line-height: 28px;
+    margin: 5px 0 0 0;
+}
+
+.five-left li .icon {
+    width: 5%;
+}
+
+.fivethings-list {
+    width: 93%;
+}
+
+.five-right {
+    width: 36%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* about penny stocks */
+
+
+.abt-stocks-inner {
+    box-shadow: 0 40px 100px #dadadb;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.abt-stocksc-content {
+    padding: 40px 50px;
+    text-align: center;
+    color: #505056;
+    margin-top: -110px;
+}
+
+.abt-stocksc-content p {
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: 500;
+}
+
+/* small cap firm */
+
+.small-caps-outperform {
+    background: url(https://www.casualcasino.top/theme/fan42/img/light-stock-bg.png) no-repeat center top;
+    padding: 80px 0;
+}
+
+.small-caps-outperform .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.smallcaps-left {
+    width: 48.5%;
+}
+
+.smallcaps-right {
+    width: 48.5%;
+}
+
+.smallcaps-left h4 {
+    color: #0e1133;
+    font-size: 25px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.smallcaps-left p {
+    color: #505056;
+    line-height: 28px;
+}
+
+.smallcaps-left h3 {
+    font-size: 30px;
+    color: #0e1133;
+    font-weight: 600;
+    letter-spacing: -2px;
+    line-height: 38px;
+}
+
+.smallcaps-left ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.smallcaps-left ul li {
+    width: 48.5%;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#76b0fa+0,397cfa+100 */
+    background: rgb(118, 176, 250);
+    /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(118, 176, 250, 1) 0%, rgba(57, 124, 250, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(118, 176, 250, 1) 0%, rgba(57, 124, 250, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(118, 176, 250, 1) 0%, rgba(57, 124, 250, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#76b0fa', endColorstr='#397cfa', GradientType=1);
+    /* IE6-9 */
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 36px;
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.smallcaps-left ul li p {
+    color: #fff;
+    line-height: 36px;
+    margin: 0;
+}
+
+.smallcaps-left ul li span {
+    display: block;
+}
+
+.smallcaps-left ul li:nth-child(2) {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f7a89c+0,f85640+100 */
+    background: rgb(247, 168, 156);
+    /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(247, 168, 156, 1) 0%, rgba(248, 86, 64, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(247, 168, 156, 1) 0%, rgba(248, 86, 64, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(247, 168, 156, 1) 0%, rgba(248, 86, 64, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f7a89c', endColorstr='#f85640', GradientType=1);
+    /* IE6-9 */
+
+}
+
+.smallcaps-left ul li:nth-child(3) {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#8be3b1+0,40c875+100 */
+    background: rgb(139, 227, 177);
+    /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(139, 227, 177, 1) 0%, rgba(64, 200, 117, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(139, 227, 177, 1) 0%, rgba(64, 200, 117, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(139, 227, 177, 1) 0%, rgba(64, 200, 117, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8be3b1', endColorstr='#40c875', GradientType=1);
+    /* IE6-9 */
+
+}
+
+.smallcaps-left ul li:nth-child(4) {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ce94fe+0,a33cfb+100 */
+    background: rgb(206, 148, 254);
+    /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(206, 148, 254, 1) 0%, rgba(163, 60, 251, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(206, 148, 254, 1) 0%, rgba(163, 60, 251, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(206, 148, 254, 1) 0%, rgba(163, 60, 251, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ce94fe', endColorstr='#a33cfb', GradientType=1);
+    /* IE6-9 */
+
+}
+
+#container {
+    margin-bottom: 25px;
+}
+
+#container, #container1 {
+    box-shadow: 0 10px 30px #dadadb;
+}
+
+.site-title.white h2 {
+    color: #fff;
+}
+
+.testimonial-block {
+    background: url(https://www.casualcasino.top/theme/fan42/img/testimonial.jpg) no-repeat center top;
+    background-size: cover;
+    padding: 80px 0;
+}
+
+.testimonial-block ul {
+    margin: 0;
+    padding: 0 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.testimonial-block ul li {
+    list-style: none;
+    border-radius: 20px;
+    background: #2b48d9;
+    padding: 30px;
+    position: relative;
+    width: 48.5%;
+    color: #fff;
+}
+
+.testimonial-block ul li p {
+    font-weight: 600;
+    margin: 0;
+    line-height: 30px;
+}
+
+.testimonial-block ul li h4 {
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.testimonial-block ul li::after {
+    content: '';
+    position: absolute;
+    background: url('https://www.casualcasino.top/theme/fan42/img/quote-righ.png') no-repeat;
+    width: 65px;
+    height: 52px;
+    right: 15px;
+    bottom: 10px;
+}
+
+.mid-signup {
+    margin: 80px 0;
+}
+
+.mid-signup-inner {
+    border-radius: 20px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 40px 100px #dadadb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.signup-img {
+    width: 48%;
+}
+
+.signup-right {
+    width: 52%;
+    padding: 30px 45px;
+    text-align: center;
+}
+
+.signup-right h2 {
+    color: #0e1133;
+    font-size: 37px;
+    line-height: 46px;
+    letter-spacing: -2px;
+    margin-top: 0;
+}
+
+.signup-right h4 {
+    color: #0e1133;
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 38px;
+}
+
+.signup-right input[type="text"] {
+    background: #eaeaea;
+    text-align: center;
+    border: none;
+    color: #646464;
+}
+
+.signup-right input[type="submit"] {
+    position: inherit;
+    margin-top: 20px;
+}
+
+.signup-right p {
+    color: #505056;
+    font-size: 12px;
+    padding: 0 130px;
+    line-height: 20px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.discover-benifits {
+    background: #eef1f6;
+    padding: 80px 0;
+}
+
+.discover-benifits .site-title h4 {
+    color: #0e1133;
+}
+
+.discover-benifits .site-title h2 {
+    margin-bottom: 0;
+}
+
+.discover-benifits ul li {
+    list-style: none;
+    box-shadow: 0 10px 70px #d8dbdf;
+    border-radius: 10px;
+    padding: 30px 25px;
+    background: #fff;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.discover-benifits ul li:last-child {
+    margin-bottom: 0;
+}
+
+.discover-benifits .benifits-icon {
+    width: 3%;
+}
+
+.discover-benifits .benifits-content {
+    width: 96%;
+    font-size: 21px;
+    font-weight: 500;
+    color: #0e1133;
+}
+
+.bottom-signup {
+    background: url(https://www.casualcasino.top/theme/fan42/img/bottom-sign-up-new.png) no-repeat center top #000;
+    background-size: cover;
+    padding: 80px 0;
+}
+
+.bottom-signup h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    letter-spacing: -4px;
+    font-weight: 600;
+    margin: 0;
+    line-height: 60px;
+}
+
+.bottom-signup .signupform {
+    max-width: 920px;
+}
+
+.bottom-signup .signupform h4 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 36px;
+    margin: 15px 0 25px 0;
+    text-align: center;
+}
+
+.bottom-signup .signupform input[type="text"] {
+    border-color: #fff;
+}
+
+.bottom-signup p {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.bottom-signup p a {
+    color: #fff;
+}
+
+.copyright {
+    background: #eef1f6;
+    text-align: center;
+    font-size: 13px;
+    padding: 20px 0;
+}
+
+.recent-picks ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.recent-picks ul li {
+    list-style: none;
+    box-shadow: 0 10px 50px #ececec;
+    border-radius: 10px;
+    width: 32%;
+    text-align: center;
+    padding: 25px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#76b0fa+0,397cfa+100 */
+    background: rgb(118, 176, 250);
+    /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(118, 176, 250, 1) 0%, rgba(57, 124, 250, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(118, 176, 250, 1) 0%, rgba(57, 124, 250, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(118, 176, 250, 1) 0%, rgba(57, 124, 250, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#76b0fa', endColorstr='#397cfa', GradientType=1);
+    /* IE6-9 */
+
+}
+
+.recent-picks ul li h2 {
+    color: #fff;
+    margin: 0;
+    font-size: 44px;
+    line-height: 44px;
+}
+
+.recent-picks ul li h4 {
+    margin: 20px 0 15px 0;
+    font-size: 30px;
+    color: #fff;
+}
+
+.recent-picks ul li p {
+    margin: 0;
+    font-weight: 600;
+    color: #fff;
+}
+
+.recent-picks ul li:nth-child(2) {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f7a89c+0,f85640+100 */
+    background: rgb(247, 168, 156);
+    /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(247, 168, 156, 1) 0%, rgba(248, 86, 64, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(247, 168, 156, 1) 0%, rgba(248, 86, 64, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(247, 168, 156, 1) 0%, rgba(248, 86, 64, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f7a89c', endColorstr='#f85640', GradientType=1);
+    /* IE6-9 */
+
+}
+
+.recent-picks ul li:nth-child(3) {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#8be3b1+0,40c875+100 */
+    background: rgb(139, 227, 177);
+    /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(139, 227, 177, 1) 0%, rgba(64, 200, 117, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(139, 227, 177, 1) 0%, rgba(64, 200, 117, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(139, 227, 177, 1) 0%, rgba(64, 200, 117, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8be3b1', endColorstr='#40c875', GradientType=1);
+    /* IE6-9 */
+
+}
+
+.recent-picks ul li:nth-child(4) {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ce94fe+0,a33cfb+100 */
+    background: rgb(206, 148, 254);
+    /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(206, 148, 254, 1) 0%, rgba(163, 60, 251, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(206, 148, 254, 1) 0%, rgba(163, 60, 251, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(206, 148, 254, 1) 0%, rgba(163, 60, 251, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ce94fe', endColorstr='#a33cfb', GradientType=1);
+    /* IE6-9 */
+
+}
+
+.mobile{display:none;}
+
+.site-header.full, #rmp_menu_trigger-8066, .site-footer, #boxes, #sms-popup{display:none;}
+
+/* responsive */
+
+@media(max-width:1199px) {
+    .container {
+        max-width: 940px;
+    }
+
+    .top-form-text {
+        padding-top: 50px;
+    }
+
+    .four-steps-icon ul {
+        margin-top: 40px;
+    }
+    .timer-content h2 {
+        font-size: 25px;
+        padding: 0 20px;
+
+      }
+      .timer-content h3 {
+        font-size: 22px;
+        padding: 0 20px;
+      }
+      .timer-content h4 {
+        font-size: 22px;
+        padding: 14px 20px;
+      }
+      .time-dt-box-right .time-text {
+        font-size: 26px;
+      }
+      .time-dt-box.big .d-name {
+        font-size: 160px;
+        line-height: 228px;
+      }
+      .time-dt-box-right .d-name {
+        font-size: 36px;
+        padding: 25px 17px;
+        width: 34%;
+      }
+      .testimonial-block ul {
+        padding: 0;
+      }
+      .recent-picks ul li h4{font-size: 26px;}
+      .mid-signup-inner{flex-wrap:wrap;}
+      .signup-img, .signup-right, .signup-img img {
+        width: 100%;
+      }
+     
+}
+
+@media(max-width:991px) {
+    .container {
+        max-width: 740px;
+    }
+    .top-form-text h1 {
+        font-size: 44px;
+        line-height: 56px;
+      }
+
+      .timer-block {
+        padding: 40px 0;
+      }
+      .timer-content{width:100%;}
+      .timer-right {
+        width: 100%;
+      }
+      .timer-content h4::after{display:none;}
+      .timer-content h4::before {
+        top: 100%;
+        left: 50%;
+        border: solid transparent;
+        content: "";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+      }
+      .timer-content h4::before {
+        border-color: rgba(136, 183, 213, 0);
+        border-top-color: var(--blue-color);
+        border-width: 16px;
+        margin-left: -16px;
+      }
+      .timer-content {
+        padding: 20px 0 0 0;
+        margin-bottom:35px;
+        text-align:center;
+      }
+      .why-choose {
+        margin-top: 20px;
+      }
+      .site-title h2 br, .site-title h4 br{ display:none;}
+      .site-title h4 {
+        font-size: 20px;
+        line-height: 30px;
+        margin: 0 0 30px 0;
+      }
+      .why-choose ul li {
+        width: 48.5%;
+        margin-bottom: 25px;
+      }
+      .why-choose{padding-top:40px; }
+      .site-title h2 {
+        font-size: 40px;
+        letter-spacing: -3px;
+        line-height: 50px;
+      }
+      .five-left {
+        width: 100%;
+      }
+      .five-things {
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
+      .five-right {
+        width: 100%;
+        position: initial;
+    
+      }
+      .smallcaps-right {
+        width: 100%;
+      }
+      .smallcaps-left {
+        width: 100%;
+      }
+      .small-caps-outperform{padding:40px 0;}
+      .mobile{display:inline-block;}
+
+      #container1, #container{display:none;}
+      .chart-img{text-align:center;}
+      .testimonial-block{padding: 40px 0;}
+      .recent-picks ul li{width: 48.5%; margin-bottom:25px;}
+      .recent-picks {
+        margin-top: 40px;
+      }
+      .signup-right p{padding:0;}
+      .mid-signup {
+        margin: 40px 0;
+      }
+      .discover-benifits {
+        background:#eef1f6;
+        padding: 40px 0;
+      }
+      .bottom-signup h2 {
+        font-size: 36px;
+        letter-spacing: -2px;
+        line-height: 46px;
+      }
+      .bottom-signup .signupform h4 {
+        font-size: 20px;
+        line-height: 32px;
+        margin: 15px 0 25px 0;
+      }
+
+	
+
+}
+
+@media(max-width:767px) {
+    .container {
+        max-width: 540px;
+    }
+    .top-form-text h1 {
+        font-size: 30px;
+        line-height: 44px;
+        letter-spacing: -3px;
+      }
+      .top-form-text {
+        padding-top: 30px;
+      }
+      .top-form-text h3 {
+        font-size: 20px;
+      }
+      .signupform input[type="text"], .signup-right input[type="text"]{min-height:71px;padding: 0 30px;font-size: 18px;}
+      .signupform input[type="submit"], .signup-right input[type="submit"] {
+        font-size: 18px;
+        padding: 17px 30px 16px 30px;
+      }
+      .four-steps-icon ul li {
+        width: 48.5%;
+        margin-bottom: 15px;
+      }
+      .smallcaps-left h3 {
+        font-size: 24px;
+        letter-spacing: -1px;
+        line-height: 34px;
+      }
+      .smallcaps-left ul li{width:100%; font-size:22px;}
+
+      .testimonial-block ul li {
+        width: 100%;
+        margin-bottom:25px;
+      }
+      .testimonial-block ul li:last-child{margin-bottom:0;}
+      .abt-stocksc-content{padding:30px;}
+      .signup-right h2 {
+        font-size: 26px;
+        line-height: 38px;
+        letter-spacing: -1px;
+      }
+      .signup-right h4 {
+        font-size: 20px;
+        line-height: 30px;
+      }
+      .signup-right{padding:20px;}
+      .discover-benifits .benifits-content {
+        width: 93%;
+        font-size:18px;
+      }
+      .discover-benifits .benifits-icon {
+        width: 4%;
+      }
+    
+      .bottom-signup h2 {
+        font-size: 31px;
+        letter-spacing: -1px;
+        line-height: 42px;
+      }
+}
+
+@media(max-width:575px) {
+    .top-form-text h1 {
+        letter-spacing: -2px;
+      }
+
+    .top-form-text h1 span {
+        display: inline;
+      }
+      .top-form-text h3 {
+        font-size: 18px;
+      }
+      .site-title h2 {
+        font-size: 32px;
+        letter-spacing: -2px;
+        line-height: 40px;
+        margin-bottom:25px;
+      }
+      .site-title h4 {
+        font-size: 18px;
+        line-height: 28px;
+      }
+      .smallcaps-left h4{font-size:20px;}
+      .abt-stocksc-content {
+        margin-top: -40px;
+      }
+      .recent-picks ul li{padding:20px;}
+      .recent-picks ul li h2 {
+        font-size: 36px;
+        line-height: 36px;
+      }
+      .recent-picks ul li h4 {
+        margin: 14px 0 10px 0;
+        font-size: 22px;
+      }
+      .recent-picks ul li p {
+        font-size: 14px;
+      }
+      .copyright{padding-left:10px; padding-right:10px;}
+      .timer-content h2 {
+        font-size: 20px;
+        padding: 0 15px;
+      }
+      .timer-content h3 {
+        font-size: 18px;
+        padding: 0 20px;
+        margin: 10px 0;
+      }
+      .timer-content h4 {
+        font-size: 18px;
+        padding: 10px 20px;
+      }
+}
+
+@media(max-width:480px) {
+    .top-form-text h1 {
+        font-size: 36px;
+        line-height: 42px;
+      }
+      .signupform input[type="submit"], .signup-right input[type="submit"] {
+        padding:17px 40px;
+        position: inherit;
+        right: 0;
+        top: 0;
+        width: 100%;
+        margin-top: 10px;
+      }
+      .signupform input[type="text"], .signup-right input[type="text"] {
+        min-height: inherit;
+        padding: 17px 30px;
+        font-size: 18px;
+        text-align: center;
+      }
+      .logo-alert img {
+        width: 200px;
+      }
+      .to-banner-alert{padding:30px 0 30px 0;}
+      .time-dt-box-left{
+        width: 45%;
+      }
+      .time-dt-box-right{width:55%;}
+      .time-dt-box.big .d-name {
+        font-size: 120px;
+        line-height: 173px;
+      }
+      .time-dt-box.big .time-text {
+        font-size: 28px;
+        padding: 3px 15px;
+      }
+      .time-dt-box-right .time-text {
+        font-size: 18px;
+      }
+      .time-dt-box-right .d-name {
+        font-size: 30px;
+        padding: 17px 17px;
+        width: 35%;
+      }
+      .featured-top ul li {
+        width: 26%;
+        margin-bottom: 15px;
+      }
+      .why-choose ul li {
+        width: 100%;
+      }
+      .fivethings-list {
+        width: 90%;
+      }
+      .five-left li h3 {
+        font-size: 18px;
+        line-height: 26px;
+      }
+      .discover-benifits ul li{padding:15px;}
+      .discover-benifits .benifits-content {
+        width: 90%;
+        font-size: 16px;
+      }
+      
+      .discover-benifits .benifits-icon {
+        width: 6%;
+      }
+}
+
+@media(max-width:420px) {
+    .top-form-text h1 {
+        font-size: 30px;
+        line-height: 36px;
+      }
+      .time-dt-box.big .d-name {
+        font-size: 90px;
+        line-height: 158px;
+      }
+      .time-dt-box-right .time-text {
+        font-size: 16px;
+        padding: 0 10px;
+      }
+      .time-dt-box-right .d-name {
+        font-size: 24px;
+        padding: 17px 11px;
+        width: 35%;
+      }
+      .time-dt-box.big .time-text {
+        font-size: 22px;
+        padding: 3px 15px;
+      }
+      .recent-picks ul li {
+        width: 100%;
+      }
+      .recent-picks ul li :last-child{margin-bottom:0;}
+}
