@@ -1,0 +1,199 @@
+
+/* CSS Document */
+
+/*----------------------------------------
+common
+------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	padding: 0px;
+	font-weight: normal;
+}
+p {
+	margin: 0px;
+	padding: 0px;
+}
+li {
+	list-style-type: none;
+}
+ul, form, dl {
+	margin: 0px;
+	padding: 0px;
+}
+*+html body {
+	padding-left: 1px;
+}
+img {
+	vertical-align: bottom;
+	border-width: 0px;
+}
+
+/*----------------------------------------
+float
+------------------------------------------*/
+
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.clear {
+	clear: both;
+}
+.center{
+	text-align: center;
+}
+
+/*----------------------------------------
+rollover
+------------------------------------------*/
+
+a:hover img.rollover {
+	opacity:0.7;
+	filter:alpha(opacity=70);
+	-ms-filter: "alpha( opacity=70 )";
+}
+
+/*----------------------------------------
+余白
+------------------------------------------*/
+
+.pad-t20 {
+	padding-top: 20px;
+}
+
+.pad-t30 {
+	padding-top: 30px;
+}
+
+.pad-tb20 {
+	padding: 30px 0;
+}
+
+.pad-b30 {
+	padding-bottom: 30px;
+}
+
+.pad-tb30 {
+	padding: 30px 0;
+}
+
+.pad-tb40 {
+	padding: 40px 0 30px;
+}
+
+.pad-t50 {
+	padding-top: 50px;
+}
+
+.pad-b40 {
+	padding-bottom: 40px;
+}
+
+.pad-b50 {
+	padding-bottom: 50px;
+}
+
+.ma-b20	{
+	margin-bottom: 20px
+}
+
+.ma-b30	{
+	margin-bottom: 30px
+}
+
+.ma-b50	{
+	margin-bottom: 50px
+}
+
+.ma-b60	{
+	margin-bottom: 60px
+}
+
+.ma-b90	{
+	margin-bottom: 90px
+}
+
+.ma-t30	{
+	margin-top: 30px;
+}
+
+.ma-t50	{
+	margin-top: 50px;
+}
+
+.ma-tb30	{
+	margin-top: 30px;
+	padding-bottom: 40px;
+}
+
+/*----------------------------------------
+文字装飾
+------------------------------------------*/
+
+.red {
+	color:#db001f;
+	font-weight:bold;
+}
+
+.yellow {
+	color: #ffe345;
+}
+
+.sky-blue {
+	color:#00d2ff;
+	font-weight:bold;
+}
+
+.blue {
+	color:#006cff;
+	font-weight:bold;
+}
+
+.red25 {
+	font-size:25px;
+	color:#e82f2f;
+	font-weight:bold;
+}
+
+.f22 {
+	font-size:22px;
+	line-height:1.5em;
+	font-weight:bold;
+}
+
+.f25 {
+	font-size:25px;
+	line-height:1.5em;
+	font-weight:bold;
+}
+
+.f35 {
+	font-size:35px;
+	line-height:1.5em;
+	font-weight:bold;
+}
+
+.marker-r {
+	background: linear-gradient(transparent 50%, #fff04c 50%);
+	font-weight: bold;
+	color: #e82f2f;
+}
+
+.marker-b {
+	background: linear-gradient(transparent 50%, #fff04c 50%);
+	font-weight: bold;
+	color: #000;
+}
+
+.t-line {
+  text-decoration: underline; 
+  text-decoration-thickness: 0.5em; 
+  text-decoration-color: rgba(255, 216, 0, 1); 
+  text-underline-offset: -0.2em; 
+  text-decoration-skip-ink: none;
+  font-weight: bold;
+}
+

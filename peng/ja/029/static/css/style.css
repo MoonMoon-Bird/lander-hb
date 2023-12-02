@@ -1,0 +1,537 @@
+
+/* CSS Document */
+
+h2 {
+	width: 100%;
+	background-color: #1f2c5c;
+	text-align: center;
+	padding: 50px 0;
+	margin: 0px 0 60px 0;
+	font-size: 3rem;
+	font-weight: bold;
+	color: #fff;
+}
+
+u {
+	font-weight: bold;
+}
+
+p {
+	font-size: 25px;
+	line-height: 1.7em;
+	text-align: left;
+	margin-bottom: 2em;
+}
+
+a:hover{
+	opacity:0.7;
+	filter: alpha(opacity=70);}
+
+.clearfix:after
+{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+hr {
+    display:block;
+    height:2px;
+    border:0;
+    border-top:2px solid #ffee8f;
+    margin:35px 0;
+    padding:0;
+}
+
+
+/*----------------------------------------
+body
+------------------------------------------*/
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+	font-family:'Noto Sans Japanese',sans-serif;
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+}
+
+body.under {
+	font-family: 'Noto Sans Japanese', sans-serif;
+	margin: 0px;
+	background:#fff;
+	height: 100%;
+}
+
+/*----------------------------------------
+link
+------------------------------------------*/
+
+a {
+	color: #028BE7;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+/*----------------------------------------
+wrap
+------------------------------------------*/
+#wrap {
+	width: 100%;
+	overflow: hidden;
+}
+
+/**********************************************************
+背景
+**********************************************************/
+
+.shadow {
+	box-shadow: 5px 5px 5px #cacaca;
+}
+
+.light {
+	text-shadow: 0 0 3px #fff,0 0 5px #fff;
+	font-weight: bold;
+}
+
+.right {
+	float: right;
+}
+
+/* PC */
+
+@media only screen and (min-width: 769px) {
+
+.sp {
+	display:none;
+}
+
+
+/*----------------------------------------
+header
+------------------------------------------*/
+
+.header {
+    width: 100%;
+}
+.header h1 {
+    color: #fff;
+	font-size: 25px;
+	font-weight: bold;
+	line-height: 1.5em;
+	text-align: center;
+    width: 100%;
+    padding: 10px 0 10px 10px;
+	background-color: #1f2c5c;
+	margin: 0px;
+}
+.header h1 span {
+	color: #ffe400;
+	font-size: 35px;
+}
+.header .cach {
+	width: 60%;
+	background:url("../image/fv-bg.jpg") no-repeat left;
+	background-size: cover;
+	padding: 30px 30% 40px 10%;
+}
+
+/*----------------------------------------
+コンテンツ共通
+------------------------------------------*/
+
+.contents {
+	width: 1000px;
+	background-color: #fff;
+	margin: 0 auto 4%;
+	padding: 60px 0 4%;
+	border: 3px solid #32578a;
+}
+
+.contents p{
+	margin-left: 70px;
+}
+
+.comment {
+	font-size: 14px;
+	text-align: right;
+}
+
+
+
+/* block1 */
+.block1 {
+	width: 100%;
+	background:url("../image/bg-pattern1.gif");
+	padding: 0px 0 50px;
+}
+
+/* block2 */
+.block2 {
+	width: 100%;
+	background:url(../image/block02-bg.jpg) no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	padding: 0px 0 50px;
+}
+
+/* block3 */
+.block3 {
+	width: 100%;
+	background:url(../image/block03-bg.jpg) no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	padding: 0px 0 50px;
+	text-align: center;
+}
+
+/* cv */
+.cv {
+	width: 100%;
+	padding: 60px 0 30px;
+	background-color: #3daa08;
+	text-align: center;
+}
+
+.cv .in_text input{
+  	width: 80%;
+	height: 68px;
+	font-size: 26px;
+	border-radius: 10px;
+	border: none;
+	background-color: #fff;
+  	padding: 6px 10%;
+  	margin: 30px auto;
+	box-shadow:5px 5px 8px 3px #ccc inset;
+}
+
+.cv img {
+	width: auto;
+}
+.cv .in_text input{
+  	width: 705px;
+	height: 68px;
+	font-size: 26px;
+	border-radius: 10px;
+	border: none;
+	background-color: #fff;
+  	padding: 6px 20px;
+  	margin: 30px auto;
+	box-shadow:5px 5px 8px 3px #ccc inset;
+}
+.cv .btn {
+	width: auto;
+}
+.cv p{
+	text-align: center;
+	font-size: 19px;
+	color: #fff;
+	margin-top: 30px;
+}
+
+.day-area p{
+	text-align: center;
+	font-weight: bold;
+}
+
+/* 受付部分 */
+.day-area .day {
+	width: 80%;
+	margin: 0 10% 50px;
+	background-color: #1f2c5c;
+	font-size: 33px;
+	font-weight: bold;
+	color: #fff;
+	padding: 40px 5%;
+}
+
+.day-area .day td {
+	padding: 10px 0;
+}
+
+/*----------------------------------------
+footer
+------------------------------------------*/
+
+#footer {
+	width:100%;
+	margin:0px auto;
+	padding:40px 0px;
+	text-align:center;
+	background-color: #1f2c5c;
+	color:#fff;
+}
+
+#footer p {
+	text-align: center;
+	font-size: 17px;
+}
+
+#footer a {
+	color:#fff;
+}
+
+#footer ul{
+	width:700px;
+	margin-left:30%;
+	display:table;
+	padding:35px 0 20px;
+	margin:0 auto;
+}
+
+#footer li{
+	display:table-cell;
+	padding:10px 10px;
+	font-size:17px;
+}
+
+
+} 
+
+/**********************************************************
+animationBtn
+**********************************************************/
+
+.animationBtn{
+
+/*デザイン*/
+width:95%;
+padding:0px;
+margin:0 auto;
+color:#000;
+text-decoration:none;
+border-radius:5px;
+margin:0 auto;
+text-align:center;
+
+/*アニメーション*/
+animation: animScale 1s infinite ease-out;
+transform-origin: 50% 50%;
+animation-play-state:running;
+
+}
+@keyframes animScale {
+  from {transform: scale3d(1.1, 1.1, 1);}
+  50% {transform: scale3d(0.95, 0.95, 1);}
+  to {transform: scale3d(1.1, 1.1, 1);}
+}
+
+
+@media only screen and (max-width: 768px) {
+/* SP TABLET */
+
+
+body {
+	font-family:OpenSans-Light,Tahoma,Helvetica Neue,Helvetica,Arial,sans-serif;
+	margin: 0px;
+}
+
+img {
+	width: 100%;
+}
+
+hr {
+    display:block;
+    height:2px;
+    border:0;
+    border-top:2px solid #ffee8f;
+    margin:15px 0;
+    padding:0;
+}
+
+.pc {
+	display:none;
+}
+
+
+
+/*----------------------------------------
+header
+------------------------------------------*/
+
+
+header {
+	margin: 0px;
+	padding: 0px;
+}
+
+
+header .fv-img {
+	padding: 0px;
+}
+
+
+/*----------------------------------------
+wrap
+------------------------------------------*/
+#wrap {
+	width: 100%;
+	margin-top:0px;
+	overflow: hidden;
+}
+
+/*----------------------------------------
+コンテンツ共通
+------------------------------------------*/
+
+p {
+	font-size: 19px;
+	line-height: 1.5em;
+	text-align: left;
+	margin-bottom: 2em;
+}
+
+h2 {
+	font-size: 6vw;
+	text-align: center;
+	padding: 25px 0;
+	margin: 0px 0 30px 0;
+}
+
+.contents {
+	background-color: #fff;
+	margin: 0 4% 4%;
+	padding: 30px 4% 4%;
+	border: 2px solid #32578a;
+}
+
+.contents p {
+	margin-left: 0%;
+}
+
+.comment {
+	font-size: 14px;
+	text-align: right;
+}
+
+.in-block {
+	padding: 30px 30px 10px;
+}
+
+
+/* block1 */
+.block1 {
+	width: 100%;
+	background:url("../image/bg-pattern1.gif");
+	padding: 0 0 20px;
+	text-align: center;
+}
+
+/* block2 */
+.block2 {
+	width: 100%;
+	background:url(../image/block02-bg.jpg) no-repeat top center;
+	background-size: cover;
+	padding: 0px 0 30px;
+	text-align: center;
+}
+
+/* block3 */
+.block3 {
+	width: 100%;
+	background:url(../image/block03-bg.jpg) no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	padding: 0px 0 30px;
+	text-align: center;
+}
+
+/* cv */
+.cv {
+	padding: 40px 4% 10px;
+	background-color: #3daa08;
+	text-align: center;
+}
+
+.cv .in_text input{
+  	width: 90%;
+	height: 68px;
+	font-size: 20px;
+	border-radius: 10px;
+	border: none;
+	background-color: #fff;
+  	padding: 6px 5%;
+  	margin: 30px auto;
+	box-shadow:5px 5px 8px 3px #ccc inset;
+}
+
+.cv .btn {
+	width: 100%;
+	margin-bottom: 20px;	
+}
+
+.cv img {
+	width: 100%;
+}
+.cv p {
+	text-align: center;
+	font-size: 12px;
+	color: #fff;
+	margin-top: 0px;
+}
+
+/* 受付部分 */
+.day-area .day {
+	width: 100%;
+	margin: 0 0% 30px;
+	background-color: #1f2c5c;
+	font-size: 1vm;
+	font-weight: bold;
+	color: #fff;
+	padding: 20px 5%;
+}
+
+.day-area .day td {
+	padding: 10px 0;
+}
+
+/*----------------------------------------
+footer
+------------------------------------------*/
+
+#footer {
+	width:100%;
+	margin:0px auto 0;
+	padding:20px 0px 10px;
+	text-align:center;
+	background-color: #1f2c5c;
+	color:#fff;
+}
+
+#footer p {
+	font-size: 13px;
+	line-height: 1.3em;
+	text-align: center;
+}
+
+#footer a {
+	color:#fff;
+}
+
+#footer ul{
+	display:none;
+}
+
+#footer p {
+	margin-bottom:1em;
+}
+}
+
+
+/*----------------------------------------
+決済エリア（仮）
+------------------------------------------*/
+
+#pay {
+	width: 100%;
+	text-align: center;
+}

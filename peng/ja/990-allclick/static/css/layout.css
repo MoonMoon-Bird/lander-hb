@@ -1,0 +1,44 @@
+
+
+/* ****************************************************
+Title: layout.css
+Created: 2013‒05-17
+Last Modified: 2013‒05-17
+Editor(s): HK
+***************************************************** */
+
+/* -------------------------------------------------------------------- 
+/* body
+-------------------------------------------------------------------- */
+
+body {
+ color: #000000;
+ font-family:	"游ゴシック", YuGothic,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ","Meiryo","ＭＳ Ｐゴシック",Verdana,Osaka,"MS PGothic",sans-serif;
+ font-size: 13px;
+ *font-size:small;
+ *font:x-small;
+ text-align: center;
+	text-size-adjust: 100%;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	max-height: 999999px;
+}
+img {
+	vertical-align: bottom;
+}
+
+.relative-wrap {
+	position: relative;
+}
+.relative-wrap960 {
+	position: relative;
+	width: 960px;
+	margin: 0px auto;
+}
+
+p, span, dt, dd, th, td, li, h3 {
+	max-height: 999999px;
+	background-image: url("https://toshopay.com/img/spacer.gif")/*tpa=https://kabu-systemtrade.com/kabuhomerun/img/spacer.gif*/;
+}
+
