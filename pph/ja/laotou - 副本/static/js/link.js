@@ -1,1 +1,0 @@
-var link = ["https://line.me/ti/p/Wvkzf52b1g"]

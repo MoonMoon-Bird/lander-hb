@@ -1,4 +1,4 @@
-const urls = ['https://google.com'];
+const urls = ['https://afxqly.mcattr.com/click'];
 const names = ['頼藤 太希'];
 function getRandomUrl() {
   const randomNum = Math.random() * urls.length;
