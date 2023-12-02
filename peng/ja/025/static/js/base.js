@@ -1,4 +1,0 @@
-jQuery(function(){$(".member header .spbtn").click(function(){if($(this).hasClass("on")){$(this).removeClass("on");$(".member header .spnav").removeClass("on");}
-else{$(this).addClass("on");$(".member header .spnav").addClass("on");}});});jQuery(function(){$(".faq ul li dl dt").click(function(){if($(this).parent().hasClass("on")){$(this).parent().removeClass("on");$(this).next().slideUp(500);}
-else{$(this).parent().addClass("on");$(this).next().slideDown(500);}});});jQuery(function(){$("footer dl dt").click(function(){if($(this).hasClass("on")){$(this).removeClass("on");$(this).next().slideUp(500);}
-else{$(this).addClass("on");$(this).next().slideDown(500);}});});
