@@ -1,0 +1,966 @@
+
+
+/******************************************************************************
+*
+* [共通]ヘッダー
+*
+******************************************************************************/
+
+header.hero_area {
+    width: 100vw;
+    height: auto;
+    position: relative;
+}
+
+header.hero_area::before {
+    content: "";
+    display: block;
+    padding-top: 41%;
+}
+
+header.hero_area .hero_area_inner {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../images/fv/main.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/*NO1*/
+
+header.hero_area .no1 {
+    width: 300px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+/*矢印*/
+
+header.hero_area .arrow {
+    width: 250px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -15px;
+    margin: auto;
+}
+
+
+/******************************************************************************
+*
+* [共通]CTA
+*
+******************************************************************************/
+
+article.cta {
+    background-image: url(../images/cta/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 40px 0 40px;
+}
+
+article.cta .txt {
+    width: 85%;
+    margin: 0 auto 40px;
+}
+
+article.cta#cta4 .txt {
+    margin-bottom: 10px;
+}
+
+/*ボタン*/
+
+article.cta .btn {
+    max-width: 640px;
+    margin: auto;
+}
+
+article.cta .btn .f {
+    width: 11%;
+    position: absolute;
+    bottom: -15%;
+    right: 2%;
+    z-index: 4;
+    filter: drop-shadow(-5px 5px 10px rgba(0, 0, 0, 0.5));
+    transform: translateZ(0);
+    pointer-events: none;
+}
+
+article.cta .btn.p2 {
+    max-width: 850px;
+}
+
+article.cta .btn.p2 .f {
+    width: 7%;
+}
+
+/*補足*/
+
+article.cta aside {
+    margin-top: 5px;
+}
+
+article.cta aside p {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/******************************************************************************
+*
+* [共通]チェック
+*
+******************************************************************************/
+
+#check {
+    position: relative;
+    background: linear-gradient(180deg, rgba(61, 64, 69, 1) 0%, rgba(124, 126, 130, 1) 41.67%, rgba(217, 218, 222, 1) 100%);
+}
+
+#check::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/check/bg1.png);
+}
+
+#check .lead {
+    width: 70%;
+    margin: 0 auto 50px;
+}
+
+#check .txt {
+    width: 80%;
+    margin: 30px auto 0;
+}
+
+/*---------------------
+* 解決案
+---------------------*/
+
+#check .bg2 {
+    width: 100vw;
+    height: auto;
+    position: relative;
+}
+
+#check .bg2::before {
+    content: "";
+    display: block;
+    padding-top: 41.7%;
+}
+
+#check .bg2 .inner {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../images/check/bg2.png);
+    background-size: cover;
+    background-position: center;
+}
+
+/******************************************************************************
+*
+* [共通]導入テキスト
+*
+******************************************************************************/
+
+#first_txt {
+    padding-top: 10px;
+    background-color: #fff;
+    background-image: url(../images/txt/first_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-position: top 25% right -10%;
+}
+
+#first_txt .lead {
+    width: 60%;
+    margin: 0 auto 20px;
+}
+
+#first_txt p {
+    font-size: 24px;
+    max-width: 550px;
+    margin: auto;
+}
+
+#first_txt p .ft {
+    font-size: 200%;
+}
+
+/******************************************************************************
+*
+* [共通]プロフィール
+*
+******************************************************************************/
+
+#prof {
+    background-image: url(../images/prof/bg2.jpg);
+    background-size: 100vw;
+    position: relative;
+}
+
+#prof::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../images/prof/bg1.jpg);
+    background-size: 100%;
+    background-position: center top -15%;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+}
+
+#prof .wrap {
+    position: relative;
+}
+
+#prof .message {
+    width: 85%;
+    margin: 0 auto 50px;
+    position: relative;
+}
+
+/*段落*/
+
+#prof .box {
+    padding-top: 30px;
+}
+
+#prof .box p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#prof .box .name {
+    max-width: 360px;
+    margin: 30px 0;
+}
+
+#prof .box .logo {
+    max-width: 360px;
+    margin: 30px 0;
+}
+
+/*アバター*/
+
+#prof .message .ava {
+    max-width: 390px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/*---------------------
+* リスト
+---------------------*/
+
+#prof .txt dl {
+    width: 85%;
+    margin: 0 auto;
+}
+
+#prof .txt dl:nth-child(n+2) {
+    margin-top: 60px;
+}
+
+#prof .txt dl dt {
+    font-size: 32px;
+    line-height: 1.3;
+    font-weight: bold;
+    border-bottom: solid 1px #333;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+#prof .txt dl dd {
+    font-size: 14px;
+    color: #555;
+    padding: 0 20px;
+}
+
+#prof .txt dl dd strong {
+    font-size: 115%;
+}
+
+/******************************************************************************
+*
+* [共通]テキストセクション
+*
+******************************************************************************/
+
+#text {}
+
+#text p .ft {
+    font-size: 200%;
+}
+
+/*---------------------
+* 画像
+---------------------*/
+
+.s2_1 {
+    max-width: 750px;
+    margin: 50px auto 0;
+}
+
+.fr.s2_3 {
+    max-width: 450px;
+    border: solid 1px #ccc;
+}
+
+.s3_2 {
+    max-width: 700px;
+}
+
+.s4_1 {
+    max-width: 500px;
+}
+
+.s4p {
+    position: relative;
+}
+
+.s4p .s4_3 {
+    position: absolute;
+    top: 60px;
+    right: 50px;
+    width: 350px;
+}
+
+.s5_2 {
+    max-width: 750px;
+    margin: auto;
+}
+
+.s5_3 {
+    max-width: 700px;
+    margin: auto;
+}
+
+.s6_3 {
+    max-width: 500px;
+}
+
+.s7_4 {
+    max-width: 700px;
+    margin: auto;
+}
+
+/*---------------------
+* S4_2
+---------------------*/
+
+.s4_2 {
+    position: relative;
+}
+
+.s4_2 .btn {
+    width: 50%;
+    position: absolute;
+    bottom: 22%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 100%;
+    overflow: hidden;
+    box-shadow: 1px 1px 20px #1D8758, 0 0 20px 40px #8FFFCF, inset 2px 60px #D3FFEC;
+    animation: glow 2s infinite ease;
+    transition: all 0.5s;
+}
+
+.s4_2 .btn:hover {
+    transform: scale(1.1);
+}
+
+/* animates box shadow glow effect */
+@keyframes glow {
+
+    0%,
+    100% {
+        box-shadow: 1px 1px 20px #1D8758, 0 0 60px 30px rgba(143, 255, 207, 0.7), inset 60px 60px rgba(211, 255, 236, 0.6);
+    }
+
+    50% {
+        box-shadow: 1px 1px #1D8758, 0 0 16px 8px rgba(143, 255, 207, 0.7), inset 2px 2px rgba(211, 255, 236, 0.6);
+    }
+}
+
+
+/******************************************************************************
+*
+* [共通]未来
+*
+******************************************************************************/
+
+#future {
+    background: #d5dee6;
+}
+
+#future .lead {
+    width: 70%;
+    margin: 0 auto 40px;
+}
+
+
+/******************************************************************************
+*
+* [共通]声
+*
+******************************************************************************/
+
+#voice {
+    background: #fff;
+}
+
+#voice .lead {
+    max-width: 360px;
+    margin: 0 auto 50px;
+}
+
+/*---------------------
+* リスト
+---------------------*/
+
+#voice .list .box:nth-child(n+2) {
+    margin-top: 100px;
+}
+
+#voice .list .box .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*顔写真*/
+
+#voice .list .box .title .ava {
+    max-width: 340px;
+}
+
+/*情報*/
+
+#voice .list .box .title .info {
+    width: 50%;
+    width: -webkit-calc(100% - 370px);
+    width: calc(100% - 370px);
+}
+
+#voice .list .box .title .info dl {
+    display: flex;
+    justify-content: space-between;
+}
+
+#voice .list .box .title .info dl:nth-child(n+2) {
+    margin-top: 5px;
+}
+
+#voice .list .box .title .info dl dt {
+    font-size: 18px;
+    background: #1a5d4a;
+    color: #fff;
+    width: 130px;
+    text-align: center;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#voice .list .box .title .info dl dd {
+    width: 50%;
+    width: -webkit-calc(100% - 145px);
+    width: calc(100% - 145px);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/*メッセージ*/
+
+#voice .list .box .note {
+    width: 96%;
+    margin: 40px auto 0;
+    background-color: #f6f7f5;
+    background-image: linear-gradient(180deg, #ccc 1px, transparent 1px);
+    background-size: 100% 2em;
+    line-height: 2em;
+    border: solid 4px #ccc;
+    position: relative;
+    padding: 2em;
+}
+
+#voice .list .box .note::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 15px 20px 15px;
+    border-color: transparent transparent #ccc transparent;
+    position: absolute;
+    top: -20px;
+    left: 135px;
+}
+
+#voice .list .box .note p {
+    line-height: 2em;
+}
+
+
+/******************************************************************************
+*
+* [共通]メッセージ
+*
+******************************************************************************/
+
+#message {
+    background-image: url(../images/bg1.jpg);
+    background-size: cover;
+}
+
+#message .lead {
+    width: 60%;
+    margin: 0 auto 50px;
+}
+
+#message p {
+    max-width: 550px;
+    margin: auto;
+    font-size: 20px;
+}
+
+#message .name {
+    max-width: 360px;
+    margin-top: 30px;
+    margin-left: auto;
+}
+
+
+
+/******************************************************************************
+*
+* [共通]レスポンシブ対応
+*
+******************************************************************************/
+
+/*1920px以下*/
+
+@media only screen and (max-width: 1920px) {
+
+    /*---------------------
+    * [共通]ヘッダー
+    ---------------------*/
+
+    header.hero_area::before {
+        padding-top: 620px;
+    }
+
+    /*---------------------
+    * [共通]チェック
+    ---------------------*/
+
+    #check .bg2::before {
+        padding-top: 700px;
+    }
+
+    #check .bg2 .inner {
+        background-position: center top;
+    }
+
+}
+
+/*1400px以下*/
+
+@media only screen and (max-width: 1400px) {}
+
+/*960px以下*/
+
+@media only screen and (max-width: 960px) {
+
+    /*---------------------
+    * [共通]ヘッダー
+    ---------------------*/
+
+    header.hero_area::before {
+        padding-top: 80%;
+    }
+
+    header.hero_area .hero_area_inner {
+        background-image: url(../images/fv/main_sp.jpg);
+    }
+
+    header.hero_area .no1 {
+        display: none;
+    }
+
+    /*---------------------
+    * [共通]チェック
+    ---------------------*/
+
+    #check .bg2::before {
+        padding-top: 69%;
+    }
+
+    #check .bg2 .inner {
+        background-image: url(../images/check/bg2_sp.png);
+    }
+
+    /*---------------------
+    * [共通]テキストセクション
+    ---------------------*/
+
+    .fr.s2_3 {
+        max-width: 250px;
+    }
+
+}
+
+/*644px以下*/
+
+@media only screen and (max-width: 644px) {
+
+    /*---------------------
+    * [共通]ヘッダー
+    ---------------------*/
+
+    header.hero_area .arrow {
+        width: 140px;
+        bottom: -10px;
+    }
+
+    /*---------------------
+    * [共通]CTA
+    ---------------------*/
+
+    article.cta {
+        padding: 30px 0 20px;
+    }
+
+    article.cta .txt {
+        width: 92%;
+        margin: 0 auto 20px;
+    }
+
+    /*ボタン*/
+
+    article.cta .btn {
+        max-width: 265px;
+    }
+
+    article.cta .btn .f {
+        width: 14%;
+        bottom: -20%;
+        right: 1%;
+    }
+
+    article.cta .btn.p2 {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    article.cta .btn.p2 .f {
+        width: 7%;
+    }
+
+    /*補足*/
+
+    article.cta aside {
+        margin-top: 3px;
+    }
+
+    article.cta aside p {
+        font-size: 11px;
+    }
+
+    /*---------------------
+    * [共通]チェック
+    ---------------------*/
+
+    #check .lead {
+        width: 85%;
+        margin: 0 auto 30px;
+    }
+
+    #check .txt {
+        width: 90%;
+        margin: 20px auto 0;
+    }
+
+    /*---------------------
+    * [共通]導入テキスト
+    ---------------------*/
+
+    #first_txt {
+        background-size: 150%;
+        background-position: top 20% right 50%;
+    }
+
+    #first_txt .lead {
+        width: 82%;
+        margin: 0 auto 10px;
+    }
+
+    #first_txt p {
+        font-size: 16px;
+    }
+
+    /*---------------------
+    * [共通]プロフィール
+    ---------------------*/
+
+    #prof .message {
+        width: 100%;
+        margin: 0 auto 30px;
+    }
+
+    /*段落*/
+
+    #prof .box {
+        padding-top: 0;
+    }
+
+    #prof .box p {
+        font-size: 14px;
+    }
+
+    #prof .box .name {
+        max-width: 190px;
+        margin: 20px 0;
+    }
+
+    #prof .box .logo {
+        max-width: 200px;
+        margin: 20px 0;
+    }
+
+    /*アバター*/
+
+    #prof .message .ava {
+        max-width: 160px;
+        right: -4%;
+    }
+
+    /*リスト*/
+
+    #prof .txt dl {
+        width: 100%;
+    }
+
+    #prof .txt dl:nth-child(n+2) {
+        margin-top: 30px;
+    }
+
+    #prof .txt dl dt {
+        font-size: 26px;
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+    }
+
+    #prof .txt dl dd {
+        font-size: 12px;
+        padding: 0 5px;
+    }
+
+    /*---------------------
+    * [共通]テキストセクション
+    ---------------------*/
+
+    #text .wrap {
+        width: 96%;
+    }
+
+    .fr.s1_4 {
+        max-width: 90px;
+        margin-right: -8px;
+    }
+
+    .s2_1 {
+        margin: 30px auto 0;
+    }
+
+    .s2_3 img {
+        border: solid 1px #ccc;
+    }
+
+    .s3_2 {
+        max-width: 280px;
+    }
+
+    .s4_1 {
+        max-width: 250px;
+        margin-bottom: -10px;
+    }
+
+    .s4p .s4_3 {
+        top: 30px;
+        right: 25px;
+        width: 110px;
+    }
+
+    .fr.s5_1 {
+        max-width: 120px;
+    }
+
+    .s5_2 {
+        max-width: 280px;
+    }
+
+    .s5_3 {
+        max-width: 300px;
+    }
+
+    .fr.s5_5 {
+        max-width: 95px;
+        margin-right: -8px;
+    }
+
+    .s6_3 {
+        max-width: 200px;
+    }
+
+    .s7_4 {
+        max-width: 280px;
+    }
+
+    /*---------------------
+    * [共通]未来
+    ---------------------*/
+
+    #future .lead {
+        width: 90%;
+        margin: 0 auto 25px;
+    }
+
+    /*---------------------
+    * [共通]声
+    ---------------------*/
+
+    #voice .lead {
+        max-width: 200px;
+        margin: 0 auto 30px;
+    }
+
+    #voice .list .box {
+        background: #fff;
+        padding: 20px 15px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    #voice .list .box:nth-child(n+2) {
+        margin-top: 50px;
+    }
+
+    #voice .list .box .title {
+        display: block;
+    }
+
+    /*顔写真*/
+
+    #voice .list .box .title .ava {
+        max-width: 130px;
+        margin: 0 auto 20px;
+    }
+
+    /*情報*/
+
+    #voice .list .box .title .info {
+        width: 100%;
+        width: -webkit-calc(100%);
+        width: calc(100%);
+    }
+
+    #voice .list .box .title .info dl:nth-child(n+2) {
+        margin-top: 3px;
+    }
+
+    #voice .list .box .title .info dl:last-child dd {
+        padding-top: 4px;
+    }
+
+    #voice .list .box .title .info dl dt {
+        font-size: 12px;
+        width: 90px;
+    }
+
+    #voice .list .box .title .info dl dd {
+        width: -webkit-calc(100% - 95px);
+        width: calc(100% - 95px);
+        font-size: 13px;
+    }
+
+    /*メッセージ*/
+
+    #voice .list .box .note {
+        width: 100%;
+        margin: 30px auto 0;
+        background-size: 100% 1.6em;
+        line-height: 1.6em;
+        border-width: 2px;
+        padding: 1.6em 1em;
+    }
+
+    #voice .list .box .note::before {
+        border-width: 0 12px 15px 12px;
+        top: -15px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    #voice .list .box .note p {
+        line-height: 1.6em;
+    }
+
+
+
+    /*---------------------
+    * [共通]メッセージ
+    ---------------------*/
+
+    #message .lead {
+        width: 90%;
+        margin: 0 auto 30px;
+    }
+
+    #message p {
+        font-size: 15px;
+    }
+
+    #message .name {
+        max-width: 250px;
+        margin-top: 20px;
+    }
+
+
+
+
+}
+
+/*375px以下*/
+
+@media only screen and (max-width: 375px) {}
+
+/*360px以下*/
+
+@media only screen and (max-width: 360px) {}
+
+/*330px以下*/
+
+@media only screen and (max-width: 330px) {}

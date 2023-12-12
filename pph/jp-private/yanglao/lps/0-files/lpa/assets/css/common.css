@@ -1,0 +1,1578 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Noto Sans JP', "Hiragino Sans", "ヒラギノ角ゴ ProN", apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Meiryo, sans-serif;
+    /*自動文字詰め*/
+    font-feature-settings: "palt";
+    /*英字の折返し*/
+    word-break: break-all;
+}
+
+html {
+    overflow: auto;
+}
+
+body {
+    overflow: hidden;
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 500;
+    color: #1a1a1a;
+    background: #fff;
+    /*背景画像*/
+    background-image: url(../images/txt/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/*段落・フォント*/
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 500;
+    color: #1a1a1a;
+    font-family: 'Noto Sans JP', "Hiragino Sans", "ヒラギノ角ゴ ProN", apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Meiryo, sans-serif;
+    font-family: 'Noto Serif JP', Georgia, 游明朝, "Yu Mincho", YuMincho, "Hiragino Mincho ProN", HGS明朝E, メイリオ, Meiryo, serif;
+}
+
+.font-gothic {
+    font-family: 'Noto Sans JP', "Hiragino Sans", "ヒラギノ角ゴ ProN", apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Meiryo, sans-serif;
+}
+
+.font-mincho {
+    font-family: 'Noto Serif JP', Georgia, 游明朝, "Yu Mincho", YuMincho, "Hiragino Mincho ProN", HGS明朝E, メイリオ, Meiryo, serif;
+}
+
+.font-en1 {
+    /*英字1*/
+    font-family: 'Arial', sans-serif;
+}
+
+.font-en2 {
+    /*英字2*/
+    font-family: sofia-pro, sans-serif;
+    font-weight: 700;
+}
+
+.font-en3 {
+    /*英字2丸文字版*/
+    font-family: sofia-pro-soft, sans-serif;
+    font-weight: 700;
+}
+
+
+/******************************************************************************
+*
+* [共通]基本設定
+*
+******************************************************************************/
+
+/*---------------------
+* コンテナ関係
+---------------------*/
+
+/*全体*/
+
+article.content_article {
+    padding: 60px 0;
+}
+
+article.content_article.none_pt {
+    padding-top: 0;
+}
+
+article.content_article.none_pb {
+    padding-bottom: 0;
+}
+
+/*内包*/
+
+.wrap {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.middle_wrap {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+/*---------------------
+* セクション内レター
+---------------------*/
+
+article.content_article section.ca_sec {
+    background: #fff;
+}
+
+/*セクション内レターの分離*/
+
+article.content_article.leave_sec section.ca_sec {
+    margin-bottom: 50px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+article.content_article.leave_sec section.ca_sec:last-child {
+    margin-bottom: 0;
+}
+
+/*セクション内レターの段落*/
+
+article.content_article section.ca_sec > p {
+    /*padding: 50px 80px;幅に段差を付ける場合*/
+    padding: 50px 80px;
+    font-size: 22px;
+    line-height: 1.7;
+}
+
+article.content_article section.ca_sec > p.none_pt {
+    padding-top: 0;
+}
+
+/*---------------------
+* 背景
+---------------------*/
+
+/*要素が見えたら背景画像を浮遊化*/
+
+.fixed_bg {
+    background-position: top center;
+    background-size: 100vw;
+    background-repeat: no-repeat;
+}
+
+.fixed_bg.on {
+    background-attachment: fixed;
+}
+
+/*ドット背景*/
+
+.lp_bg_dot {
+    background: #ededed;
+    background-image: radial-gradient(#e3e3e3 6%, transparent 12%), radial-gradient(#e3e3e3 6%, transparent 12%);
+    background-position: 0 0, 11px 11px;
+    background-size: 22px 22px;
+}
+
+/*ライン背景*/
+
+.lp_bg_line {
+    background: #000;
+    background-image: linear-gradient(-90deg, rgba(255, 255, 255, 0.3) 0, transparent 1%, transparent 100%);
+    background-size: 100px;
+}
+
+/*---------------------
+* 見出し
+---------------------*/
+
+/*見出し(2)*/
+
+.common_h2 {
+    background-color: #000;
+    background-image: url(../images/txt/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    position: relative;
+    padding: 30px 0;
+}
+
+.common_h2 h2 {
+    font-family: 'Noto Serif JP', Georgia, 游明朝, "Yu Mincho", YuMincho, "Hiragino Mincho ProN", HGS明朝E, メイリオ, Meiryo, serif;
+    text-align: center;
+    font-size: 48px;
+    line-height: 1.4;
+    font-weight: 900;
+    width: 100%;
+    color: #fff;
+}
+
+/*---------------------
+* テキスト関係
+---------------------*/
+
+/*一般*/
+
+small {
+    font-size: 80%;
+}
+
+strong {
+    font-weight: 900;
+}
+
+/*イタリック*/
+
+.italic {
+    font-style: italic;
+}
+
+/*全角括弧などの余白調整*/
+
+i.i1 {
+    margin-left: -0.5em;
+}
+
+i.i2 {
+    margin-right: -0.5em;
+}
+
+/*文字サイズ*/
+
+.fsb {
+    font-size: 120%;
+}
+
+.fsb2 {
+    font-size: 150%;
+}
+
+.fsb3 {
+    font-size: 175%;
+}
+
+/*カラー*/
+
+.tc0 {
+    color: #486886;
+}
+
+.tc1 {
+    color: #c3272f;
+}
+
+.tc2 {
+    color: #53c0bd;
+    color: #0065ad;
+    color: #0f5779;
+}
+
+.tc3 {
+    color: #ffb237;
+}
+
+.tc4 {
+    color: #017a68;
+}
+
+.tc5 {
+    color: #6e3a87;
+    color: #573b77;
+}
+
+/*マーカー*/
+
+.tm1 {
+    background: linear-gradient(transparent 70%, #ffa3d1 70%);
+}
+
+.tm2 {
+    background: linear-gradient(transparent 70%, #72edff 70%);
+}
+
+.tm3 {
+    background: linear-gradient(transparent 70%, #ffe571 70%);
+}
+
+.tm4 {
+    background: linear-gradient(transparent 70%, #b6ebb8 70%);
+}
+
+/*下線*/
+
+.tu0 {
+    background: linear-gradient(transparent 90%, #1a1a1a 90%);
+    padding-bottom: 2px;
+}
+
+.tu1 {
+    background: linear-gradient(transparent 90%, #980000 90%);
+    padding-bottom: 2px;
+}
+
+.tu2 {
+    background: linear-gradient(transparent 90%, #0f5779 90%);
+    padding-bottom: 2px;
+}
+
+.tu3 {
+    background: linear-gradient(transparent 90%, #ce9b2f 90%);
+    padding-bottom: 2px;
+}
+
+.tu4 {
+    background: linear-gradient(transparent 90%, #018f6d 90%);
+    padding-bottom: 2px;
+}
+
+.tu5 {
+    background: linear-gradient(transparent 90%, #573b77 90%);
+    padding-bottom: 2px;
+}
+
+/*ドット*/
+
+.td0 {
+    border-bottom: dotted 2px #486886;
+}
+
+.td1 {
+    border-bottom: dotted 2px #980000;
+}
+
+.td2 {
+    border-bottom: dotted 2px #0f5779;
+}
+
+.td3 {
+    border-bottom: dotted 2px #ce9b2f;
+}
+
+.td4 {
+    border-bottom: dotted 2px #018f6d;
+}
+
+.td5 {
+    border-bottom: dotted 2px #573b77;
+}
+
+/*テキスト背景*/
+
+.tbg0 {
+    background: #486886;
+    color: #fff;
+    display: inline;
+    padding: 0 3px;
+}
+
+.tbg1 {
+    background: #980000;
+    color: #fff;
+    display: inline;
+    padding: 0 3px;
+}
+
+.tbg2 {
+    background: #0f5779;
+    color: #fff;
+    display: inline;
+    padding: 0 3px;
+}
+
+.tbg3 {
+    background: #ce9b2f;
+    color: #fff;
+    display: inline;
+    padding: 0 3px;
+}
+
+.tbg4 {
+    background: #018f6d;
+    color: #fff;
+    display: inline;
+    padding: 0 3px;
+}
+
+.tbg5 {
+    background: #573b77;
+    color: #fff;
+    display: inline;
+    padding: 0 3px;
+}
+
+/*改行(SP時のみ改行)*/
+
+.brSp {
+    display: none;
+}
+
+/*---------------------
+* 余白調整
+---------------------*/
+
+/*縦*/
+
+.lp_m {
+    margin: 80px 0;
+}
+
+.lp_m_auto {
+    margin: 80px auto;
+}
+
+/*横*/
+
+.lp_p {
+    padding: 0 80px;
+}
+
+/*上のみ*/
+
+.lp_mt {
+    margin-top: 80px;
+}
+
+.lp_pt {
+    padding-top: 80px;
+}
+
+/*下のみ*/
+
+.lp_mb {
+    margin-bottom: 80px;
+}
+
+.lp_pb {
+    padding-bottom: 80px;
+}
+
+/*---------------------
+* 画像関係
+---------------------*/
+
+.lp_img img {
+    display: block;
+}
+
+/*枠付き*/
+
+.lp_img.be_border img {
+    border: solid 1px #e0e0e0;
+}
+
+/*テキスト右に配置*/
+
+img.fr {
+    display: block;
+    float: right;
+    max-width: 300px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+/*画像補足情報*/
+
+figure figcaption {
+    text-align: right;
+    font-size: 11px;
+    line-height: 2;
+    color: #666;
+}
+
+/*---------------------
+* 2カラム
+---------------------*/
+
+.lp2c {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lp2c > div {
+    width: 48%;
+}
+
+/*左右の入れ替え*/
+
+.lp2c.lp2c_r {
+    flex-flow: row-reverse;
+}
+
+/*---------------------
+* 2カラム見出し
+---------------------*/
+
+.c2_lead {
+    background: #0f5779;
+    display: flex;
+    font-size: 18px;
+    min-height: 65px;
+    line-height: 1.7;
+}
+
+.c2_lead .sub {
+    width: 140px;
+    background: #c4ff00;
+    font-weight: bold;
+    color: #0f5779;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c2_lead .txt {
+    width: 100%;
+    width: -webkit-calc(100% - 140px);
+    width: calc(100% - 140px);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+}
+
+/*---------------------
+* 2カラムチェックリスト
+---------------------*/
+
+.c2_checklist ul {
+    width: 100%;
+    padding: 25px 30px;
+    background: #f1f1f1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.c2_checklist ul li {
+    width: 48.8%;
+    font-size: 15px;
+    line-height: 1.3;
+    background: url(../images/pl_check1.png) no-repeat left 4px;
+    background-size: 22px auto;
+    margin-bottom: 5px;
+    padding: 5px 0 10px 27px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+/*---------------------
+* 動画(埋め込み用)
+---------------------*/
+
+.mov {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.mov::before {
+    content: "";
+    display: block;
+    padding-top: 56.2%;
+}
+
+.mov iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*---------------------
+* インナーコンテンツ
+---------------------*/
+
+/*コンテナ*/
+
+.inner_content .ic_container {
+    width: 91%;
+    width: -webkit-calc(100% - 160px);
+    width: calc(100% - 160px);
+    margin: 0 auto 60px;
+    background: #ededed;
+    position: relative;
+}
+
+.inner_content .ic_container:last-child {
+    margin: 0 auto;
+}
+
+.inner_content .ic_container > .ic_first_wrap {
+    padding: 40px;
+}
+
+/*全幅*/
+
+.inner_content.full_wide .ic_container {
+    width: 100%;
+    width: -webkit-calc(100%);
+    width: calc(100%);
+}
+
+/*インナーコンテンツの見出し(画像)*/
+
+.inner_content .ic_container .ic_title img {
+    display: block;
+    width: 100%;
+}
+
+/*インナーコンテンツの見出し(テキスト)*/
+
+.inner_content .ic_container .ic_title.text_title {
+    background: #0f5779;
+    padding: 20px 15px;
+}
+
+.inner_content .ic_container .ic_title.text_title.lb {
+    /*ライン背景追記*/
+    background-image: linear-gradient(-90deg, rgba(255, 255, 255, 0.1) 0, transparent 1%, transparent 100%);
+    background-size: 100px;
+}
+
+.inner_content .ic_container .ic_title.text_title h3 {
+    text-align: center;
+    font-size: 26px;
+    line-height: 1.4;
+    font-weight: bold;
+    color: #fff;
+}
+
+.inner_content .ic_container .ic_title.text_title .number {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.inner_content .ic_container .ic_title.text_title .number span {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 1;
+    background: #c4ff00;
+    padding: 9.5px 25px 8px;
+    border-radius: 50px;
+}
+
+.inner_content .ic_container .ic_title.text_title .sub {
+    text-align: center;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #fff;
+    margin-top: 5px;
+    letter-spacing: 0.1em;
+}
+
+/*背景追加*/
+
+.inner_content.be_bg {
+    background: #ededed;
+    padding: 50px 0;
+}
+
+.inner_content.be_bg .ic_container {
+    background: #fff;
+    position: relative;
+}
+
+/*ライン追加*/
+
+.inner_content.be_line .ic_container::before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 50px;
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: #ddd;
+}
+
+.inner_content.be_line .ic_container:last-child::before {
+    content: none;
+}
+
+/*三角形追加*/
+
+.inner_content.be_flow .ic_container::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 25px 0 25px;
+    border-color: #dddddd transparent transparent transparent;
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.inner_content.be_flow .ic_container:last-child::before {
+    content: none;
+}
+
+/*外枠追加*/
+
+.inner_content.be_border .ic_container {
+    border: solid 2px #000;
+}
+
+/*---------------------
+* ポイントリスト
+---------------------*/
+
+/*見出し*/
+
+.point_list .pl_head h3 {
+    font-size: 22px;
+    line-height: 1.5;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    padding: 20px 30px;
+    background: #1a1a1a;
+}
+
+/*補足*/
+
+.point_list aside {
+    font-size: 11px;
+    color: #666;
+    margin-top: 5px;
+    text-align: right;
+}
+
+/*基本のリストコンテナ*/
+
+.point_list ul li {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+
+.point_list ul li:last-child {
+    margin-bottom: 0;
+}
+
+.point_list ul li > i {
+    display: block;
+}
+
+.point_list ul li > span {
+    display: block;
+    width: 90%;
+}
+
+/*背景あり*/
+
+.point_list.be_bg ul {
+    background: #ededed;
+    padding: 30px;
+}
+
+/*区切り線あり*/
+
+.point_list.be_line ul li {
+    margin: 0;
+    padding: 10px 0;
+    border-bottom: dotted 1px #ccc;
+}
+
+.point_list.be_line ul li:first-child {
+    padding-top: 0;
+}
+
+.point_list.be_line ul li:last-child {
+    padding-bottom: 0;
+    border-bottom-width: 0;
+}
+
+/*枠線あり*/
+
+.point_list.be_border ul {
+    border: solid 1px #333;
+}
+
+/*デザイン1(数字パターン)*/
+
+.point_list.d1 ul {
+    /*numberのカウンタを0にセット*/
+    counter-reset: number 0;
+}
+
+.point_list.d1 ul li > i {
+    width: 25px;
+    height: 25px;
+    line-height: 24px;
+    font-size: 14px;
+    text-align: center;
+    background: #000;
+    color: #fff;
+    border-radius: 50px;
+}
+
+.point_list.d1 ul li > i::before {
+    /*numberカウンタの増加数をセット*/
+    counter-increment: number 1;
+    content: counter(number);
+    font-family: 'Arial', sans-serif;
+}
+
+.point_list.d1 ul li > span {
+    width: -webkit-calc(100% - 35px);
+    width: calc(100% - 35px);
+    line-height: 25px;
+    font-weight: 900;
+}
+
+/*デザイン2(アルファベットパターン)*/
+
+.point_list.d2 ul {
+    /*カウンター変数hogeをリセット*/
+    counter-reset: hoge;
+}
+
+.point_list.d2 ul li > i {
+    width: 25px;
+    height: 25px;
+    line-height: 24px;
+    font-size: 14px;
+    text-align: center;
+    background: #000;
+    color: #fff;
+    border-radius: 50px;
+}
+
+.point_list.d2 ul li > i::before {
+    /*カウンター変数hogeの画面表示形式*/
+    counter-increment: hoge;
+    content: counter(hoge, upper-alpha);
+    font-family: 'Arial', sans-serif;
+}
+
+.point_list.d2 ul li > span {
+    width: -webkit-calc(100% - 35px);
+    width: calc(100% - 35px);
+    line-height: 25px;
+    font-weight: 900;
+}
+
+/*デザイン3(任意画像)*/
+
+.point_list.d3 ul li > i {
+    width: 25px;
+}
+
+.point_list.d3 ul li > i::before {
+    content: "";
+    display: block;
+    background-image: url(../images/pl_check1.png);
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+}
+
+.point_list.d3 ul li > span {
+    width: -webkit-calc(100% - 35px);
+    width: calc(100% - 35px);
+    line-height: 26px;
+    font-weight: 900;
+}
+
+/*デザイン4(編集可能チェックアイコン)*/
+
+.point_list.d4 ul li > i {
+    width: 25px;
+}
+
+.point_list.d4 ul li > i::before {
+    content: "";
+    display: block;
+    background-color: #000;
+    background-image: url(../images/pl_check2.png);
+    background-repeat: no-repeat;
+    background-size: 12px;
+    background-position: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+}
+
+.point_list.d4 ul li > span {
+    width: -webkit-calc(100% - 35px);
+    width: calc(100% - 35px);
+    line-height: 26px;
+    font-weight: 900;
+}
+
+/*デザイン5(タイル式)*/
+
+.point_list.d5 ul li {
+    margin-bottom: 0;
+    padding: 15px 10px;
+    background: #fff;
+    border: solid 1px #666;
+    border-bottom-width: 0;
+    border-left-width: 6px;
+}
+
+.point_list.d5 ul li:last-child {
+    border-bottom-width: 1px;
+}
+
+.point_list.d5 ul li:nth-child(odd) {
+    border-left-color: #0f5779;
+}
+
+.point_list.d5 ul li:nth-child(even) {
+    border-left-color: #c6b50b;
+}
+
+.point_list.d5 ul li > i::before {
+    content: "";
+    display: block;
+    background-image: url(../images/pl_check1.png);
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+}
+
+.point_list.d5 ul li > span {
+    width: -webkit-calc(100% - 35px);
+    width: calc(100% - 35px);
+    line-height: 26px;
+    font-weight: 900;
+}
+
+/*---------------------
+* 付箋リスト
+---------------------*/
+
+.tag_list.be_bg ul {
+    background: #ededed;
+    padding: 30px;
+}
+
+.tag_list ul li {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+    font-weight: bold;
+    background: #fff;
+    padding: 20px 15px;
+    border-left: solid 15px #13434f;
+    margin-bottom: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.tag_list ul li:last-child {
+    margin-bottom: 0;
+}
+
+/*---------------------
+* ブレンドモード
+---------------------*/
+
+.mbm-d {
+    /*差の絶対値*/
+    mix-blend-mode: difference;
+}
+
+.mbm-o {
+    /*オーバーレイ*/
+    mix-blend-mode: overlay;
+}
+
+.mbm-s {
+    /*スクリーン*/
+    mix-blend-mode: screen;
+}
+
+.mbm-c {
+    /*覆い焼き*/
+    mix-blend-mode: color-dodge;
+}
+
+/*---------------------
+* 表示関係
+---------------------*/
+
+._pc {}
+
+._sp {
+    display: none !important;
+}
+
+
+/******************************************************************************
+*
+* [共通]フッター
+*
+******************************************************************************/
+
+/*追従ボタン*/
+
+#fixed_btn {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 150px;
+    z-index: 9;
+}
+
+/*フッター*/
+
+footer {
+    background: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+footer p.copy {
+    color: #999;
+    font-size: 11px;
+    margin-top: 5px;
+}
+
+footer p.tokushoho a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #999;
+    transition: all 0.5s;
+}
+
+footer p.tokushoho a:hover {
+    opacity: 0.7;
+}
+
+
+/******************************************************************************
+*
+* [共通]レスポンシブ対応
+*
+******************************************************************************/
+
+/*1920px以下*/
+
+@media only screen and (max-width: 1920px) {}
+
+/*1400px以下*/
+
+@media only screen and (max-width: 1400px) {
+
+    /*---------------------
+    * [共通]基本設定
+    ---------------------*/
+
+    .middle_wrap {
+        width: 92%;
+    }
+
+}
+
+/*960px以下*/
+
+@media only screen and (max-width: 960px) {
+
+    /*---------------------
+    * [共通]基本設定
+    ---------------------*/
+
+    .wrap {
+        width: 92%;
+    }
+
+}
+
+/*644px以下*/
+
+@media only screen and (max-width: 644px) {
+
+    /*---------------------
+    * [共通]背景/全体テキスト
+    ---------------------*/
+
+    body {
+        background: none;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    body::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-image: url(../images/txt/bg.jpg);
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    /*---------------------
+    * 浮遊背景(iOS Safari用)
+    ---------------------*/
+
+    _::-webkit-full-page-media,
+    _:future,
+    :root .fixed_bg.on {
+        /*背景の消去*/
+        background-image: none !important;
+        position: relative;
+        /*状況に応じて変更*/
+        overflow: hidden;
+        z-index: -1;
+    }
+
+    _::-webkit-full-page-media,
+    _:future,
+    :root .fixed_bg.on:before {
+        content: '';
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: 100vw;
+    }
+
+    _::-webkit-full-page-media,
+    _:future,
+    :root .fixed_bg.on .wrap {
+        position: relative;
+    }
+
+    _::-webkit-full-page-media,
+    _:future,
+    :root selector.fixed_bg.on:before {
+        /*個別に背景設定*/
+        background-image: url(https://tre-cox.com/lps/0-files/lpa/assets/images/header_img.jpg);
+    }
+
+    /*---------------------
+    * [共通]コンテナ関係
+    ---------------------*/
+
+    article.content_article {
+        padding: 30px 0;
+    }
+
+    article.content_article.leave_sec section.ca_sec {
+        margin-bottom: 30px;
+        border-radius: 10px;
+    }
+
+    article.content_article section.ca_sec > p {
+        padding: 28px 14px;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    /*---------------------
+    * [共通]背景
+    ---------------------*/
+
+    .lp_bg_dot {
+        background-position: 0 0, 9px 9px;
+        background-size: 18px 18px;
+    }
+
+    .lp_bg_line {
+        background-size: 80px;
+    }
+
+    /*---------------------
+    * [共通]見出し
+    ---------------------*/
+
+    .common_h2 {
+        padding: 20px 0;
+    }
+
+    .common_h2 h2 {
+        font-size: 6.6vw;
+    }
+
+    /*---------------------
+    * [共通]テキスト関係
+    ---------------------*/
+
+    .fsb {
+        font-size: 115%;
+    }
+
+    .fsb2 {
+        font-size: 140%;
+    }
+
+    .brRes {
+        display: none;
+    }
+
+    .brSp {
+        display: block;
+    }
+
+    /*スマホ用テキストサイズ*/
+
+    .sptxt1 {
+        font-size: 100%;
+    }
+
+    .sptxt2 {
+        font-size: 110%;
+    }
+
+    .sptxt3 {
+        font-size: 120%;
+    }
+
+    .sptxt4 {
+        font-size: 130%;
+    }
+
+    .sptxt5 {
+        font-size: 140%;
+    }
+
+    /*---------------------
+    * [共通]余白調整
+    ---------------------*/
+
+    .lp_m {
+        margin: 30px 0;
+    }
+
+    .lp_m_auto {
+        margin: 30px auto;
+    }
+
+    .lp_p {
+        padding: 0 16px;
+    }
+
+    .lp_mt {
+        margin-top: 30px;
+    }
+
+    .lp_pt {
+        padding-top: 30px;
+    }
+
+    .lp_mb {
+        margin-bottom: 30px;
+    }
+
+    .lp_pb {
+        padding-bottom: 30px;
+    }
+
+    /*---------------------
+    * [共通]画像関係
+    ---------------------*/
+
+    img.fr {
+        max-width: 120px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+
+    figure figcaption {
+        text-align: left;
+        font-size: 10px;
+        line-height: 1.5;
+        margin-top: 5px;
+    }
+
+    /*---------------------
+    * [共通]2カラム共通
+    ---------------------*/
+
+    .lp2c {
+        display: block;
+    }
+
+    .lp2c > div {
+        width: 100%;
+    }
+
+    .lp2c > div:last-child {
+        margin-top: 30px;
+    }
+
+    /*---------------------
+    * [共通]2カラム見出し
+    ---------------------*/
+
+    .c2_lead {
+        font-size: 15px;
+        min-height: 50px;
+        line-height: 1.5;
+    }
+
+    .c2_lead .sub {
+        width: 70px;
+        font-size: 12px;
+    }
+
+    .c2_lead .txt {
+        width: -webkit-calc(100% - 70px);
+        width: calc(100% - 70px);
+        padding-left: 10px;
+    }
+
+    /*---------------------
+    * [共通]2カラムチェックリスト
+    ---------------------*/
+
+    .c2_checklist ul {
+        padding: 15px 10px;
+        display: block;
+    }
+
+    .c2_checklist ul li {
+        width: 100%;
+        font-size: 14px;
+        background: url(../images/pl_check1.png) no-repeat left 6.5px;
+        background-size: 16px auto;
+        padding: 5px 0 10px 21px;
+    }
+
+    .c2_checklist ul li:last-child {
+        padding-bottom: 0;
+        border-width: 0;
+    }
+
+    /*---------------------
+    * [共通]インナーコンテンツ
+    ---------------------*/
+
+    .inner_content .ic_container {
+        width: 96%;
+        width: -webkit-calc(100% - 32px);
+        width: calc(100% - 32px);
+        margin: 0 auto 30px;
+    }
+
+    .inner_content .ic_container > .ic_first_wrap {
+        padding: 20px 15px;
+    }
+
+    .inner_content .ic_container .ic_title.text_title {
+        padding: 15px 7px;
+    }
+
+    .inner_content .ic_container .ic_title.text_title.lb {
+        background-size: 70px;
+    }
+
+    .inner_content .ic_container .ic_title.text_title h3 {
+        font-size: 5.7vw;
+    }
+
+    .inner_content .ic_container .ic_title.text_title .number {
+        margin-bottom: 7px;
+    }
+
+    .inner_content .ic_container .ic_title.text_title .number span {
+        font-size: 13px;
+        padding: 6px 15px;
+    }
+
+    .inner_content .ic_container .ic_title.text_title .sub {
+        font-size: 10px;
+        transform: scale(0.8);
+        margin-top: 3px;
+        letter-spacing: 0.05em;
+        opacity: 0.5;
+    }
+
+    .inner_content.be_bg {
+        padding: 20px 0;
+    }
+
+    .inner_content.be_line .ic_container::before {
+        height: 30px;
+        bottom: -30px;
+    }
+
+    .inner_content.be_flow .ic_container::before {
+        border-width: 16px 20px 0 20px;
+        bottom: -23px;
+    }
+
+    .inner_content.be_border .ic_container {
+        border-width: 1px;
+    }
+
+    /*---------------------
+    * [共通]ポイントリスト
+    ---------------------*/
+
+    /*見出し*/
+
+    .point_list .pl_head h3 {
+        padding: 12px 8px;
+        font-size: 15px;
+    }
+
+    /*補足*/
+
+    .point_list aside {
+        font-size: 10px;
+    }
+
+    /*基本のリストコンテナ*/
+
+    .point_list ul li {
+        font-size: 15px;
+        margin-bottom: 7px;
+    }
+
+    /*背景あり*/
+
+    .point_list.be_bg ul {
+        padding: 14px;
+    }
+
+    /*区切り線あり*/
+
+    .point_list.be_line ul li {
+        padding: 8px 0;
+    }
+
+    /*デザイン1(数字パターン) & デザイン2(アルファベットパターン)*/
+
+    .point_list.d1 ul li > i,
+    .point_list.d2 ul li > i {
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        font-size: 11px;
+        margin-right: 0;
+    }
+
+    .point_list.d1 ul li > span,
+    .point_list.d2 ul li > span {
+        width: -webkit-calc(100% - 25px);
+        width: calc(100% - 25px);
+        line-height: 22px;
+    }
+
+    /*デザイン3(任意画像)*/
+
+    .point_list.d3 ul li > i::before {
+        width: 20px;
+        height: 20px;
+    }
+
+    .point_list.d3 ul li > span {
+        width: -webkit-calc(100% - 25px);
+        width: calc(100% - 25px);
+        line-height: 22px;
+    }
+
+    /*デザイン4(編集可能チェック)*/
+
+    .point_list.d4 ul li > i::before {
+        width: 20px;
+        height: 20px;
+        background-size: 10px;
+    }
+
+    .point_list.d4 ul li > span {
+        width: -webkit-calc(100% - 25px);
+        width: calc(100% - 25px);
+        line-height: 22px;
+    }
+
+    /*デザイン5(タイル式)*/
+
+    .point_list.d5 ul li {
+        padding: 12px 7px;
+    }
+
+    .point_list.d5 ul li > i::before {
+        width: 20px;
+        height: 20px;
+    }
+
+    .point_list.d5 ul li > span {
+        width: -webkit-calc(100% - 25px);
+        width: calc(100% - 25px);
+        line-height: 22px;
+    }
+
+    /*---------------------
+    * [共通]付箋リスト
+    ---------------------*/
+
+    .tag_list.be_bg ul {
+        padding: 15px;
+    }
+
+    .tag_list ul li {
+        font-size: 14px;
+        padding: 15px 10px;
+        border-left-width: 8px;
+    }
+
+    /*---------------------
+    * [共通]表示関係
+    ---------------------*/
+
+    ._pc {
+        display: none !important;
+    }
+
+    ._sp {
+        display: block !important;
+    }
+
+    /*---------------------
+    * [共通]フッター
+    ---------------------*/
+
+    /*追従ボタン*/
+
+    #fixed_btn {
+        bottom: 5px;
+        right: 5px;
+        width: 90px;
+    }
+
+    /*フッター*/
+
+    footer {
+        padding: 10px 0;
+    }
+
+    footer p.copy {
+        font-size: 10px;
+    }
+
+    footer p.tokushoho a {
+        font-size: 13px;
+    }
+
+}
+
+/*375px以下*/
+
+@media only screen and (max-width: 375px) {}
+
+/*360px以下*/
+
+@media only screen and (max-width: 360px) {}
+
+/*330px以下*/
+
+@media only screen and (max-width: 330px) {}
