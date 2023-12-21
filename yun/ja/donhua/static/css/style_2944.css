@@ -1,0 +1,1071 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  background-image: none;
+  border: none;
+  border-radius: 0;
+  color: inherit;
+  font-family: inherit;
+  padding: 0;
+  width: 100%;
+}
+input:focus {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+
+.grecaptcha-badge {
+  visibility: hidden;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #313131;
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  font-family: "ヒラギノ角ゴシック Pro", Hiragino Kaku Gothic Pro, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, sans-serif;
+}
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 14px;
+    font-size: 1.4rem;
+  }
+}
+
+a {
+  color: #2d93e9;
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.7;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+img, video, object {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+.layout--sp {
+  display: none !important;
+}
+
+@media screen and (max-width: 767px) {
+  .layout--sp {
+    display: block !important;
+  }
+  .layout--pc {
+    display: none !important;
+  }
+}
+.button {
+  -webkit-animation: buttonAnimation 0.8s ease 0s infinite alternate;
+          animation: buttonAnimation 0.8s ease 0s infinite alternate;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+.button__link {
+  display: block;
+  width: 52.0833333333%;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 6px;
+  color: #fff;
+  background-color: #6eb038;
+  border-radius: 5px;
+  font-size: 20px;
+  font-size: 2rem;
+  line-height: 1.4;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .button__link {
+    width: 100%;
+    font-size: 14px;
+    font-size: 1.4rem;
+  }
+}
+.button__link em {
+  font-size: 24px;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+@media screen and (max-width: 767px) {
+  .button__link em {
+    font-size: 16px;
+    font-size: 1.6rem;
+  }
+}
+.button--submit {
+  display: block;
+  width: 31.25%;
+  margin: 0 auto;
+  padding: 10px 5px;
+  color: #fff;
+  background-color: #6eb038;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.button--submit:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+.button--shadow {
+  margin-bottom: 4px;
+}
+.button--shadow .button__link {
+  -webkit-box-shadow: 0 4px 0 0 #4d871d;
+          box-shadow: 0 4px 0 0 #4d871d;
+}
+.button--shadow.button--submit {
+  -webkit-box-shadow: 0 4px 0 0 #4d871d;
+          box-shadow: 0 4px 0 0 #4d871d;
+}
+.button--orange .button__link {
+  background-color: #e0911c;
+  -webkit-box-shadow: 0 4px 0 0 #8a5910;
+          box-shadow: 0 4px 0 0 #8a5910;
+}
+.button--orange.button--submit {
+  background-color: #e0911c;
+  -webkit-box-shadow: 0 4px 0 0 #8a5910;
+          box-shadow: 0 4px 0 0 #8a5910;
+}
+
+@-webkit-keyframes buttonAnimation {
+  from {
+    -webkit-transform: scale(0.9, 0.9);
+            transform: scale(0.9, 0.9);
+  }
+  to {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+
+@keyframes buttonAnimation {
+  from {
+    -webkit-transform: scale(0.9, 0.9);
+            transform: scale(0.9, 0.9);
+  }
+  to {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+input {
+  padding: 8.5px 14px;
+  color: #ababab;
+  background-color: #f1f1f1;
+  border: 1px solid #c9c9c9;
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+@media screen and (max-width: 767px) {
+  input {
+    padding: 10.25px 13px;
+  }
+}
+input:focus {
+  color: #313131;
+  background-color: #fff;
+  border: 1px solid #c9c9c9;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+          box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+}
+
+.movie {
+  max-width: 640px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.emphasis {
+  color: #bd5c2c;
+}
+
+.attention {
+  color: #ababab;
+  font-size: 12px;
+  font-size: 1.2rem;
+}
+.supplement {
+  font-size: 12px;
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 767px) {
+  .supplement {
+    font-size: 10px;
+    font-size: 1rem;
+  }
+}
+
+.headerInfo {
+  padding: 6px;
+  background-color: #cb4706;
+}
+.headerInfo__wrapper {
+  max-width: 890px;
+  margin: 0 auto;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .headerInfo__wrapper {
+    line-height: 1.4;
+  }
+}
+.headerInfo__text {
+  display: inline-block;
+  font-size: 16px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #fff;
+}
+@media screen and (max-width: 767px) {
+  .headerInfo__text {
+    font-size: 1.2rem;
+  }
+}
+.headerInfo__text--emphasis {
+  color: #ffe8b0;
+}
+.headerInfo__text--normal {
+  font-weight: normal;
+}
+
+.limitedCampaignMinutes {
+  position: relative;
+  background-image: url(../image/limitedcampaign_bg_confetti01__pc.png), url(../image/limitedcampaign_bg_confetti02__pc.png), repeating-linear-gradient(-45deg, #f1c779, #f1c779 10px, #f2cd87 10px, #f2cd87 20px);
+  background-position: left -354px top 16px, right -354px top 16px, left top;
+  background-color: #f1c779;
+  background-repeat: no-repeat;
+  background-size: 66.3888888889% auto, 66.3888888889% auto, 100% auto;
+}
+@media screen and (max-width: 767px) {
+  .limitedCampaignMinutes {
+    background-image: url(../image/limitedcampaign_bg_confetti01__sp.png), repeating-linear-gradient(-45deg, #f1c779, #f1c779 5px, #f2cd87 5px, #f2cd87 10px);
+    background-position: left top -140px, left top;
+    background-size: 100% auto;
+  }
+}
+@media screen and (min-width: 1441px) {
+  .limitedCampaignMinutes {
+    background-size: contain;
+    background-position: left -100px top 16px, right -100px top 16px, left top;
+  }
+}
+.limitedCampaignMinutes__wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.limitedCampaignMinutes__wrapper::before, .limitedCampaignMinutes__wrapper::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -30px;
+  width: 580px;
+  height: 224px;
+  background: url(../image/limitedcampaign_bg_flag01.png) no-repeat left top/cover;
+}
+.limitedCampaignMinutes__wrapper::before {
+  left: calc(50% - 728px);
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
+.limitedCampaignMinutes__wrapper::after {
+  right: calc(50% - 728px);
+}
+@media screen and (max-width: 767px) {
+  .limitedCampaignMinutes__wrapper::before, .limitedCampaignMinutes__wrapper::after {
+    top: -14px;
+    width: 314px;
+    height: 112px;
+  }
+  .limitedCampaignMinutes__wrapper::before {
+    left: -199px;
+  }
+  .limitedCampaignMinutes__wrapper::after {
+    right: -199px;
+  }
+}
+@media screen and (min-width: 1441px) {
+  .limitedCampaignMinutes__wrapper::before {
+    left: 0;
+  }
+  .limitedCampaignMinutes__wrapper::after {
+    right: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .limitedCampaignMinutes__inner {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 130px 20px 100px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .limitedCampaignMinutes__inner {
+    width: 100%;
+    margin: 0 auto;
+    padding: 47px 10px 50px;
+  }
+}
+.limitedCampaignMinutes__title {
+  text-align: center;
+}
+.limitedCampaignMinutes__titleLead {
+  display: block;
+  width: 65.1041666667%;
+  margin: 0 auto;
+}
+.limitedCampaignMinutes__titleRibbon {
+  position: relative;
+  display: block;
+  max-width: 790px;
+  min-height: 110px;
+  margin: auto;
+  background: url(../image/limitedcampaign_title02__pc.webp) no-repeat center center/100% 100%;
+  z-index: 1;
+}
+@media screen and (max-width: 767px) {
+  .limitedCampaignMinutes__titleRibbon {
+    max-width: 79.733vw;
+    min-height: 18.933vw;
+    padding: 7px 0 20px;
+    background: url(../image/limitedcampaign_title02__sp.webp) no-repeat center center/100% 100%;
+  }
+}
+.limitedCampaignMinutes__titleRibbonWrapper {
+  display: grid;
+  grid: "date text" auto "time text" 1fr/auto 390px;
+  gap: 0 17px;
+  max-width: 580px;
+  margin: auto;
+  padding: 18px 0 35px;
+}
+@media screen and (max-width: 767px) {
+  .limitedCampaignMinutes__titleRibbonWrapper {
+    display: block;
+    grid: unset;
+    max-width: 60vw;
+    padding: 0;
+    text-align: center;
+  }
+}
+.limitedCampaignMinutes__titleRibbonDate {
+  grid-area: date;
+  font-size: clamp(18px, 1.3888888889vw, 20px);
+  font-weight: bold;
+  color: #ffe65b;
+}
+@media screen and (max-width: 767px) {
+  .limitedCampaignMinutes__titleRibbonDate {
+    display: inline-block;
+    font-size: 3.2vw;
+    max-width: 60vw;
+  }
+}
+.limitedCampaignMinutes__titleRibbonNumber {
+  font-size: clamp(28px, 2.0833333333vw, 30px);
+  font-weight: bold;
+}
+@media screen and (max-width: 767px) {
+  .limitedCampaignMinutes__titleRibbonNumber {
+    font-size: 4vw;
+    max-width: 60vw;
+  }
+}
+.limitedCampaignMinutes__titleRibbonTime {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-area: time;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-size: clamp(13px, 0.9722222222vw, 14px);
+  font-weight: bold;
+  color: #ffe65b;
+  line-height: 0.2;
+  white-space: nowrap;
+}
+.limitedCampaignMinutes__titleRibbonTime::before, .limitedCampaignMinutes__titleRibbonTime::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #ffe65b;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.limitedCampaignMinutes__titleRibbonTime:before {
+  margin: 0 5px 0 0;
+}
+.limitedCampaignMinutes__titleRibbonTime:after {
+  margin: 0 0 0 5px;
+}
+@media screen and (max-width: 767px) {
+  .limitedCampaignMinutes__titleRibbonTime {
+    display: inline-block;
+    font-size: 3.2vw;
+    line-height: 1.4;
+  }
+  .limitedCampaignMinutes__titleRibbonTime::before, .limitedCampaignMinutes__titleRibbonTime::after {
+    display: none;
+  }
+}
+.limitedCampaignMinutes__titleRibbonText {
+  grid-area: text;
+  font-size: clamp(42px, 3.125vw, 45px);
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 0.065em;
+  line-height: 1.4;
+  text-align: left;
+}
+@media screen and (max-width: 767px) {
+  .limitedCampaignMinutes__titleRibbonText {
+    display: block;
+    font-size: 5.6vw;
+    line-height: 1;
+    text-align: center;
+  }
+}
+.limitedCampaignMinutes__titleText {
+  width: 82.0833333333%;
+  margin: 0 auto;
+  margin-top: 3px;
+}
+@media screen and (max-width: 767px) {
+  .limitedCampaignMinutes__titleLead {
+    max-width: 80vw;
+    width: 100%;
+  }
+  .limitedCampaignMinutes__titleText {
+    max-width: 79.7333vw;
+    width: 100%;
+    margin-top: 2px;
+  }
+}
+.limitedCampaignMinutes__content {
+  margin-top: -70px;
+  padding: 82px 52px 50px;
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  letter-spacing: 0.025em;
+  -webkit-box-shadow: 0px 16px 0px 0px rgba(0, 0, 0, .1);
+          box-shadow: 0px 16px 0px 0px rgba(0, 0, 0, .1);
+}
+@media screen and (max-width: 767px) {
+  .limitedCampaignMinutes__content {
+    margin-top: -35px;
+    padding: 32px 20px 45px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, .1);
+            box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, .1);
+  }
+}
+.limitedCampaignMinutes__countdown {
+  position: relative;
+  margin-top: 33px;
+  padding-bottom: 40px;
+}
+.limitedCampaignMinutes__countdown::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: url(../image/limitedcampaign_line01.png) no-repeat left center;
+}
+@media screen and (max-width: 767px) {
+  .limitedCampaignMinutes__countdown {
+    margin-top: 23px;
+    padding-bottom: 30px;
+  }
+}
+.limitedCampaignMinutes__countdownPeriod {
+  position: relative;
+  width: 310px;
+  margin: 0 auto;
+  padding: 10px 0;
+  color: #fff;
+  background-color: #d9af60;
+  border-radius: 50px;
+  font-size: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.limitedCampaignMinutes__countdownPeriod em {
+  font-size: 26px;
+  font-size: 2.6rem;
+}
+.limitedCampaignMinutes__countdownPeriod::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 6.5px 0 6.5px;
+  border-color: #d9af60 transparent transparent transparent;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+@media screen and (max-width: 767px) {
+  .limitedCampaignMinutes__countdownPeriod {
+    width: 190px;
+    padding-top: 7px;
+    padding-bottom: 6px;
+    font-size: 1.3rem;
+  }
+  .limitedCampaignMinutes__countdownPeriod em {
+    font-size: 1.7rem;
+  }
+  .limitedCampaignMinutes__countdownPeriod::after {
+    bottom: -9px;
+    border-width: 9px 5px 0 5px;
+  }
+}
+.limitedCampaignMinutes__countdownWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.limitedCampaignMinutes__countdownItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background-color: #1e2b5c;
+  margin-top: 25px;
+  padding-top: 25px;
+  padding-right: 14px;
+  padding-bottom: 22px;
+  padding-left: 15px;
+  border: 2px solid #c7d5ed;
+  -webkit-box-shadow: 10px 10px 0px 0px #c7d5ed;
+          box-shadow: 10px 10px 0px 0px #c7d5ed;
+}
+.limitedCampaignMinutes__countdownItem + .limitedCampaignMinutes__countdownUnit {
+  margin-left: 15px;
+}
+@media screen and (max-width: 767px) {
+  .limitedCampaignMinutes__countdownItem {
+    margin-top: 12px;
+    padding-top: 12px;
+    padding-right: 8px;
+    padding-bottom: 10px;
+    padding-left: 8px;
+    -webkit-box-shadow: 5px 5px 0px 0px #c7d5ed;
+            box-shadow: 5px 5px 0px 0px #c7d5ed;
+  }
+  .limitedCampaignMinutes__countdownItemText {
+    width: 16.8253968254%;
+  }
+  .limitedCampaignMinutes__countdownItemText--day {
+    width: 11.1111111111%;
+  }
+  .limitedCampaignMinutes__countdownItem + .limitedCampaignMinutes__countdownUnit {
+    margin-left: 8px;
+  }
+}
+.limitedCampaignMinutes__countdownItemNumber {
+  color: #fff;
+  font-size: 63px;
+  font-size: 6.3rem;
+  font-weight: bold;
+  line-height: 1;
+}
+.limitedCampaignMinutes__countdownItemNumber span {
+  display: inline-block;
+  padding: 0 25px;
+  background-color: #1e2b5c;
+  border: 2px solid #c7d5ed;
+  line-height: 126px;
+  -webkit-box-shadow: 12px 13px 0px 0px #c7d5ed;
+          box-shadow: 12px 13px 0px 0px #c7d5ed;
+}
+.limitedCampaignMinutes__countdownItemNumber span + span {
+  margin-left: 20px;
+}
+@media screen and (max-width: 767px) {
+  .limitedCampaignMinutes__countdownItemNumber {
+    font-size: clamp(28px, 8.4vw, 63px);
+  }
+  .limitedCampaignMinutes__countdownItemNumber span {
+    padding: 0 18px;
+    border-width: 1px;
+    line-height: 89px;
+    -webkit-box-shadow: 7px 7px 0px 0px #c7d5ed;
+            box-shadow: 7px 7px 0px 0px #c7d5ed;
+  }
+  .limitedCampaignMinutes__countdownItemNumber span + span {
+    margin-left: 10px;
+  }
+}
+.limitedCampaignMinutes__countdownUnit + .limitedCampaignMinutes__countdownItem {
+  margin-left: 22px;
+}
+@media screen and (max-width: 767px) {
+  .limitedCampaignMinutes__countdownUnit + .limitedCampaignMinutes__countdownItem {
+    margin-left: 3px;
+  }
+}
+.limitedCampaignMinutes__countdownNote {
+  margin-top: 30px;
+  color: rgba(49, 49, 49, .6);
+  font-size: 14px;
+  font-size: 1.4rem;
+  letter-spacing: 0.025em;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .limitedCampaignMinutes__countdownNote {
+    margin-top: 24px;
+    font-size: 1.3rem;
+    text-align: left;
+  }
+}
+.limitedCampaignMinutes__appeal {
+  position: relative;
+  z-index: 2;
+}
+.limitedCampaignMinutes__appealText {
+  margin-top: 20px;
+  font-size: clamp(20px, 2.0833333333vw, 30px);
+  font-weight: bold;
+  text-align: center;
+  line-height: 1;
+  letter-spacing: 0.025em;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .limitedCampaignMinutes__appealText {
+    text-align: center;
+    padding-bottom: calc(22vw + 20px);
+  }
+}
+@media screen and (max-width: 767px) {
+  .limitedCampaignMinutes__appealText {
+    margin-top: 24px;
+    padding-bottom: calc(22vw + 20px);
+    font-size: clamp(12px, 4.8vw, 36px);
+    text-align: center;
+    line-height: 1.38;
+  }
+}
+.limitedCampaignMinutes__appealTextDate {
+  color: #e76016;
+}
+.limitedCampaignMinutes__appealTextStrong {
+  font-size: clamp(34px, 3.0555555556vw, 44px);
+  font-weight: bold;
+  letter-spacing: 0.025em;
+}
+@media screen and (max-width: 767px) {
+  .limitedCampaignMinutes__appealTextStrong {
+    font-size: clamp(14px, 6.4vw, 48px);
+    letter-spacing: -3px;
+    white-space: nowrap;
+  }
+}
+.limitedCampaignMinutes__appealTextEmphasis {
+  display: inline-block;
+  position: relative;
+  margin-top: 20px;
+  padding-right: 16px;
+  padding-left: 15px;
+  background: none;
+  color: #e76016;
+  font-size: clamp(34px, 3.0555555556vw, 44px);
+  -webkit-font-feature-settings: "palt";
+          font-feature-settings: "palt";
+  letter-spacing: 0.025em;
+  z-index: 1;
+}
+.limitedCampaignMinutes__appealTextEmphasis::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  bottom: -4px;
+  left: 0;
+  background-color: #ffe8b0;
+  z-index: -1;
+}
+.limitedCampaignMinutes__appealTextEmphasis .textDots {
+  padding-top: 0.7em;
+  background-position: top left;
+  background-size: 1em 1em;
+  background-image: radial-gradient(#e76016 14%, rgba(231, 96, 22, 0) 0);
+  background-repeat: repeat-x;
+}
+@media screen and (max-width: 767px) {
+  .limitedCampaignMinutes__appealTextEmphasis {
+    margin-top: 0;
+    padding-right: 0;
+    padding-left: 0;
+    font-size: clamp(14px, 6.4vw, 48px);
+    line-height: 1;
+  }
+  .limitedCampaignMinutes__appealTextEmphasis::before {
+    height: 15px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .limitedCampaignMinutes__appealText {
+    padding-bottom: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .limitedCampaignMinutes__appealText {
+    font-size: clamp(18px, 4.8vw, 36px);
+    margin-top: 24px;
+    padding-bottom: 0;
+  }
+}
+.limitedCampaignMinutes__specialLecture {
+  position: relative;
+  height: auto;
+  margin-top: 43px;
+  background-color: #fcf3e1;
+  border-radius: 10px;
+  z-index: 1;
+}
+.limitedCampaignMinutes__specialLecture::before, .limitedCampaignMinutes__specialLecture::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 55px;
+  height: 0;
+  padding-bottom: 57px;
+  background: url(../image/limitedcampaign_bg_coin01.webp) no-repeat left top/contain;
+  z-index: 2;
+}
+.limitedCampaignMinutes__specialLecture::before {
+  left: 40px;
+  top: 10px;
+}
+.limitedCampaignMinutes__specialLecture::after {
+  top: 7px;
+  right: 39px;
+  width: 61px;
+  padding-bottom: 71px;
+  background-image: url(../image/limitedcampaign_bg_coin02.webp);
+}
+@media screen and (max-width: 767px) {
+  .limitedCampaignMinutes__specialLecture {
+    height: auto;
+    margin-top: 20px;
+    padding: 0;
+    border-radius: 5px;
+  }
+  .limitedCampaignMinutes__specialLecture::before, .limitedCampaignMinutes__specialLecture::after {
+    max-width: 55px;
+    width: 7.333vw;
+    max-height: 58px;
+    padding-bottom: 7.733vw;
+  }
+  .limitedCampaignMinutes__specialLecture::before {
+    left: 24px;
+    top: 12px;
+  }
+  .limitedCampaignMinutes__specialLecture::after {
+    top: 16px;
+    right: 23px;
+    width: 8.2666666667vw;
+    padding-bottom: 9.3333333333vw;
+  }
+}
+.limitedCampaignMinutes__specialLectureTitle {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50px;
+  background: #c5912e;
+  font-size: 26px;
+  font-size: 2.6rem;
+  font-weight: bold;
+  color: #fff;
+  line-height: 0.5;
+  letter-spacing: 0.025em;
+  border-radius: 10px 10px 0 0;
+}
+@media screen and (max-width: 767px) {
+  .limitedCampaignMinutes__specialLectureTitle {
+    height: 9.33333vw;
+    font-size: 4.267vw;
+    letter-spacing: 0.15em;
+    border-radius: 5px 5px 0 0;
+  }
+}
+.limitedCampaignMinutes__specialLectureContent {
+  padding: 27px 20px 45px;
+}
+.limitedCampaignMinutes__specialLectureDefinition:last-of-type {
+  margin-top: 20px;
+}
+@media screen and (max-width: 767px) {
+  .limitedCampaignMinutes__specialLectureDefinition:last-of-type {
+    margin-top: 35px;
+  }
+}
+.limitedCampaignMinutes__specialLectureTeam {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 295px;
+  margin: auto;
+  color: #c5912e;
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+}
+.limitedCampaignMinutes__specialLectureTeam::before, .limitedCampaignMinutes__specialLectureTeam::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  background: #c5912e;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.limitedCampaignMinutes__specialLectureTeam:before {
+  margin: 0 15px 0 0;
+}
+.limitedCampaignMinutes__specialLectureTeam:after {
+  margin: 0 0 0 15px;
+}
+.limitedCampaignMinutes__specialLectureTeamNumber {
+  font-size: 30px;
+  font-size: 3rem;
+  margin: -5px 0 0 4px;
+}
+@media screen and (max-width: 767px) {
+  .limitedCampaignMinutes__specialLectureTeam {
+    font-size: 1.4rem;
+  }
+  .limitedCampaignMinutes__specialLectureTeam::before, .limitedCampaignMinutes__specialLectureTeam::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #c5912e;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  .limitedCampaignMinutes__specialLectureTeam:before {
+    margin: 0 5px 0 0;
+  }
+  .limitedCampaignMinutes__specialLectureTeam:after {
+    margin: 0 0 0 5px;
+  }
+  .limitedCampaignMinutes__specialLectureTeamNumber {
+    font-size: 2rem;
+    margin: -5px 0 0 4px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .limitedCampaignMinutes__specialLectureDescription {
+    margin-top: 7px;
+  }
+}
+.limitedCampaignMinutes__specialLectureDescriptionTitle {
+  font-size: 34px;
+  font-size: 3.4rem;
+  font-weight: bold;
+  letter-spacing: 0.025em;
+  line-height: 1.4;
+}
+@media screen and (max-width: 767px) {
+  .limitedCampaignMinutes__specialLectureDescriptionTitle {
+    font-size: 2rem;
+    line-height: 1.6;
+  }
+}
+.limitedCampaignMinutes__specialLectureDescriptionText {
+  margin-top: 8px;
+  font-size: 24px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  letter-spacing: 0.025em;
+  line-height: 1.7;
+  line-height: 1;
+}
+@media screen and (max-width: 767px) {
+  .limitedCampaignMinutes__specialLectureDescriptionText {
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+}
+.limitedCampaignMinutes__specialLectureDescriptionDetail {
+  margin-top: 15px;
+  color: #a6a195;
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 0.025em;
+  line-height: 2.2;
+}
+@media screen and (max-width: 767px) {
+  .limitedCampaignMinutes__specialLectureDescriptionDetail {
+    margin-top: 17px;
+    font-size: 1.3rem;
+    line-height: 1.5;
+  }
+}
+.limitedCampaignMinutes__attention {
+  margin-top: 30px;
+  font-size: 20px;
+  font-size: 2rem;
+}
+.limitedCampaignMinutes__attention em {
+  color: #cf1f1f;
+  font-weight: bold;
+}
+@media screen and (max-width: 767px) {
+  .limitedCampaignMinutes__attention {
+    margin-top: 25px;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    text-align: left;
+  }
+}
+.limitedCampaignMinutes .button {
+  margin-top: 25.2px;
+}
+@media screen and (max-width: 767px) {
+  .limitedCampaignMinutes .button {
+    margin-top: 15.8px;
+  }
+}
+.limitedCampaignMinutes__countdownExtension {
+  margin-top: -14px;
+  margin-bottom: 14px;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .limitedCampaignMinutes__countdownExtension {
+    max-width: 170px;
+    margin-top: -8px;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-left: auto;
+  }
+}
+
+.limitedCampaignMinutes--2944 .limitedCampaignMinutes__countdown::after {
+  content: none;
+}

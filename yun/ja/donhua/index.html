@@ -1,0 +1,1354 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  
+
+
+
+  <!-- google optimize tags -->
+  
+<script async="" src="static/js/optimize.js"></script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+      <title>投資の達人になる投資講座</title>
+    <meta name="description" content="">
+  <link rel="canonical" href="https://toushi-up.com/">
+  <link rel="preconnect" href="">
+  <link rel="preconnect" href="" crossorigin="">
+  <link rel="stylesheet" href="static/css/tooltipster.bundle.min.css">
+
+      <link rel="stylesheet" href="static/css/style.css">
+    
+            
+        <script>
+            const $ret_path = 'fb0101d.html';
+      const $be_last_date = '2023/12/24';
+    </script>
+  
+  
+  
+  
+      <link rel="stylesheet" href="static/css/style_2944.css">
+    <script src="static/js/limit_count.js" defer=""></script>
+  
+  <script src="static/js/jquery.min.js"></script>
+  <script src="static/js/tooltipster.bundle.min.js"></script>
+  <script src="static/js/jquery.validate.min.js"></script>
+  <script src="static/js/jquery.validate.handler.js"></script>
+  <script src="static/js/jquery.autoKana.js"></script>
+  <script src="static/js/main.js" defer=""></script>
+  <script src="static/js/jquery.modal.min.js" defer=""></script>
+
+      
+    
+  
+  
+  
+  
+      <meta property="og:title" content="投資の達人になる投資講座 ｜ 無料体験実施中！">
+    <meta property="og:description" content="GlobalFinancialSchool監修！他の投資講座とは違う本当の話を聞きたくありませんか？今だけ投資の達人になる投資講座の無料体験実施中！">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://toushi-up.com/cfm/renew01.html">
+    <meta property="og:image" content="https://toushi-up.com/assets/images/renew/ogp_gsnisa.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="shortcut icon" href="https://toushi-up.com/assets/images/microsoft.ico">
+      <!-- Ptengine Tag -->
+  <script src="static/js/41ppvqaa.js"></script>
+  <!-- End Ptengine Tag -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-145376517-3"></script>
+      <script src="static/js/api.js"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-145376517-3');
+
+    window.onload = function() {
+      $('.send-btn').attr('disabled', false);
+    };
+
+          var submit_flg = true;
+      var myAlert = function(response) {
+        $('.send-btn').attr('disabled', false);
+        $('#v2_recp .error').hide();
+        submit_flg = true;
+      };
+    
+    $(document).ready(function() {
+              grecaptcha.ready(function() {
+          grecaptcha.execute('6LfqgLEZAAAAAKYeZsqCLl3XhMPL8daSGn1B_Djj', {
+            action: 'homepage'
+          }).then(function(token) {
+            $.post(
+              "/recaptcha.php", {
+                "re_token": token
+              },
+              function(data) {
+                $('[name=score]').val(data);
+
+                if (Number.parseFloat(data) <= 0.5) {
+                  submit_flg = false;
+                  $('#v2_recp').show();
+                }
+              }
+            );
+          });
+        });
+      
+      $('.send-btn').click(function() {
+        $(this).prop('disabled', true);
+        const text = $(this).text();
+        $(this).html('送信中...');
+        $(this).closest('form').submit();
+
+        var elm = $(this);
+
+        setTimeout(function() {
+          elm.prop('disabled', false);
+          elm.html(text);
+        }, 4000);
+      });
+
+      $('#modal-form input').tooltipster({
+        trigger: 'custom',
+        onlyOne: false,
+        position: 'bottom',
+      });
+
+      var validate = $("#modal-form").validate({
+        rules: {
+          can_mail: {
+            required: true,
+            email: true,
+            emailcst: true
+          },
+        },
+        messages: {
+          can_mail: {
+            required: "メールアドレスを入力してください。",
+            email: "Eメールの形式で入力してください。",
+            emailcst: "Eメールの形式で入力してください。"
+          },
+        },
+        errorPlacement: function(error, element) {
+          var lastError = $(element).data('lastError'),
+            newError = $(error).text();
+
+          $(element).data('lastError', newError);
+
+          if (newError !== '' && newError !== lastError) {
+            $(element).tooltipster('content', newError);
+            $(element).tooltipster('show');
+          }
+        },
+        success: function(label, element) {
+          $(element).tooltipster('hide');
+        },
+      });
+
+      $('#send-modal').click(function() {
+        if ($("#modal-form").valid()) {
+          // キャンセル待ち送信
+          $.ajax({
+            url: 'https://flc-event.com/4jR93g/cancel-wait',
+            type: 'POST',
+            async: false,
+            cache: false,
+            data: {
+              'event_id': $('#applyForm1 input[name=event_id]').val(),
+              'event_form_id': $('#applyForm1 input[name=event_form_id]').val(),
+              'mail': $('input[name=can_mail]').val(),
+              'event_date': $('input[name=can_event_date]').val(),
+              'apimode': 1
+            },
+            timeout: 3000,
+
+          }).done(function(data) {
+            if (data.indexOf('ERR;;') != -1) {
+              $('#modal-msg-area').removeClass('success');
+              $('#modal-msg-area').html(data.replace('ERR;;', ''));
+              $('#modal-msg-area').show();
+            } else {
+              $('#modal-msg-area').addClass('success');
+              $('#modal-msg-area').html('キャンセル待ちの申込が完了しました。');
+              $('#modal-msg-area').show();
+            }
+          });
+        } else {
+          $('input[name=can_mail]').tooltipster('show');
+        }
+      });
+
+      $('#cancel-modal').on($.modal.CLOSE, function(event, modal) {
+        $('input[name=can_mail]').tooltipster('hide');
+      });
+    });
+
+    function cancelWait(day, str) {
+      $(document).ready(function() {
+        $('#cancel-modal').modal();
+        $('#modal-msg-area').hide();
+
+        $('#str_area').html(str);
+        $('input[name=can_event_date]').val(day);
+      });
+    }
+  </script>
+  <!-- Google Tag Manager -->
+    <script>
+    (function(w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', "GTM-K6SZZ9G");
+  </script>
+  <!-- End Google Tag Manager -->
+
+  
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="ns.html" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <header class="header">
+    <div class="header__wrapper">
+      <div class="header__content">
+        <div class="header__title">
+          <h1 class="header__logo">
+            <img src="static/picture/header_logo01.png" alt="投資の達人になる投資講座 2023年度版">
+          </h1>
+          <p class="header__mark">
+            <img src="static/picture/header_image01.png" alt="2時間動画セミナー">
+          </p>
+        </div>
+        <div class="header__info layout--pc">
+          <p class="header__infoTel"></p>
+          <p class="header__infoBusinesshour">全日9:00-18:00受付（一部、長期休暇を除く）</p>
+          <p class="attention">※必ず受付に「投資の達人講座の件」とお伝えください。</p>
+        </div>
+        <div class="header__info layout--sp">
+          <p class="header__infoTel">
+            <a href="tel:0120998385" class="header__infoTelLink">お電話</a>
+        </p>
+        </div>
+      </div>
+      <p class="attention layout--sp">※必ず受付に「投資の達人講座の件」とお伝えください。</p>
+    </div>
+  </header>
+  <!-- /.header -->
+<div class="headerInfo">
+  <div class="headerInfo__wrapper">
+    <p class="headerInfo__text headerInfo__text--date">12/24(日) 23:59まで</p>
+    <p class="headerInfo__text headerInfo__text--emphasis">&emsp;ー&emsp;期間限定キャンペーン実施中！</p>
+    <p class="headerInfo__text headerInfo__text--normal">本編動画に加えて2つの最新動画をプレゼント！</p>
+  </div>
+</div>
+  <section class="mainVisual mainVisual--2283 mainVisual--3871">
+    <div class="mainVisual__wrapper">
+      <div class="mainVisual__content">
+        <p class="mainVisual__ribbon">
+          <picture>
+            <source media="(max-width: 768px)" srcset="/assets/images/renew/common_icon_free02_3871__sp.webp" width="510" height="137">
+            <img src="static/picture/common_icon_free02_shinsa01.png" alt="会場受講5,000円 オンライン受講なら無料公開中" width="218" height="196">
+          </picture>
+        </p>
+        <h2 class="mainVisual__title">
+          <img src="static/picture/mainvisual_title03_3871__pc.webp" alt="未経験の方も安心！ 2時間の動画でプロ講師が徹底解説 毎月収入を得る 投資の始め方" width="1177" height="544">
+        </h2>
+        <h3 class="mainVisual__subTitle">
+          </h3>
+        <p class="mainVisual__comment">
+            <img src="static/picture/mainvisual_text01.png" alt="動画視聴は24時間いつでもどこでもOK！">
+        </p>
+        <div class="mainVisual__blockBottom">
+          <div class="mainVisual__award">
+            <p class="mainVisual__awardTitle">
+              <img src="static/picture/mainvisual_text02_0102.png" alt="累計30万人以上が参加！満足度93%以上！">
+            </p>
+            <p class="mainVisual__awardImage">
+              <img src="static/picture/mainvisual_image_award01.png" alt="投資セミナーの満足度・実用的で信頼できる投資セミナー・投資セミナー投資初心者の満足度・みんなにおすすめしたいセミナー、第1位">
+            </p>
+          </div>
+          <div class="mainVisual__annotation mainVisual__annotation--right">
+            <p class="mainVisual__annotationText">調査方法：インターネット調査 / 調査概要：2021年 11月 / サイトのイメージ調査調査提供：日本トレンドリサーチ</p>
+            <p class="mainVisual__annotationText">※1 Global Financial Schoolの関連イベント含む</p>
+            <p class="mainVisual__annotationText">※2 調査概要：投資の達人講座受講者に向けたアンケートで「やや満足」「満足」を選んだ割合 / 調査期間：2023年2月 / 調査対象人数：307名</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /.mainVisual -->
+<section class="limitedCampaignMinutes limitedCampaignMinutes--2944">
+    <div class="limitedCampaignMinutes__wrapper">
+      <div class="limitedCampaignMinutes__inner">
+        <h2 class="limitedCampaignMinutes__title">
+          <span class="limitedCampaignMinutes__titleLead">
+            <picture>
+              <source srcset="/assets/images/renew03/limitedcampaign_title01__sp.webp" media="(max-width: 767px)" width="612" height="112">
+              <img src="static/picture/limitedcampaign_title01__pc.webp" alt="投資未経験、投資がうまくいっていない方必見" width="625" height="63">
+            </picture>
+          </span>
+          <span class="limitedCampaignMinutes__titleRibbon">
+            <span class="limitedCampaignMinutes__titleRibbonWrapper">
+              <time class="limitedCampaignMinutes__titleRibbonDate"><span class="limitedCampaignMinutes__titleRibbonNumber">12</span>月<span class="limitedCampaignMinutes__titleRibbonNumber">24</span>日(日)</time>
+              <span class="limitedCampaignMinutes__titleRibbonTime">23:59まで</span>
+              <em class="limitedCampaignMinutes__titleRibbonText">お申込者限定特典</em>
+            </span>
+          </span>
+        </h2>
+        <div class="limitedCampaignMinutes__content">
+
+          <div class="limitedCampaignMinutes__appeal">
+            <p class="limitedCampaignMinutes__appealText">本編動画に加えて<br class="layout--pc">さらに<br class="layout--sp"><strong class="limitedCampaignMinutes__appealTextStrong"><em class="limitedCampaignMinutes__appealTextEmphasis">2つの最新動画</em>をプレゼント！</strong></p>
+          </div>
+
+          <div class="limitedCampaignMinutes__specialLecture">
+            <p class="limitedCampaignMinutes__specialLectureTitle">最新特典投資動画</p>
+            <div class="limitedCampaignMinutes__specialLectureContent">
+              <dl class="limitedCampaignMinutes__specialLectureDefinition">
+                <dt class="limitedCampaignMinutes__specialLectureTeam">特典動画<span class="limitedCampaignMinutes__specialLectureTeamNumber">1</span></dt>
+                <dd class="limitedCampaignMinutes__specialLectureDescription">
+                  <p class="limitedCampaignMinutes__specialLectureDescriptionTitle">12月18日以降どんな<br class="layout--sp">投資対象を見ればいいのか</p>
+                  <p class="limitedCampaignMinutes__specialLectureDescriptionText">最新の経済情勢と注目企業を<br class="layout--sp">分かりやすく解説</p>
+                  <p class="limitedCampaignMinutes__specialLectureDescriptionDetail">講師：市川雄一郎 ｜ 30分 ｜ 12月18日撮影</p>
+                </dd>
+              </dl>
+              <dl class="limitedCampaignMinutes__specialLectureDefinition">
+                <dt class="limitedCampaignMinutes__specialLectureTeam">特典動画<span class="limitedCampaignMinutes__specialLectureTeamNumber">2</span></dt>
+                <dd class="limitedCampaignMinutes__specialLectureDescription">
+                  <p class="limitedCampaignMinutes__specialLectureDescriptionTitle">投資が分からなくても<br class="layout--sp">経済的自由になれるのか</p>
+                  <p class="limitedCampaignMinutes__specialLectureDescriptionText">経済的自由になるために<br class="layout--sp">12月18日以降にすべきことを解説</p>
+                  <p class="limitedCampaignMinutes__specialLectureDescriptionDetail">講師：市川雄一郎 ｜ 10分 ｜ 12月18日撮影</p>
+                </dd>
+              </dl>
+            </div>
+          </div>
+
+          <div class="limitedCampaignMinutes__countdown">
+                        <p class="limitedCampaignMinutes__countdownPeriod">申込期限まで残りわずか！</p>
+            <div class="limitedCampaignMinutes__countdownWrap">
+              <div class="limitedCampaignMinutes__countdownItem jsDaycount">
+                <span class="limitedCampaignMinutes__countdownItemNumber jsDaycount__number jsDaycount__number--tens">8</span><span class="limitedCampaignMinutes__countdownItemNumber jsDaycount__number jsDaycount__number--ones">8</span>
+              </div>
+              <p class="limitedCampaignMinutes__countdownUnit">
+                <img src="static/picture/limitedcampaign_minutes_text01.png" alt="日" width="34" height="44">
+              </p>
+              <div class="limitedCampaignMinutes__countdownItem jsHourcount">
+                <span class="limitedCampaignMinutes__countdownItemNumber jsDaycount__number jsDaycount__number--tens">8</span><span class="limitedCampaignMinutes__countdownItemNumber jsDaycount__number jsDaycount__number--ones">8</span>
+              </div>
+              <p class="limitedCampaignMinutes__countdownUnit">
+                <img src="static/picture/limitedcampaign_minutes_text02.png" alt="時間" width="102" height="52">
+              </p>
+              <div class="limitedCampaignMinutes__countdownItem jsMinutescount">
+                <span class="limitedCampaignMinutes__countdownItemNumber jsDaycount__number jsDaycount__number--tens">8</span><span class="limitedCampaignMinutes__countdownItemNumber jsDaycount__number jsDaycount__number--ones">8</span>
+              </div>
+              <p class="limitedCampaignMinutes__countdownUnit">
+                <img src="static/picture/limitedcampaign_minutes_text03.png" alt="分" width="52" height="50">
+              </p>
+            </div>
+            <p class="limitedCampaignMinutes__countdownNote">※達人動画を最後まで見た人に自動で特典の案内がメールで送付されます。<br class="layout--pc">ぜひ２時間の動画を最後まで御覧ください。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /.limitedCampaign -->
+  <section class="aboutCourse">
+    <div class="aboutCourse__box aboutCourse__box--header">
+      <div class="aboutCourse__wrapper">
+        <h2 class="aboutCourse__title">
+          <picture>
+            <source srcset="/assets/images/renew/aboutcourse_title01_1381__pc.png" media="(min-width: 768px)">
+            <img src="static/picture/aboutcourse_title01_1381__sp.png" alt="投資は怖いと思っていませんか？ 損をせず資産を増やせるようになるために 投資を一から学べる講座です" width="541" height="151">
+          </picture>
+        </h2>
+        <div class="aboutCourse__photo">
+          <picture>
+            <source srcset="/assets/images/renew/aboutcourse_image01__pc.png" width="414" height="374" media="(min-width: 768px)">
+            <img src="static/picture/aboutcourse_image01__sp.png" alt="当講座の運営元 Global Financial School (GFS) イメージキャラクター武田鉄矢さん" width="628" height="450">
+          </picture>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /.aboutCourse -->
+
+  <section id="studentCounts" class="studentCounts">
+    <div class="studentCounts__wrapper">
+      <h2 class="studentCounts__title">
+        <img src="static/picture/studentcounts_title01.png" alt="おかげさまで多くの方にご受講いただいております" width="596" height="134">
+      </h2>
+      <div class="studentCounts__boardWrapper">
+        <div class="studentCounts__board">
+          <h3 class="studentCounts__boardTitle">投資の達人になる投資講座　申し込み状況</h3>
+          <ul class="studentCounts__boardList">
+              <li class="studentCounts__listItem">2023年12月20日 <b>560</b>名申し込みました</li>
+              <li class="studentCounts__listItem">2023年12月19日 <b>393</b>名申し込みました</li>
+              <li class="studentCounts__listItem">2023年12月18日 <b>462</b>名申し込みました</li>
+              <li class="studentCounts__listItem">2023年12月17日 <b>1,251</b>名申し込みました</li>
+              <li class="studentCounts__listItem">2023年12月16日 <b>592</b>名申し込みました</li>
+              <li class="studentCounts__listItem">2023年12月15日 <b>524</b>名申し込みました</li>
+              <li class="studentCounts__listItem">2023年12月14日 <b>465</b>名申し込みました</li>
+              <li class="studentCounts__listItem">2023年12月13日 <b>479</b>名申し込みました</li>
+            </ul>
+          <div class="studentCounts__illust layout--pc">
+            <img src="static/picture/studentcounts_image01__pc.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="studentCounts__illust layout--sp">
+        <img src="static/picture/studentcounts_image01__sp.png" alt="">
+      </div>
+    </div>
+
+    <div class="aboutCourse__box aboutCourse__box--body">
+      <div class="aboutCourse__wrapper">
+          <p class="aboutCourse__text">＼お申し込みは<em>わずか30秒</em>／</p>
+        <p class="button button--shadow">
+          <a href="#form" class="button__link">今だけ無料！<br><em>投資動画</em>(2時間)<em>を受け取る</em></a>
+        </p>
+        </div>
+    </div>
+  </section>
+  <!-- /studentCounts -->
+  <section class="oldgeProblem">
+    <div class="oldgeProblem__box oldgeProblem__box--header">
+      <div class="oldgeProblem__wrapper">
+        <p class="oldgeProblem__lead">お金は命を支える水に似ています。<br>水の流れる所に水車を置けば、<br class="layout--sp">水は働く力になります。<br>そのように、<em class="emphasis">お金も働かせる</em>ことが大切です。<br><br>学校では教えてくれなかったお金のこと。<br><em class="emphasis">知識ゼロの未経験者</em>を、<br class="layout--sp"><em class="emphasis">投資で成功</em>に導くのが<br>私たちのミッションです。</p>
+        <h2 class="oldgeProblem__title">
+        </h2>
+      </div>
+    </div>
+    <div class="oldgeProblem__box oldgeProblem__box--body">
+      <div class="oldgeProblem__wrapper">
+        <p class="oldgeProblem__graph">
+          <img src="static/picture/oldgeproblem_text01_shinsa01.png" alt="世界の株価平均値は給料の何倍も上昇 50年間の世界平均株価の動きのグラフ（MSCI ACWIを元に弊社作成）">
+        </p>
+        <p class="oldgeProblem__graphAnnotation">※1 金融審議会 市場ワーキング・グループによる報告書（2019年）</p>
+      </div>
+    </div>
+  </section>
+  <!-- /.oldgeProblem -->
+  <section class="attendanceEfficacy">
+    <div class="attendanceEfficacy__wrapper">
+      <h2 class="attendanceEfficacy__title">
+        <img src="static/picture/attendanceefficacy_title01.png" alt="当講座を視聴すると…">
+      </h2>
+      <ul class="attendanceEfficacy__list">
+        <li class="attendanceEfficacy__item attendanceEfficacy__item--execution">
+          <figure class="attendanceEfficacy__itemImage">
+            <img src="static/picture/attendanceefficacy_image01__sp.jpg" class="layout--sp">
+          </figure>
+          <div class="attendanceEfficacy__itemDetail">
+            <p class="attendanceEfficacy__itemTitle"><em class="emphasis">資産形成の基礎</em>を習得し<br>投資を<em class="emphasis">実行</em>できるようになります。</p>
+            <div class="attendanceEfficacy__itemPoint">
+              <p class="attendanceEfficacy__itemPointText">100円から投資を始める方法や<br>口座開設におすすめの証券会社などもお伝えいたします。</p>
+            </div>
+          </div>
+        </li>
+        <li class="attendanceEfficacy__item attendanceEfficacy__item--relieveanxiety">
+          <figure class="attendanceEfficacy__itemImage">
+            <img src="static/picture/attendanceefficacy_image02__sp.jpg" alt="" class="layout--sp">
+          </figure>
+          <div class="attendanceEfficacy__itemDetail">
+            <p class="attendanceEfficacy__itemTitle">具体的な<em class="emphasis">投資手法</em>が分かり、将来設計ができるため<br class="layout--pc">老後の不安も<em class="emphasis">解消</em>されます。</p>
+            <ul class="attendanceEfficacy__itemPoint">
+              <li class="attendanceEfficacy__itemPointText attendanceEfficacy__itemPointText--list">・複利計算でどのように資産を増やすべきなのか？</li>
+              <li class="attendanceEfficacy__itemPointText attendanceEfficacy__itemPointText--list">・資産を作ったあとは老後資金としてどのように維持しながら<br class="layout--pc">生活費として使うのか？</li>
+            </ul>
+          </div>
+        </li>
+        <li class="attendanceEfficacy__item attendanceEfficacy__item--movie">
+          <figure class="attendanceEfficacy__itemImage">
+            <img src="static/picture/attendanceefficacy_image03__sp.jpg" alt="" class="layout--sp">
+          </figure>
+          <div class="attendanceEfficacy__itemDetail">
+            <p class="attendanceEfficacy__itemTitle">動画は好きな時間に好きな場所で何度でも<br class="layout--sp">視聴可能。<br class="layout--pc"><em class="emphasis">忙しい人</em>でも知識を<em class="emphasis">習得</em>できます。 </p>
+            <div class="attendanceEfficacy__itemPoint">
+              <p class="attendanceEfficacy__itemPointText">動画は再生速度の変更も可能です。 <br>途中で止めても続きから再生できます。</p>
+            </div>
+          </div>
+        </li>
+        <li class="attendanceEfficacy__item attendanceEfficacy__item--nisa">
+          <figure class="attendanceEfficacy__itemImage">
+            <img src="static/picture/attendanceefficacy_image04__sp.jpg" alt="" class="layout--sp">
+          </figure>
+          <div class="attendanceEfficacy__itemDetail">
+            <p class="attendanceEfficacy__itemTitle"><em class="emphasis">NISA</em>で何に投資すれば良いのかが分かります。</p>
+            <div class="attendanceEfficacy__itemPoint">
+              <p class="attendanceEfficacy__itemPointText">NISAのデメリットは、節税という言葉に心を奪われてしまうことです。<br>節税のためではなく、資産を増やすためのNISA活用方法を<br class="layout--pc">お伝えいたします。</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- /.attendanceEfficacy -->
+  <section class="courseDetail">
+    <div class="courseDetail__wrapper">
+      <h2 class="courseDetail__title">
+        <img src="static/picture/coursedetail_title01__pc.png" alt="無料でここまで話してくれるの？大好評の講座内容を公開" class="layout--pc">
+        <img src="static/picture/coursedetail_title01__sp.png" alt="無料でここまで話してくれるの？大好評の講座内容を公開" class="layout--sp">
+      </h2>
+      <div class="courseDetail__lists">
+        <ul class="courseDetail__list">
+          <li class="courseDetail__item">
+            <p class="courseDetail__itemText"><em class="emphasis">投資未経験</em>でもわかる投資の仕組み</p>
+            <ul class="courseDetail__itemPoints">
+              <li class="courseDetail__itemPoint">・投資を<em class="emphasis">100円から始める</em>方法とは？</li>
+              <li class="courseDetail__itemPoint">・FXや暗号資産と株や債券、不動産の違い</li>
+            </ul>
+          </li>
+          <li class="courseDetail__item">
+            <p class="courseDetail__itemText">月収2倍を目指す<em class="emphasis">投資の3ステップ</em></p>
+            <ul class="courseDetail__itemPoints">
+              <li class="courseDetail__itemPoint">・その<em class="emphasis">投資の方程式</em>を公開</li>
+            </ul>
+          </li>
+          <li class="courseDetail__item">
+            <p class="courseDetail__itemText"><em class="emphasis">なにから投資</em>をすれば良いのか</p>
+            <ul class="courseDetail__itemPoints">
+              <li class="courseDetail__itemPoint"><em class="emphasis">・過去数十年ずっと上昇してきたもの</em>とは？</li>
+              <li class="courseDetail__itemPoint">・普段の生活から気付ける株価上昇のポイント</li>
+            </ul>
+          </li>
+          <li class="courseDetail__item">
+            <p class="courseDetail__itemText">口座開設におすすめの<em class="emphasis">証券会社</em></p>
+          </li>
+          <li class="courseDetail__item">
+            <p class="courseDetail__itemText"><em class="emphasis">NISA</em>やiDeCoのお得な使い方</p>
+          </li>
+          <li class="courseDetail__item">
+            <p class="courseDetail__itemText">もっとも<em class="emphasis">お得な保険</em>の入り方</p>
+          </li>
+          <li class="courseDetail__item">
+            <p class="courseDetail__itemText">投資で失敗する人の<em class="emphasis">6つ</em>の共通点</p>
+          </li>
+        </ul>
+        <ul class="courseDetail__list">
+          <li class="courseDetail__item">
+            <p class="courseDetail__itemText">講師の<em class="emphasis">投資実績</em>を公開</p>
+            <ul class="courseDetail__itemPoints">
+              <li class="courseDetail__itemPoint">・実践しているノウハウを解説</li>
+            </ul>
+          </li>
+          <li class="courseDetail__item">
+            <p class="courseDetail__itemText">定期預金で<em class="emphasis">金利6.5％</em>は<br class="layout--pc">なぜ可能なのか？</p>
+          </li>
+          <li class="courseDetail__item">
+            <p class="courseDetail__itemText">投資信託で<em class="emphasis">毎年5%</em>の配当を<br class="layout--pc">もらうには<br class="layout--sp">どうすればいいか</p>
+          </li>
+          <li class="courseDetail__item">
+            <p class="courseDetail__itemText"><em class="emphasis">星野リゾート</em>を保有して<br class="layout--sp">家賃収入<br class="layout--pc"><em class="emphasis">年利10%</em>はなぜ可能なのか</p>
+          </li>
+          <li class="courseDetail__item">
+            <p class="courseDetail__itemText">Amazonにお金を貸して<em class="emphasis">金利4%</em>を<br class="layout--sp">得られるのはどこの証券会社か</p>
+          </li>
+          <li class="courseDetail__item">
+            <p class="courseDetail__itemText">おすすめの<br class="layout--pc">家計シミュレーションサイト<br class="layout--sp">2つ</p>
+          </li>
+          <li class="courseDetail__item courseDetail__item--etc">
+            <p class="courseDetail__itemText"><img src="static/picture/coursedetail_text01__pc.png" alt="この他盛りだくさん！"></p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- /.courseDetail -->
+  <section class="mainInstructor">
+    <div class="mainInstructor__wrapper">
+      <div class="mainInstructor__inner">
+        <h2 class="mainInstructor__title">
+          <img src="static/picture/maininstructor_title01.png" alt="Global Financial School(GFS)校長 市川 雄一郎が講座監修">
+          <span class="mainInstructor__titleComment"><img src="static/picture/maininstructor_title02.png" alt="多数メディアで出演・執筆"></span>
+        </h2>
+          <div class="twitter mainInstructor__twitter">
+            <p class="mainInstructor__twitterTitle">365日/雄一郎の金融配信</p>
+            <a class="twitter-timeline" data-height="430" data-theme="light" href="https://twitter.com/ichikawa_toushi?ref_src=twsrc%5Etfw">Tweets by ichikawa_toushi</a>
+            <script async="" src="static/js/widgets.js" ></script>
+          </div>
+        <div class="mainInstructor__profile jsExpand isOpen">
+          <p class="mainInstructor__profileTitle jsExpand--trigger">市川 雄一郎のプロフィールを見る</p>
+          <div class="mainInstructor__profileWrapper jsExpand--target">
+            <div class="mainInstructor__profileInner">
+              <div class="mainInstructor__profileContent mainInstructor__profileContent--detail">
+                <p class="mainInstructor__profileContentText">国家資格　1級ファイナンシャル・プランニング技能士（資産運用設計業務）<br>世界24カ国のFP国際資格CFP®認定取得　MBAも取得<br>東京証券取引所から日本のお金の専門家10人の1人に選出（他にはさわかみファンドの澤上篤人氏、ひふみ投信の藤野英人氏ら）</p>
+                <p class="mainInstructor__profileContentText">テレビ番組『ホリプレゼンツ求人任三郎がいく！』(2020年1月17日放送)モノマネタレントのホリさんから取材を受けました。<br>BS12「ドランクドラゴンのバカ売れ研究所！」に出演（2020年2月22日放送）テーマは「投資の達人講座は情報が超濃密！」というものです。番組内では株の選び方をドランクドラゴンさんに伝授。<br>その他テレビ、ラジオ等出演多数（お宅訪問家計見直しや番組監修なども）<br>「会社四季報」編集長と共同セミナーも行う。</p>
+                <p class="mainInstructor__profileContentText">各メディアにて取材、寄稿、監修多数<br>日本経済新聞、日経ベリタス、読売新聞、朝日新聞、静岡新聞、東洋経済、住宅新報社、プレジデント、 ネットマネー、ダイヤモンド Zai、週刊ダイヤモンド、ラジオ日経、野村證券、大和証券、新生銀行、日本郵政グループ、日本生命、住友生命、アクサ生命 ほか多数）</p>
+                <p class="mainInstructor__profileContentText">ソフトバンクグループのサイバー大学講師として「資産運用実践論」「ファイナンシャル・プランニング入門」を担当し、ともに人気科目となっている。</p>
+              </div>
+              <div class="mainInstructor__profileContent mainInstructor__profileContent--pickup">
+                <ul class="mainInstructor__profileContentList">
+                  <li class="mainInstructor__profileContentItem">
+                    <div class="mainInstructor__profileContentItemImage">
+                      <img src="static/picture/maininstructor_image01.jpg" alt="">
+                    </div>
+                    <p class="mainInstructor__profileContentItemTitle">2021年<em class="emphasis">フジテレビ<br class="layout--pc">「日曜報道」</em>に出演</p>
+                  </li>
+                  <li class="mainInstructor__profileContentItem">
+                    <div class="mainInstructor__profileContentItemImage">
+                      <img src="static/picture/maininstructor_image02.jpg" alt="">
+                    </div>
+                    <p class="mainInstructor__profileContentItemTitle">投資の達人講座が<br class="layout--pc"><em class="emphasis">ドランクドラゴンさん</em>の<br><em class="emphasis">テレビ番組</em>で取材されました</p>
+                  </li>
+                  <li class="mainInstructor__profileContentItem">
+                    <div class="mainInstructor__profileContentItemImage">
+                      <img src="static/picture/maininstructor_image03.jpg" alt="">
+                    </div>
+                    <p class="mainInstructor__profileContentItemTitle">特別対談！<br class="layout--pc"><em class="emphasis">市川雄一郎 & 武田鉄矢<span>さん</span></em></p>
+                  </li>
+                </ul>
+              </div>
+              <div class="mainInstructor__profileContent mainInstructor__profileContent--media">
+                <ul class="mainInstructor__profileContentList">
+                  <li class="mainInstructor__profileContentItem">
+                    <div class="mainInstructor__profileContentItemImage">
+                      <img src="static/picture/maininstructor_captcha01.jpg" alt="">
+                    </div>
+                    <p class="mainInstructor__profileContentItemText">「PRESIDENT Online」<br>で記事を執筆</p>
+                  </li>
+                  <li class="mainInstructor__profileContentItem">
+                    <div class="mainInstructor__profileContentItemImage">
+                      <img src="static/picture/maininstructor_captcha02.jpg" alt="">
+                    </div>
+                    <p class="mainInstructor__profileContentItemText">「DIAMOND online」で<br>記事を執筆</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /.mainInstructor -->
+  <section class="courseMovie">
+    <div class="courseMovie__wrapper">
+      <h2 class="courseMovie__title">
+        <img src="static/picture/coursemovie_title01__pc.png" alt="投資の達人講座を4分40秒の動画で解説">
+      </h2>
+      <div class="movie">
+        <video-js data-account="5974301517001" data-player="gkP9ytinq" data-embed="default" controls="" data-video-id="6300081887001" data-playlist-id="" data-application-id="" class="vjs-fluid"></video-js>
+        <script src="static/js/index.min.js"></script>
+      </div>
+    </div>
+  </section>
+  <!-- /.courseMovie -->
+  <div class="applyInduction">
+    <div class="applyInduction__wrapper">
+      <div class="applyInduction__contents">
+        <p class="applyInduction__text">＼お申し込みは<em>わずか30秒</em>／</p>
+        <p class="button button--shadow">
+
+            <a href="#form" class="button__link">無料公開中！<br><em>投資動画</em>(2時間)<em>を受け取る</em></a>
+        </p>
+        <div class="applyInduction__photo layout--pc">
+          <img src="static/picture/applyinduction_image01.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.applyInduction -->
+  <section class="courseDocument">
+    <div class="courseDocument__wrapper">
+      <h2 class="courseDocument__title">
+        <img src="static/picture/coursedocument_title01.png" alt="当講座では投資の全体像を基本的なことから発展編まで 一気に学ぶことができます">
+      </h2>
+      <div class="courseDocument__point">
+        <img src="static/picture/coursedocument_image01__pc.png" alt="Point 出版した書籍が現在もAmazonランキング上位。講座では書籍には書けなかった過激な内容をお伝えします。" class="layout--pc">
+        <img src="static/picture/coursedocument_image01__sp.png" alt="出版した書籍が現在もAmazonランキング上位。講座では書籍には書けなかった過激な内容をお伝えします。" class="layout--sp">
+      </div>
+      <div class="courseDocument__example">
+        <p class="courseDocument__exampleTitle">
+          <span>実</span><span>際</span><span>の</span><span>講</span><span>座</span><span>資</span><span>料</span>
+        </p>
+        <div class="courseDocument__exampleImage">
+          <picture>
+            <source srcset="/assets/images/renew/coursedocument_image02__sp.png" media="(max-width: 767px)" width="710" height="860">
+            <img src="static/picture/coursedocument_image02__pc.png" alt="GFS式投資全体MAP、車の両輪、GFS式投資の3ステージ、5％配当の投資信託、証券会社はどこがいい？" width="960" height="496">
+          </picture>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /.courseDocument -->
+  <section class="monitorResults">
+    <div class="monitorResults__box monitorResults__box--header">
+      <div class="monitorResults__wrapper">
+        <p class="monitorResults__lead"><em>素人</em>でも<em>初心者</em>でも投資で成功するための<br><span class="monitorResults__leadKnowhow"><em class="monitorResults__leadPoint">ノウハウ</em><small class="monitorResults__leadMark">※1</small></span>を知ることができます</p>
+        <h2 class="monitorResults__title">
+          <img src="static/picture/monitorresults_title01__pc.png" alt="Twitterで モニター3名(未経験者の主婦)を 募集し、当講座の動画を視聴していただきました。">
+        </h2>
+        <p class="monitorResults__text">証券口座を開設し、<br class="layout--sp">投資を実行していただくと…</p>
+      </div>
+    </div>
+    <div class="monitorResults__box monitorResults__box--body">
+      <div class="monitorResults__wrapper">
+        <p class="monitorResults__lead">
+          <img src="static/picture/monitorresults_text01.png" alt="投資未経験者3名の結果発表">
+        </p>
+        <div class="monitorResults__photo">
+          <img src="static/picture/monitorresults_image01.png" alt="">
+        </div>
+        <h2 class="monitorResults__title">
+          <img src="static/picture/monitorresults_title02.png" alt="3名とも約1年で資金が2倍以上に増えました！">
+        </h2>
+        <p class="monitorResults__conversation">
+          <img src="static/picture/monitorresults_text02__pc.png" alt="当時のAさんとのやりとりの一部" class="layout--pc">
+          <img src="static/picture/monitorresults_text02__sp.png" alt="当時のAさんとのやりとりの一部" class="layout--sp">
+        </p>
+        <div class="monitorResults__allmember">
+          <p class="monitorResults__allmemberTitle">モニターさんの運用結果</p>
+
+
+          <p class="monitorResults__allmemberText">
+            <img src="static/picture/monitorresults_text03_807__pc.png" alt="結果" class="layout--pc">
+            <img src="static/picture/monitorresults_text03_807__sp.png" alt="結果" class="layout--sp">
+          </p>
+        </div>
+        <p class="monitorResults__annotation">※1 資産運用の成果は個人によって異なります。当講座内容は将来の運用成果を保証するものではありません。</p>
+      </div>
+    </div>
+  </section>
+  <!-- /.monitorResults -->
+  <section class="uniqueInformation">
+    <div class="uniqueInformation__wrapper">
+      <div class="uniqueInformation__content">
+        <h2 class="uniqueInformation__title">
+          <img src="static/picture/uniqueinformation_title01.png" alt="他では手に入らない独自のお得情報も！">
+        </h2>
+        <div class="uniqueInformation__document layout--sp">
+          <figucaption class="uniqueInformation__documentText">実際の講座資料</figucaption>
+          <figure class="uniqueInformation__documentImage">
+            <img src="static/picture/uniqueinformation_image01.png" alt="実際の証券口座のサンプル資料">
+          </figure>
+        </div>
+        <div class="uniqueInformation__point">
+          <p class="uniqueInformation__pointText">実際に投資で<em class="emphasis">結果を出している講師</em>が、<br>証券口座を見せながら<br class="layout--sp">実践的なお話をします。</p>
+        </div>
+      </div>
+      <div class="uniqueInformation__document layout--pc">
+        <figucaption class="uniqueInformation__documentText">実際の講座資料</figucaption>
+        <figure class="uniqueInformation__documentImage">
+          <img src="static/picture/uniqueinformation_image01.png" alt="実際の証券口座のサンプル資料">
+        </figure>
+      </div>
+    </div>
+  </section>
+  <!-- /.uniqueInformation -->
+  <div class="applyInduction">
+    <div class="applyInduction__wrapper">
+      <div class="applyInduction__contents">
+        <p class="applyInduction__text">＼お申し込みは<em>わずか30秒</em>／</p>
+        <p class="button button--shadow">
+
+            <a href="#form" class="button__link">無料公開中！<br><em>投資動画</em>(2時間)<em>を受け取る</em></a>
+        </p>
+        <div class="applyInduction__photo layout--pc">
+          <img src="static/picture/applyinduction_image01.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.applyInduction -->
+<section class="participantComments">
+  <div class="participantComments__wrapper">
+    <h2 class="participantComments__title">
+      <img src="static/picture/participantcomments_title01.png" alt="受講者の満足度は93%" width="684" height="216">
+    </h2>
+    <ul class="participantComments__list">
+      <li class="participantComments__item participantComments__item--type01">
+        <p class="participantComments__itemText">
+          <img src="static/picture/participantcomments_text01.png" alt="投資の基本的な考え方をしっかりと説明してくれたので良かったです。投資で資産を増やすには勉強が大切だと思いました。">
+        </p>
+        <div class="participantComments__itemImage participantComments__itemImage--type01">
+          <img src="static/picture/participantcomments_image01.png" alt="">
+        </div>
+      </li>
+      <li class="participantComments__item participantComments__item--type02">
+        <p class="participantComments__itemText">
+          <img src="static/picture/participantcomments_text02.png" alt="２時間は長いなと思って、見始めたのですが、気がついたらあっという間に終わっていて、もっと知りたいとなりました。他の無料セミナーでは中身がないことも多かったのでこれだけ濃密な情報が期間限定とはいえ無料というのは凄いと思いました。早速、いくつか投資を開始します。">
+        </p>
+        <div class="participantComments__itemImage participantComments__itemImage--type02">
+          <img src="static/picture/participantcomments_image02.png" alt="">
+        </div>
+      </li>
+    </ul>
+    <p class="participantComments__supplementText">※視聴者の感想のため、感じ方には個人差があります。また当講座内容は将来の運用成果を保証するものではありません</p>
+    <h3 class="participantComments__subTitle">
+      <img src="static/picture/participantcomments_title02.png" alt="動画視聴者88人の声">
+    </h3>
+    <div class="movie">
+      <video-js data-account="5974301517001" data-player="gkP9ytinq" data-embed="default" controls="" data-video-id="6300072521001" data-playlist-id="" data-application-id="" class="vjs-fluid"></video-js>
+      <script src="static/js/index.min.js"></script>
+    </div>
+  </div>
+</section>
+<!-- /.participantComments -->
+  <section class="limitedtimePrice">
+    <div class="limitedtimePrice__wrapper">
+      <h2 class="limitedtimePrice__title">
+            <img src="static/picture/limitedtimeprice_title01_gsnisa.png" alt="感染症でダメージを受けた日本に貢献するため受講料5,000円が無料">
+      </h2>
+      <div class="limitedtimePrice__content">
+          <p class="limitedtimePrice__lead -gsnisa"><em class="emphasis">早めに登録</em>し<em class="emphasis emphasis--superlative">後日視聴</em>も<br class="layout--pc">おすすめです。</p>
+        <div class="limitedtimePrice__point">
+          <img src="static/picture/limitedtimeprice_image01__pc.png" alt="動画はスキマ時間で少しずつ見ることもできます">
+        </div>
+      </div>
+      <p class="limitedtimePrice__text">お申込み後すぐに視聴画面に切り替わり、<br>動画を視聴することができます。</p>
+    </div>
+  </section>
+  <!-- /.limitedtimePrice -->
+  <section class="bonusGift">
+    <div class="bonusGift__wrapper">
+      <h2 class="bonusGift__title">
+        <img src="static/picture/bonusgift_title01.png" alt="本サイト限定 ６つの特典をプレゼント！" width="515" height="105">
+      </h2>
+      <p class="bonusGift__lead">ご希望があれば投資の相談にも乗ります。</p>
+      <p class="bonusGift__text">
+        <picture>
+          <source srcset="/assets/images/renew/bonusgift_text01__sp.png?230519" alt="特別感謝記念セット 動画視聴者無料プレゼント" media="(max-width: 767px)" width="748" height="964">
+          <img src="static/picture/bonusgift_text01__pc.png" alt="特別感謝記念セット 動画視聴者無料プレゼント" width="948" height="502">
+        </picture>
+      </p>
+      <p class="attention">※画像はイメージです。<br class="layout--sp">※キャンペーンは予告なく終了する場合がございます。<br class="layout--sp">あらかじめご了承ください。<br>※記念セットの受け取り方法は講座内で案内がございます。<br class="layout--sp">※表示価格は税込みになります。</p>
+    </div>
+  </section>
+  <!-- /.bonusGift -->
+<section class="limitedCampaignMinutes limitedCampaignMinutes--2944">
+    <div class="limitedCampaignMinutes__wrapper">
+      <div class="limitedCampaignMinutes__inner">
+        <h2 class="limitedCampaignMinutes__title">
+          <span class="limitedCampaignMinutes__titleLead">
+            <picture>
+              <source srcset="/assets/images/renew03/limitedcampaign_title01__sp.webp" media="(max-width: 767px)" width="612" height="112">
+              <img src="static/picture/limitedcampaign_title01__pc.webp" alt="投資未経験、投資がうまくいっていない方必見" width="625" height="63">
+            </picture>
+          </span>
+          <span class="limitedCampaignMinutes__titleRibbon">
+            <span class="limitedCampaignMinutes__titleRibbonWrapper">
+              <time class="limitedCampaignMinutes__titleRibbonDate"><span class="limitedCampaignMinutes__titleRibbonNumber">12</span>月<span class="limitedCampaignMinutes__titleRibbonNumber">24</span>日(日)</time>
+              <span class="limitedCampaignMinutes__titleRibbonTime">23:59まで</span>
+              <em class="limitedCampaignMinutes__titleRibbonText">お申込者限定特典</em>
+            </span>
+          </span>
+        </h2>
+        <div class="limitedCampaignMinutes__content">
+
+          <div class="limitedCampaignMinutes__appeal">
+            <p class="limitedCampaignMinutes__appealText">本編動画に加えて<br class="layout--pc">さらに<br class="layout--sp"><strong class="limitedCampaignMinutes__appealTextStrong"><em class="limitedCampaignMinutes__appealTextEmphasis">2つの最新動画</em>をプレゼント！</strong></p>
+          </div>
+
+          <div class="limitedCampaignMinutes__specialLecture">
+            <p class="limitedCampaignMinutes__specialLectureTitle">最新特典投資動画</p>
+            <div class="limitedCampaignMinutes__specialLectureContent">
+              <dl class="limitedCampaignMinutes__specialLectureDefinition">
+                <dt class="limitedCampaignMinutes__specialLectureTeam">特典動画<span class="limitedCampaignMinutes__specialLectureTeamNumber">1</span></dt>
+                <dd class="limitedCampaignMinutes__specialLectureDescription">
+                  <p class="limitedCampaignMinutes__specialLectureDescriptionTitle">12月18日以降どんな<br class="layout--sp">投資対象を見ればいいのか</p>
+                  <p class="limitedCampaignMinutes__specialLectureDescriptionText">最新の経済情勢と注目企業を<br class="layout--sp">分かりやすく解説</p>
+                  <p class="limitedCampaignMinutes__specialLectureDescriptionDetail">講師：市川雄一郎 ｜ 30分 ｜ 12月18日撮影</p>
+                </dd>
+              </dl>
+              <dl class="limitedCampaignMinutes__specialLectureDefinition">
+                <dt class="limitedCampaignMinutes__specialLectureTeam">特典動画<span class="limitedCampaignMinutes__specialLectureTeamNumber">2</span></dt>
+                <dd class="limitedCampaignMinutes__specialLectureDescription">
+                  <p class="limitedCampaignMinutes__specialLectureDescriptionTitle">投資が分からなくても<br class="layout--sp">経済的自由になれるのか</p>
+                  <p class="limitedCampaignMinutes__specialLectureDescriptionText">経済的自由になるために<br class="layout--sp">12月18日以降にすべきことを解説</p>
+                  <p class="limitedCampaignMinutes__specialLectureDescriptionDetail">講師：市川雄一郎 ｜ 10分 ｜ 12月18日撮影</p>
+                </dd>
+              </dl>
+            </div>
+          </div>
+
+          <div class="limitedCampaignMinutes__countdown">
+                        <p class="limitedCampaignMinutes__countdownPeriod">申込期限まで残りわずか！</p>
+            <div class="limitedCampaignMinutes__countdownWrap">
+              <div class="limitedCampaignMinutes__countdownItem jsDaycount">
+                <span class="limitedCampaignMinutes__countdownItemNumber jsDaycount__number jsDaycount__number--tens">8</span><span class="limitedCampaignMinutes__countdownItemNumber jsDaycount__number jsDaycount__number--ones">8</span>
+              </div>
+              <p class="limitedCampaignMinutes__countdownUnit">
+                <img src="static/picture/limitedcampaign_minutes_text01.png" alt="日" width="34" height="44">
+              </p>
+              <div class="limitedCampaignMinutes__countdownItem jsHourcount">
+                <span class="limitedCampaignMinutes__countdownItemNumber jsDaycount__number jsDaycount__number--tens">8</span><span class="limitedCampaignMinutes__countdownItemNumber jsDaycount__number jsDaycount__number--ones">8</span>
+              </div>
+              <p class="limitedCampaignMinutes__countdownUnit">
+                <img src="static/picture/limitedcampaign_minutes_text02.png" alt="時間" width="102" height="52">
+              </p>
+              <div class="limitedCampaignMinutes__countdownItem jsMinutescount">
+                <span class="limitedCampaignMinutes__countdownItemNumber jsDaycount__number jsDaycount__number--tens">8</span><span class="limitedCampaignMinutes__countdownItemNumber jsDaycount__number jsDaycount__number--ones">8</span>
+              </div>
+              <p class="limitedCampaignMinutes__countdownUnit">
+                <img src="static/picture/limitedcampaign_minutes_text03.png" alt="分" width="52" height="50">
+              </p>
+            </div>
+            <p class="limitedCampaignMinutes__countdownNote">※達人動画を最後まで見た人に自動で特典の案内がメールで送付されます。<br class="layout--pc">ぜひ２時間の動画を最後まで御覧ください。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /.limitedCampaign -->
+  <!-- <section class="formArea" id="form">
+    <div class="formArea__wrapper">
+      <h2 class="formArea__title">
+        <img src="static/picture/formarea_title01__pc.png" alt="投資動画の受け取りはこちら" class="layout--pc">
+        <img src="static/picture/formarea_title01__sp.png" alt="投資動画の受け取りはこちら" class="layout--sp">
+      </h2>
+      <p class="formArea__ribbon">
+          <img src="static/picture/common_icon_free02_shinsa01.png" alt="通常5,000円 オンライン受講なら無料公開中">
+      </p>
+      <div class="formArea__announce">
+        <p class="attention">※予告なく無料公開を終了する場合がございます。<br class="layout--sp">あらかじめご了承ください。</p>
+        <p class="formArea__announceNote">下記お申し込み後、<br class="layout--sp">10分以内に<em>toushi@manebu.jp</em>から<br class="layout--sp">動画視聴のためのURLがメールで届きます。<br>メールをよくお読みください。
+        </p>
+      </div>
+      <div class="formArea__content">
+        <p class="empty-item">未入力・未選択項目が残り<span class="length">1</span>箇所あります。</p>
+                    <form id="applyForm1" method="POST" action="entry.html" class="jsApplyForm01">
+              <input type="hidden" name="Act" value="entry">
+                        <input type="hidden" name="Code" value="4jR93g">
+            <input type="hidden" name="ret_path" value="fb0101d.html">
+            <input type="hidden" name="mirai_id" value="">
+            <input type="hidden" name="mirai_suffix" value="">
+            <input type="hidden" name="f_token" value="d9j31odjep3k">
+            <input type="hidden" name="request_uri" value="/cfm/fb0101d.html?">
+                          <input type="hidden" name="" value="0">
+                          <input type="hidden" name="_token" value="oAGmzgJFUb4lJIBtcJbTGh118f2zAjTE55txITKN">
+                          <input type="hidden" name="event_form_id" value="13">
+                          <input type="hidden" name="event_id" value="1">
+                          <input type="hidden" name="event_entry_id" value="">
+                          <input type="hidden" name="type[0]" value="メールアドレス">
+                          <input type="hidden" name="item[0]" value="メールアドレス">
+                          <input type="hidden" name="type[1]" value="お名前">
+                          <input type="hidden" name="item[1]" value="お名前">
+                          <input type="hidden" name="type[2]" value="ふりがな">
+                          <input type="hidden" name="item[2]" value="ふりがな">
+                          <input type="hidden" name="type[3]" value="携帯電話">
+                          <input type="hidden" name="item[3]" value="携帯電話">
+                          <input type="hidden" name="type[4]" value="開催日時">
+                          <input type="hidden" name="item[4]" value="参加日時">
+                          <input type="hidden" name="type[5]" value="１行テキスト">
+                          <input type="hidden" name="item[5]" value="ご紹介者(いる場合)">
+                          <input type="hidden" name="type[6]" value="固定値（非表示）">
+                          <input type="hidden" name="item[6]" value="種別">
+                          <input type="hidden" name="val[6]" value="広告">
+                          <input type="hidden" name="_token" value="oAGmzgJFUb4lJIBtcJbTGh118f2zAjTE55txITKN">
+                          <input type="hidden" name="event_form_id" value="13">
+                          <input type="hidden" name="event_id" value="1">
+                          <input type="hidden" name="event_date" value="">
+                        <input type="hidden" name="C01" value="オンライン動画受講">
+                        <div class="formArea__table">
+              <dl class="formArea__tableItem">
+                <dt class="formArea__tableHeader"><span class="required">メールアドレス</span></dt>
+                <dd class="formArea__tableBody">
+                  <input type="email" inputmode="email" name="Mail" placeholder="例) school@manebu.jp" value="" class="formArea__tableBodyInput required-item" data-half="true">
+                  <p class="attention">
+                    ※下記のメールアドレスをお使いの方は<br>【toushi@manebu.jp】からのメールの受信設定をONにしてください。<br>@docomo.ne.jp @ezweb.ne.jp @hotmail.co.jp @icloud.com @me.com @mac.com</p>
+                  <p class="formArea__tableBodyText">・受信設定方法は
+                    <a href="https://sites.google.com/apie.jp/globalfinancialschool/" target="_blank" rel="noreferrer">こちら</a>
+                  </p>
+                  <p class="formArea__tableBodyText">・お問い合わせはこちら<br>電話：0120-99-8385<br>全日9:00-18:00受付<em class="supplement">（一部、長期休暇を除く)</em><br>メール：<a href="mailto:school@manebu.jp?subject=GFS%E3%81%8A%E7%94%B3%E3%81%97%E8%BE%BC%E3%81%BF%E3%81%AE%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B&amp;">school@manebu.jp</a><br class="layout--sp"><em>※ご返答までに最大2営業日かかる場合があります。</em></p>
+                </dd>
+              </dl>
+              <dl class="formArea__tableItem">
+                <dt class="formArea__tableHeader"><span class="required">お名前 (姓・名)</span></dt>
+                <dd class="formArea__tableBody">
+                  <input type="text" class="formArea__tableBodyInput required-item" name="NameSei" placeholder="例) 田町" value="">
+                  <input type="text" class="formArea__tableBodyInput required-item" name="NameMei" placeholder="例) 太郎" value="">
+                </dd>
+              </dl>
+              <dl class="formArea__tableItem">
+                <dt class="formArea__tableHeader"><span class="required">ふりがな (姓・名)</span></dt>
+                <dd class="formArea__tableBody">
+                  <input type="text" class="formArea__tableBodyInput required-item" name="RubySei" placeholder="例) たまち" value="" data-kana="true">
+                  <input type="text" class="formArea__tableBodyInput required-item" name="RubyMei" placeholder="例) たろう" value="" data-kana="true">
+                </dd>
+              </dl>
+              <dl class="formArea__tableItem">
+                <dt class="formArea__tableHeader"><span class="required">携帯電話番号</span></dt>
+                <dd class="formArea__tableBody">
+                  <input type="text" inputmode="numeric" class="formArea__tableBodyInput required-item" maxlength="11" name="MobileTel" placeholder="09000001111" autocomplete="tel" value="" data-half="true">
+                  <p class="attention">※期間限定の無料公開により、不正なお申し込みを防止するため必要になります。</p>
+                  <p class="attention">※メールエラーの場合はショートメッセージを<br class="layout--sp">お送りいたします。</p>
+                </dd>
+              </dl>
+                <dl class="formArea__tableItem">
+                  <dt class="formArea__tableHeader"><span class="required">参加方法</span></dt>
+                  <dd class="formArea__tableBody">
+                    <p class="formArea__tableBodyText">受講方法を下記2つから選択してください。</p>
+                    <p class="attention">
+                      <em>※現在は「オンライン受講のみ」になります</em>
+                    </p>
+                    <label class="formArea__tableBodyInput__label"><input type="radio" inputmode="radio" name="Participate" value="オンライン動画受講" class="formArea__tableBodyInput required-item" data-half="true" checked="checked">オンラインで動画を視聴する</label>
+                    <label class="formArea__tableBodyInput__label"><input type="radio" inputmode="radio" name="Participate" value="セミナー会場受講" class="formArea__tableBodyInput required-item" data-half="true" disabled="disabled">セミナー会場で受講する<br class="layout--sp">（受講費5,000円）</label>
+                    <p class="attention">
+                      <em>※現在はコロナ対策で休止中となっております</em>
+                    </p>
+                  </dd>
+                </dl>
+              <p class="formArea__balloon">ボタンを押すと、<br class="layout--sp">すぐにメールで動画視聴リンクが届きます。<br>好きな時間に好きな場所で<br class="layout--sp">ゆっくりお楽しみください。</p>
+              <button type="submit" value="" class="send-btn button button--submit button--shadow">上記の内容で動画を受け取る</button>
+              <p class="formArea__privacy">※<a href="https://freelifegroup.jp/privacy/?_ebx=ffdhwdlde.1594634609.7kkxhrl" target="_blank" rel="noopener noreferrer">個人情報保護方針</a>に同意の上でお進みください。</p>
+            </div>
+            </form>
+      </div>
+    </div>
+  </section> -->
+  <!-- /.formArea-->
+  <section class="ourAchievements">
+    <div class="ourAchievements__wrapper">
+      <h2 class="ourAchievements__title">
+        <img src="static/picture/ourachievements_title01__pc.png" alt="運営元は信頼と実績のGlobal Financial School" class="layout--pc">
+        <img src="static/picture/ourachievements_title01__sp.png" alt="運営元は信頼と実績のGlobal Financial School" class="layout--sp">
+      </h2>
+      <div class="ourAchievements__photo">
+        <img src="static/picture/ourachievements_image02.png" alt="">
+      </div>
+      <div class="ourAchievements__award">
+        <div class="ourAchievements__awardImage">
+          <img src="static/picture/ourachievements_image01__pc.png" alt="おかげさまで4冠達成!生徒数日本一 講義数日本一 講義時間数日本一 講師数日本一" class="layout--pc">
+          <img src="static/picture/ourachievements_image01__sp.png" alt="おかげさまで4冠達成!生徒数日本一 講義数日本一 講義時間数日本一 講師数日本一" class="layout--sp">
+        </div>
+        <p class="attention">調査実施期間：2022年9月～10月■生徒数：2021年以降の入学生徒で調査時点でも在籍する生徒数。教室コースのみの生徒は除く■講義数：動画1つを1講義とカウントする。■講義時間数：動画の合計時間■動画講義を担当している講師の数■調査対象範囲：日本国内（全国）</p>
+      </div>
+    </div>
+  </section>
+  <!-- /.ourAchievements -->
+  <section class="faq">
+    <div class="faq__wrapper">
+      <div class="faq__title">
+        <img src="static/picture/faq_title01.png" alt="よくある質問">
+      </div>
+      <ul class="faq__list">
+        <li class="faq__item jsExpand isOpen">
+          <dl class="faq__itemInner">
+            <dt class="faq__itemQuestion jsExpand--trigger">オンライン受講でも特別感謝記念セットはもらえますか？</dt>
+            <dd class="faq__itemAnswer jsExpand--target">
+              <p class="faq__itemAnswerText">はい。記念セットの受け取り方法については講義動画内で案内がございます。<br><span class="attention">※キャンペーンは予告なく終了する場合がございます。あらかじめご了承ください。</span></p>
+            </dd>
+          </dl>
+        </li>
+        <li class="faq__item jsExpand">
+          <dl class="faq__itemInner">
+            <dt class="faq__itemQuestion jsExpand--trigger">オンライン動画受講はスマートフォンでも視聴可能ですか？</dt>
+            <dd class="faq__itemAnswer jsExpand--target">
+              <p class="faq__itemAnswerText">オンライン動画受講はお申し込みから7日間、好きな時間、好きな場所でご視聴いただけます。<br>パソコン以外にもスマートフォンやタブレットでご視聴可能です。</p>
+              <p class="faq__itemAnswerText">弊社独自の動画配信システムを利用しており、登録や費用は一切発生しません。</p>
+            </dd>
+          </dl>
+        </li>
+        <li class="faq__item jsExpand">
+          <dl class="faq__itemInner">
+            <dt class="faq__itemQuestion jsExpand--trigger">なぜオンライン受講が無料なのですか？</dt>
+            <dd class="faq__itemAnswer jsExpand--target">
+              <p class="faq__itemAnswerText">当講座は2020年3月末まで有料でしたが、新型コロナウイルスに関する皆様の経済状況を考え、社会貢献の一環として無料開放することに致しました。<br>いずれ有料に戻させて頂く予定でございます。</p>
+            </dd>
+          </dl>
+        </li>
+        <li class="faq__item jsExpand">
+          <dl class="faq__itemInner">
+            <dt class="faq__itemQuestion jsExpand--trigger">他社の投資講座と何が違いますか？</dt>
+            <dd class="faq__itemAnswer jsExpand--target">
+              <p class="faq__itemAnswerText">まず情報源が違います。<br>私たちは書籍に書いてあるようなことをそのまま講義するということはいたしません。実際に私たちでも投資を行っているからこそのオリジナルの体験談や、オリジナルの投資分析方法、オリジナルの投資情報がございます。<br>例えばETFは東証の規則により必ず配当を出さなければいけないことになっており、アメリカも同様です。しかしある場所ではそうではありません。また、ある国の国債をよいタイミングで買えば金利が9％以上になります。しかし国債情報はインターネットで検索しても書籍を見ても出てきません。また個別株投資の分析についても講義の中でやらせや台本無しでライブで分析します。</p>
+              <p class="faq__itemAnswerText">つまり、講義内容の“濃さ”と“本物度合い”が最も他社と異なる部分だと思います。</p>
+            </dd>
+          </dl>
+        </li>
+        <li class="faq__item jsExpand">
+          <dl class="faq__itemInner">
+            <dt class="faq__itemQuestion jsExpand--trigger">他にも投資に詳しそうな人がブログやTwitter、YouTubeをやっておりますが？</dt>
+            <dd class="faq__itemAnswer jsExpand--target">
+              <p class="faq__itemAnswerText">日本には1億2500万人の人がおりますので、色々な人が色々な場所で発信をしています。どの情報が正しくて、どの情報が間違っているのか、判断するのはとても難しいことです。なぜなら、情報が間違っていても多くの人は責任をとらなくてよいのですから。したがって、情報を判断するためにはまず責任追及できることが大事です。<br>情報発信者の名前、所在、組織、規模、ビジネス、社員数等々、それらがしっかりしているか確かめてください。それらが隠されている場合は信用しない方がいいです。責任をとらなくていい情報というのはいい加減なものです。</p>
+            </dd>
+          </dl>
+        </li>
+        <li class="faq__item jsExpand">
+          <dl class="faq__itemInner">
+            <dt class="faq__itemQuestion jsExpand--trigger">2時間の動画講座だけで投資の知識全部が手に入りますか？</dt>
+            <dd class="faq__itemAnswer jsExpand--target">
+              <p class="faq__itemAnswerText">かなり熱意を込めて作った講義です。きっと満足頂けると考えています。<br>しかし物事に終わりはありません。<br>例えば料理を作る場合、美味しい料理を作る方法を教えてもらっても、それだけで全ての料理を作ることは出来ません。他にも料理はありますし、もっと美味しい料理が発明されるかもしれません。しかしまず１つ美味しい料理を覚えることが大切なのです。<br>この「投資の達人になる投資講座」では10個ほど投資に関するノウハウをお教えしますので、それでまずは満足してください。他の料理も覚えたくなったなら、ぜひ他の料理にもチャレンジしてみてください。<br>一緒に美味しい料理を作りましょう。</p>
+            </dd>
+          </dl>
+        </li>
+        <li class="faq__item jsExpand">
+          <dl class="faq__itemInner">
+            <dt class="faq__itemQuestion jsExpand--trigger">楽して不労所得で悠々自適に暮せますか？お金がお金を生み出しますか？</dt>
+            <dd class="faq__itemAnswer jsExpand--target">
+              <p class="faq__itemAnswerText">もしも楽して稼げるならば、なぜ誰も楽して稼いでいないのでしょうか？楽して稼いでいる人をちゃんと見たことはありますか？確認したことはありますか？本当は必死なのに、楽して稼いでいるように装っている人はいます。<br>しかし本当に楽して稼いでいる人をその目で確認したことはないですよね？それが真実です。人類が誕生して以来、そのようなことはありませんでした。</p>
+              <p class="faq__itemAnswerText">6000年前、バビロニアにて金貸しというものがスタートし大きな財産を作る人が誕生しましたが、やはりそれなりに努力家でした。あれから6000年経過しましたが、楽をして稼ぐ人は誕生していません。もしも楽をして稼ぐ人がいれば、その人の真似をする人が登場し、楽をして稼げなくなるまで真似する人が増えます。そして、稼げなくなると真似する人の増加はストップします。</p>
+              <p class="faq__itemAnswerText">しかし、皆さんにおすすめの方法があります。楽をしないで稼ぐのです。これなら可能です。人よりも少し努力すると少し稼ぎが増えます。他の人は努力が嫌いだから永遠に追いつかれることはありません。<br>どのような努力かというと、「投資の達人になる投資講座」に参加するという努力です。延べ参加人数30万人を超えていますが、それでも日本の人口1億2500万人からすると、わずか0.25%ほどです。努力する人は少ないです。ちなみに日本で1億円以上の資産を保有する世帯は7.1％もありますから、実は少しの努力だけで富裕層になれるということなのです。小学校の1学年が200人だとしたら1学年に14人ほどは富裕層の人がいます。その人たちと同じぐらいにはすぐになれます。それでも多くの人は200人中の186人のままなのです。とにかく努力が嫌いなのです。とにかく楽だけをしたいのです。楽して儲かる方法という嘘に飛びついてきた人生なのです。</p>
+              <p class="faq__itemAnswerText">人生を変えたいならば、200人中14人になりたいならば、「投資の達人になる投資講座」に参加することです。</p>
+            </dd>
+          </dl>
+        </li>
+        <li class="faq__item jsExpand">
+          <dl class="faq__itemInner">
+            <dt class="faq__itemQuestion jsExpand--trigger">友人知人に教えてもよいですか？</dt>
+            <dd class="faq__itemAnswer jsExpand--target">
+              <p class="faq__itemAnswerText">はい、もちろんです。仲間は多ければ多いほど心強くなります。</p>
+            </dd>
+          </dl>
+        </li>
+        <li class="faq__item jsExpand">
+          <dl class="faq__itemInner">
+            <dt class="faq__itemQuestion jsExpand--trigger">この講座の主催者、運営会社はどこですか？</dt>
+            <dd class="faq__itemAnswer jsExpand--target">
+              <p class="faq__itemAnswerText">独立系資産運用コンサルティング会社の株式会社Free Life Consultingです。グループで年間70億円の売上、社員70名以上です。創業以来連続黒字、連続増益を達成している安定した企業グループです。</p>
+              <p class="faq__itemAnswerText">・ホームページ&nbsp;&nbsp;<a href="https://freelifegroup.jp/" target="_blank" rel="noopener noreferrer">https://freelifegroup.jp/</a><br>・会社案内動画&nbsp;&nbsp;<a href="https://youtu.be/6zCiRmduge4" target="_blank" rel="noopener noreferrer">https://youtu.be/6zCiRmduge4</a></p>
+            </dd>
+          </dl>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- /.faq -->
+  <div class="applyInduction">
+    <div class="applyInduction__wrapper">
+      <div class="applyInduction__contents">
+        <p class="applyInduction__text">＼お申し込みは<em>わずか30秒</em>／</p>
+        <p class="button button--shadow">
+
+            <a href="#form" class="button__link">無料公開中！<br><em>投資動画</em>(2時間)<em>を受け取る</em></a>
+        </p>
+        <div class="applyInduction__photo layout--pc">
+          <img src="static/picture/applyinduction_image01.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.applyInduction -->
+  <section class="lastMessage">
+    <div class="lastMessage__wrapper">
+      <h2 class="lastMessage__title">
+        <img src="static/picture/lastmessage_title01.png" alt="講座を監修した市川から最後の言葉">
+      </h2>
+      <div class="movie">
+        <video-js data-account="5974301517001" data-player="gkP9ytinq" data-embed="default" controls="" data-video-id="6272459381001" data-playlist-id="" data-application-id="" class="vjs-fluid"></video-js>
+        <script src="static/js/index.min.js"></script>
+      </div>
+      <div class="lastMessage__content">
+        <p class="lastMessage__text">みなさん、最後まで読んで頂いて有難うございました。<br class="layout--pc">ぜひ安心してこの投資の達人になる投資講座に参加して下さい。</p>
+        <p class="lastMessage__text">中身が空っぽの宣伝セミナーなどではありません。<br class="layout--pc">投資関係、お金関係の講座の中では、この日本で一番おすすめです。<br class="layout--pc">一番身になるという自負があります。<br class="layout--pc">私も色々なセミナーに参加していますので…。<br class="layout--pc">もしも他にもっと良いセミナーが存在するのであれば、当日こっそりと教えてください。<br class="layout--pc">そのセミナーに参加をして、良い部分を全て我々の講座に反映させます。</p>
+        <p class="lastMessage__text">私たちの理念は、“Fast alone, Far together.”というものです。<br class="layout--pc">「一人で行くなら早いけれど、遠くへ行くにはみんな一緒でないといけない」という意味です。<br class="layout--pc">お金のことは私一人の方が早いです。<br class="layout--pc">しかし、大きなことを成し遂げるには、日本を変えるには、みんなで協力しないとできないのです。<br class="layout--pc">日本人が投資に詳しくなれば、日本経済も活性化すると考えています。<br class="layout--pc">ぜひみなさん、一緒に遠くへ行きましょう。<br class="layout--pc">この講座ではみなさんのお金の弱みを強みに変えることを保証します。</p>
+        <p class="lastMessage__signature">
+          <img src="static/picture/lastmessage_text01.png" alt="市川 雄一郎">
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- /.lastMessage -->
+  <!-- <section class="teacherInstructors">
+    <div class="teacherInstructors__wrapper">
+      <h2 class="teacherInstructors__title">
+        <img src="static/picture/teacherinstructors_title01.png" alt="信頼と実績の運営元Global Financial School 名だたる講師陣の一例">
+      </h2>
+      <ul class="teacherInstructors__list">
+        <li class="teacherInstructors__item">
+          <p class="teacherInstructors__itemPhoto">
+            <img src="static/picture/teacherinstructors_image01.jpg" alt="">
+          </p>
+          <div class="teacherInstructors__itemProfile">
+            <p class="teacherInstructors__itemTitle">東京大学 名誉教授/<br class="layout--sp">学習院大学 教授</p>
+            <p class="teacherInstructors__itemName">伊藤元重氏</p>
+            <div class="teacherInstructors__itemDetail">
+              <p class="teacherInstructors__itemDetailText">税制調査会 委員 / 復興推進委員会 委員長 / 社会保障制度改革推進会議 委員 / 公正取引委員会 独占禁止懇話会 会長　など</p>
+              <p class="teacherInstructors__itemDetailText">著書<br>「ゼミナール国際経済入門」(日本経済新聞出版社) / 「ゼミナール現代経済入門 」(日本経済新聞社)　など多数</p>
+            </div>
+          </div>
+        </li>
+        <li class="teacherInstructors__item">
+          <p class="teacherInstructors__itemPhoto">
+            <img src="static/picture/teacherinstructors_image02.jpg" alt="">
+          </p>
+          <div class="teacherInstructors__itemProfile">
+            <p class="teacherInstructors__itemTitle">株式投資研究の世界的権威</p>
+            <p class="teacherInstructors__itemName">ジェレミー・<br class="layout--sp">シーゲル教授</p>
+            <div class="teacherInstructors__itemDetail">
+              <p class="teacherInstructors__itemDetailText">ぺンシルべニア大学大学院教授(金融論)<br>ウォートンの魔術師と称される。<br>ウィズダム・ツリー・インべストメンツの上級投資戦略アドバイザー。<br>CNN、CNBC、ウォールストリート・ジャーナル、バロンズ、フィナンシャル・タイムズ等のメディアにもたびたび登場し、市場関係者の注目を集めている。</p>
+            </div>
+          </div>
+        </li>
+        <li class="teacherInstructors__item">
+          <p class="teacherInstructors__itemPhoto">
+            <img src="static/picture/teacherinstructors_image03.jpg" alt="">
+          </p>
+          <div class="teacherInstructors__itemProfile">
+            <p class="teacherInstructors__itemTitle">60万円を3億円にした<br class="layout--sp">日本株式投資家</p>
+            <p class="teacherInstructors__itemName">堀哲也氏</p>
+            <div class="teacherInstructors__itemDetail">
+              <p class="teacherInstructors__itemDetailText">大きく動くきっかけのある銘柄を選び出し、その中からできる限りリスクの低い銘柄に投資する。<br>ヤフー！ファイナンスの掲示板などでの有望銘柄情報の拾い方から、『会社四季報』での投資候補の絞り方、他のプレイヤーの心理を読んで株価予想の精度を上げる手法に精通。</p>
+            </div>
+          </div>
+        </li>
+        <li class="teacherInstructors__item">
+          <p class="teacherInstructors__itemPhoto">
+            <img src="static/picture/teacherinstructors_image04.jpg" alt="">
+          </p>
+          <div class="teacherInstructors__itemProfile">
+            <p class="teacherInstructors__itemTitle">世界三大投資家の元義娘</p>
+            <p class="teacherInstructors__itemName">メアリー・<br class="layout--sp">バフェット氏</p>
+            <div class="teacherInstructors__itemDetail">
+              <p class="teacherInstructors__itemDetailText">世界一の株式投資家ウォーレン・バフェット氏の一番弟子。<br>12年間、バフェット投資を家族として身近で見てきた人物でありその投資哲学の伝道師。<br>バフェット投資手法について米国にてベストセラー書籍を多数執筆。<br>現在はUCLAを含む多数の大学にてファイナンスを講義している。</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section> -->
+  <!-- /.teacherInstructors -->  <section class="courseOutline">
+    <!-- <div class="courseOutline__wrapper">
+      <h2 class="courseOutline__title">
+        <img src="static/picture/courseoutline_title.png" alt="講座概要" class="courseOutline__titleText">
+      </h2>
+      <div class="courseOutline__box">
+        <div class="courseOutline__detail">
+          <dl class="courseOutline__detailList">
+            <dt class="courseOutline__detailTitle">講義時間</dt>
+            <dd class="courseOutline__detailText">2時間</dd>
+          </dl>
+          <dl class="courseOutline__detailList">
+            <dt class="courseOutline__detailTitle">講師</dt>
+          <dd class="courseOutline__detailText">市川雄一郎＆上野ゆきひろ 他</dd>
+          </dl>
+          <dl class="courseOutline__detailList">
+            <dt class="courseOutline__detailTitle">運営会社</dt>
+            <dd class="courseOutline__detailText">株式会社Free Life Consulting</dd>
+          </dl>
+          <dl class="courseOutline__detailList">
+            <dt class="courseOutline__detailTitle">所在地</dt>
+            <dd class="courseOutline__detailText">東京都港区芝浦3-9-1 芝浦ルネサイトタワー2F</dd>
+          </dl>
+          <dl class="courseOutline__detailList">
+            <dt class="courseOutline__detailTitle">最寄駅</dt>
+            <dd class="courseOutline__detailText">JR「田町」駅より徒歩4分<br>地下鉄「三田」駅より徒歩7分</dd>
+          </dl>
+        </div>
+        <div class="courseOutline__map">
+          <div class="courseOutline__mapImage gmap">
+            <iframe src="embed.html" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <!--/courseOutline-->
+  <div id="cancel-modal" class="cancelBox">
+    <form id="modal-form" class="cancelBox__form" action="" method="POST">
+      <input type="hidden" name="can_event_date">
+      <h3 class="cancelBox__title">キャンセル待ち申込</h3>
+      <div id="modal-msg-area" class="cancelBox__alert" style="display:none;"></div>
+      <ul class="cancelBox__list">
+        <li class="cancelBox__item">
+          <p class="cancelBox__itemTitle">申込日時</p>
+          <p id="str_area" class="cancelBox__itemDate"></p>
+        </li>
+        <li class="cancelBox__item">
+          <p class="cancelBox__itemTitle">メールアドレス<span class="required"></span></p>
+          <p id="str_area" class="cancelBox__itemMail">
+            <input type="email" inputmode="email" name="can_mail" placeholder="例) school@manebu.jp" value="" data-half="true">
+          </p>
+        </li>
+      </ul>
+      <p class="cancelBox__button">
+        <a class="cancelBox__buttonLink" href="javascript:void(0)" id="send-modal">キャンセル待ちに申し込む</a>
+      </p>
+      <p class="cancelBox__button cancelBox__button--close">
+        <a class="cancelBox__buttonLink close-btn" href="#close-modal" rel="modal:close">閉じる</a>
+      </p>
+    </form>
+  </div>
+  <!--/.cancelBox -->  <p class="pageTop">
+    <a href="#" class="pageTop__link">TOP</a>
+  </p>
+  <!-- /.pageTop -->
+</body>  
+<!-- <footer class="footer">
+    <div class="footer__wrapper">
+      <div class="footer__inner">
+        <div class="footer__contact">
+          <h2 class="footer__title">講座に関するお問い合わせ先</h2>
+          <ul class="footer__contactList">
+            <li class="footer__contactItem">
+              <p class="footer__contactItemMail">school@manebu.jp</p>
+              <p class="attention">※ご返答までに最大2営業日かかる場合があります。</p>
+            </li>
+            <li class="footer__contactItem">
+              <p class="footer__contactItemTel layout--pc">0120-99-8385</p>
+              <p class="footer__contactItemTel layout--sp"><a>0120-99-8385</a></p>
+              <p class="footer__contactItemText">365日 9:00-18:00受付（一部、長期休暇を除く）</p>
+              <p class="attention">※代表電話ですので、必ず「投資の達人講座の件」と<br class="layout--sp">お伝えください。<br>※受付担当者がご用件を承り、<br class="layout--sp">担当者から折り返しご連絡いたします。</p>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__member">
+          <div class="footer__memberPhoto">
+            <img src="static/picture/footer_image01.jpg" alt="">
+          </div>
+          <ul class="footer__memberNumbers">
+            <li class="footer__memberNumber">会社名　株式会社Free Life Consulting</li>
+            <li class="footer__memberNumber">従業員　70人（グループ全体で150人）</li>
+          </ul>
+        </div>
+        <div class="footer__company">
+          <ul class="footer__companySns">
+            <li class="footer__companySnsItem footer__companySnsItem--twitter">
+              <a href="https://twitter.com/share?url=https%3A//toushi-up.com/guest/&text=GlobalFinancialSchool%E7%9B%A3%E4%BF%AE%EF%BC%81%E4%BB%96%E3%81%AE%E6%8A%95%E8%B3%87%E8%AC%9B%E5%BA%A7%E3%81%A8%E3%81%AF%E9%81%95%E3%81%86%E6%9C%AC%E5%BD%93%E3%81%AE%E8%A9%B1%E3%82%92%E8%81%9E%E3%81%8D%E3%81%9F%E3%81%8F%E3%81%82%E3%82%8A%E3%81%BE%E3%81%9B%E3%82%93%E3%81%8B%EF%BC%9F%E4%BB%8A%E6%9C%88%E3%81%A0%E3%81%91%E6%8A%95%E8%B3%87%E3%81%AE%E9%81%94%E4%BA%BA%E3%81%AB%E3%81%AA%E3%82%8B%E6%8A%95%E8%B3%87%E8%AC%9B%E5%BA%A7%E3%81%AE%E7%84%A1%E6%96%99%E4%BD%93%E9%A8%93%E5%AE%9F%E6%96%BD%E4%B8%AD%EF%BC%81" target="_blank" rel="noopener noreferrer" class="footer__companySnsItemLink">
+                <img src="static/picture/footer_icon_twitter01.png" alt="Twitter">
+              </a>
+            </li>
+            <li class="footer__companySnsItem footer__companySnsItem--facebook">
+              <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//toushi-up.com/guest/" target="_blank" rel="noopener noreferrer" class="footer__companySnsItemLink">
+                <img src="static/picture/footer_icon_facebook01.png" alt="Facebook">
+              </a>
+            </li>
+            <li class="footer__companySnsItem footer__companySnsItem--line">
+              <a href="https://social-plugins.line.me/lineit/share?url=https%3A//toushi-up.com/guest/" target="_blank" rel="noopener noreferrer" class="footer__companySnsItemLink">
+                <img src="static/picture/footer_icon_line01.png" alt="LINE">
+              </a>
+            </li>
+          </ul>
+          <ul class="footer__companyInfo">
+            <li class="footer__companyInfoItem">
+              <a href="https://freelifegroup.jp/company/#company" target="_blank" rel="noopener noreferrer" class="footer__companyInfoItemLink">会社概要</a>
+            </li>
+            <li class="footer__companyInfoItem">
+              <a href="https://freelifegroup.jp/privacy/" target="_blank" rel="noopener noreferrer" class="footer__companyInfoItemLink">個人情報保護方針</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__gptw">
+          <div class="footer__gptwMark">
+            <img src="static/picture/footer_logo_gptw.png" alt="Great Place To Work">
+          </div>
+          <div class="footer__gptwDetail">
+            <p class="footer__gptwDetailText">私達はGreat Place to Work®から<br>「働きがいのある会社」に認定されています。</p>
+          </div>
+        </div>
+      </div>
+      <p class="footer__copyright">Copyright © Free Life Consulting All Rights Reserved.</p>
+    </div>
+  </footer> -->
+  <!-- /.footer -->
+</html>
