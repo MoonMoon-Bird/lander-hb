@@ -1,0 +1,420 @@
+/*オリジナル*/
+body {
+  font-family:'メイリオ', 'Meiryo', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', sans-serif;
+}
+
+p .bred {
+	color:red;
+	font-weight: bold;
+}
+
+p .bblue {
+	color:blue;
+	font-weight: bold;
+}
+
+img {
+	margin-top: 3em;
+	margin-bottom: 3em;
+}
+
+.pad01 {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+/*オリジナル*/
+
+section {
+    padding: 70px 0;
+    position: relative;
+}
+
+section .inner {
+    overflow: visible;
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 50px 50px;
+}
+
+.sec_6 .box_3 {
+    overflow-y: scroll;
+    height: 200px;
+    padding: 1em;
+    border: #bababa solid 1px;
+}
+
+.box_4 {
+    height: 100%;
+    padding: 1em;
+    border: #bababa solid 1px;
+}
+
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+section {
+  display: block;
+}
+
+section::after {
+  display: block;
+  clear: both;
+  content: '';
+}
+
+@media screen and (max-width: 1024px) {
+  section .inner {
+    padding: 5% 2%;
+  }
+}
+
+@media screen and (max-width: 767px) {	
+  section {
+    padding: 5% 0;
+  }
+
+section .inner {
+    padding: 0 2%;
+}
+
+p {
+    font-size: 11px;
+    font-size: 1.1rem;
+}
+}
+
+.sec_6 .box_3 p {
+    font-size: 11px;
+    font-size: 1.1rem;
+}
+
+.box_4 p {
+    font-size: 9px;
+    font-size: 0.9rem;
+}
+
+.btn_sita p {
+    font-size: 9px;
+    font-size: 0.9rem;
+	padding: 1em 5em 3em 5em;
+}
+
+@media screen and (max-width: 768px) {
+.sec_6 .box_3 p {
+  font-size: 8px;
+  font-size: 0.8rem;
+}
+	
+.box_4 p {
+  font-size: 7px;
+  font-size: 0.7rem;
+}
+
+.btn_sita p {
+  font-size: 7px;
+  font-size: 0.7rem;
+}
+
+.sec_6 .box_3 {
+    height: 150px;
+}
+	
+.box_4 {
+    height: 100%;
+}
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+p {
+  font-size: 22px;
+  font-size: 2.2rem;
+  line-height: 1.65em;
+  margin-bottom: 1.5em;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 550px) {
+.sec_6 .box_3 p {
+  font-size: 5px;
+  font-size: 0.5rem;
+}
+	
+.box_4 p {
+  font-size: 4px;
+  font-size: 0.4rem;
+}
+	
+.btn_sita p {
+  font-size: 4px;
+  font-size: 0.4rem;
+}
+	
+.box_4 {
+    height: 100%;
+}
+}
+
+
+
+
+
+
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  min-height: 100%;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+.main {
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+.sec02,
+.mailform {
+  background: url(https://jmar-bi.com/nshf3-1/img/bg_math.jpg) repeat;
+  background-size: cover;
+  background-position: 0 0;
+}
+
+.sec-inner {
+  max-width: 80%;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.mailform .sec-inner {
+  padding-bottom: 40px;
+}
+
+.mailform .pub_form {
+  margin-bottom: 4%;
+}
+
+.mailform .pub_form dt,
+.mailform hr {
+  display: none;
+}
+
+.mailform .pub_form dd {
+  text-align: center;
+}
+
+.mailform .pub_form dd input {
+  width: 88%;
+  height: 8.5vw;
+  max-height: 85px;
+  border: 6px solid #c0c0c0;
+  font-size: 3.5vw;
+  color: #959595;
+  text-align: center;
+  border-radius: 5px;
+  padding: 1vw;
+}
+
+.mailform .pub_form dd input:focus {
+  outline: none;
+}
+
+.mailform .btn_submit {
+  width: 88%;
+  margin: 0 auto;
+  text-align: center;
+  background: url(https://jmar-bi.com/nshf3-1/img/cta_btn.png) no-repeat;
+  background-size: contain;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.mailform .btn_submit:hover {
+  opacity: 0.7;
+}
+
+.mailform .btn_submit input {
+  width: 100%;
+  height: 13vw;
+  max-height: 140px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.footer {
+  background-color: #2A2A2A;
+  padding: 20px;
+}
+
+.tokusyoho img,
+.copy img {
+  vertical-align: middle;
+}
+
+.tokusyoho {
+  display: block;
+  width: 20%;
+  margin: 0 auto;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.tokusyoho:hover {
+  opacity: 0.7;
+}
+
+.copy {
+  width: 38%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+.mailform .pub_form dd input {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 767px) {
+.mailform .pub_form dd input {
+    border-width: 3px;
+  }
+  .tokusyoho {
+    width: 30vw;
+  }
+  .copy {
+    width: 54vw;
+  }
+}
+@media screen and (max-width: 500px) {
+.mailform .sec-inner {
+    padding-bottom: 20px;
+  }
+  .footer {
+    padding: 10px;
+  }
+  .copy {
+    margin-top: -8px;
+  }
+}
+.tokushoho {
+  min-height: 100vh;
+}
+.tokushoho article {
+  padding: 60px 20px;
+}
+.tokushoho .entry-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.tokushoho table {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-top: 1px #999 solid;
+  border-right: 1px #999 solid;
+  width: 100%;
+  max-width: 100%;
+}
+.tokushoho table tr td {
+  font-size: 15px;
+  line-height: 24px;
+  padding: 10px;
+  border-bottom: 1px solid #999;
+  border-left: 1px solid #999;
+  vertical-align: top;
+}
+.tokushoho table tr td:first-child {
+  width: 130px;
+  background: #ebebeb;
+}
+.tokushoho .copy {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  margin-top: 0 !important;
+}
+@media screen and (max-width: 1060px) {
+  .tokushoho article {
+    padding: 40px 15px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .tokushoho tr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .tokushoho td {
+    width: 100% !important;
+  }
+  .tokushoho footer {
+    padding: 20px;
+  }
+  .tokushoho .copy {
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=style.css.map */
+
+
+	.sec01 p {
+	font-size: 20px	;
+	}
+
+@media screen and (max-width: 768px) {
+	.sec01 p {
+	font-size: 18px	;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.sec01 p {
+	font-size: 18px	;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.sec01 p {
+	font-size: 15px	;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.sec01 p {
+	font-size: 15px	;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.sec01 p {
+	font-size: 14px	;
+	}
+}
