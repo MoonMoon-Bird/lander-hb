@@ -1,0 +1,161 @@
+ 
+
+ 
+     <!DOCTYPE html>
+     <!-- saved from url=(0038)https://2fagez.xyz:66/?channelCode=m96 -->
+     <html lang="zh_CN" style="font-size: 54.5638px;">
+     
+     <head>
+         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <script>
+         //渠道
+         function getQueryString(name) {
+             var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+             var reg_rewrite = new RegExp("(^|/)" + name + "/([^/]*)(/|$)", "i");
+             var r = window.location.search.substr(1).match(reg);
+             var q = window.location.pathname.substr(1).match(reg_rewrite);
+             if (r != null) {
+                 return unescape(r[2]);
+             } else if (q != null) {
+                 return unescape(q[2]);
+             } else {
+                 return null;
+             }
+         }
+         if (getQueryString('channelCode') == null) {
+             var rootUrl = window.location.href;
+             var channelCode = 'ac555';
+             var proxyAccount = '';
+             window.location.href = rootUrl + '?channelCode=' + channelCode + '' + proxyAccount;
+         }
+     
+     </script>
+         <meta id="noback" name="noback" content="1">
+         <meta id="myversion" name="myversion" content="d4f6sdd">
+         <link rel="stylesheet" type="text/css" href="static/css/style.css">
+         <link rel="stylesheet" type="text/css" href="static/css/css.css">
+         <script type="text/javascript" src="static/js/jquery.min.js"></script>
+         <script type="text/javascript" src="static/js/qrcode.min.js"></script>
+         <script src="static/js/appinstall.js"></script>
+         <style type="text/css">
+             #qrcode {
+                 text-align: center;
+                 background-color: #fff;
+                 border-radius: 10px;
+                 width: 116px;
+                 height: 116px;
+                 margin: auto;
+                 position: absolute;
+                 top: 230px;
+                 left: 50%;
+                 -webkit-transform: translate(-50%, -50%);
+                 -moz-transform: translate(-50%, -50%);
+                 -ms-transform: translate(-50%, -50%);
+                 -o-transform: translate(-50%, -50%);
+                 transform: translate(-50%, -50%);
+             }
+     
+             .out-mask {
+                 display: none;
+                 position: fixed;
+                 top: 0;
+                 left: 0;
+                 right: 0;
+                 bottom: 0;
+                 background: rgba(0, 0, 0, 0.8);
+                 z-index: 50;
+             }
+     
+             .out-panel {
+                 position: absolute;
+                 left: 0;
+                 right: 0;
+                 top: 25%;
+                 width: 80%;
+                 margin: 0 auto;
+                 max-width: 660px;
+                 padding: 15px 15px 0;
+             }
+     
+             .out-panel .out-close {
+                 position: absolute;
+                 right: 20px;
+                 top: -20px;
+                 width: 40px;
+             }
+     
+             .out-panel .out-bg {
+                 width: 100%;
+             }
+     
+             .out-panel .game-down {
+                 position: absolute;
+                 display: block;
+                 width: 50%;
+                 height: 20%;
+                 bottom: -20px;
+                 left: 25%;
+             }
+     
+             .out-panel .game-down {
+                 background-image: url(https://mjhongkong.oss-cn-hongkong.aliyuncs.com/page33_noback/static/btn02.png);
+                 background-size: 100% 100%;
+                 background-repeat: no-repeat;
+             }
+     
+             a[title="站长统计"] {
+                 display: none;
+             }
+         </style>
+     </head>
+     
+     <body>
+         <div class="downloadButton">
+             <div id="allpng">
+                 <div class="header mbtn"><img src="static/picture/heads.png"></div>
+                 <div class="zw"></div>
+                 <div class="content mbtn">
+                     <div class="play-item"><img src="https://jhsdkj.oss-cn-hangzhou.aliyuncs.com/dj981/js/loading.js"><img class="play-btn" src="static/picture/play.png"></div><img src="https://jhsdkj.oss-cn-hangzhou.aliyuncs.com/dj981/js/index_1.js"><img src="https://jhsdkj.oss-cn-hangzhou.aliyuncs.com/dj981/js/index_2.js">
+                 </div>
+                 <div class="zw"></div>
+                 <div class="footer mbtn"><img src="static/picture/foots.png"></div>
+             </div>
+         </div>
+         <!-- <div id="codeDiv" style="display: none;" title=""><canvas width="166"
+                 height="166" style="display: none;"></canvas></div> -->
+         <!-- <div id="qrcode" style="width: 170px; height: 195px; font-size: 16px; display: block;"> 手机扫码下载</div> -->
+         <div class="out-mask">
+             <!--<div class="out-panel"><img src="https://jhsdkj.oss-cn-hangzhou.aliyuncs.com/dj981/tupian/close.png" alt="" class="out-close">-->
+                 <!--<img src="https://jhsdkj.oss-cn-hangzhou.aliyuncs.com/dj981/js/AKvB.js" class="out-bg">-->
+                 <!--<div class="game-down downloadButton"></div>--><div>
+             </div>
+         </div>
+         <script type="text/javascript" src="static/js/onclick.js"></script>
+         <script>
+     $(document).ready(function(){
+     
+         var codeUrl = window.location.href
+             var qrcode = new QRCode(document.getElementById("qrcode"), {
+                 text: codeUrl,
+                 render: "canvas",  //
+                 width: 166,
+                 height: 166,
+                 typeNumber:-1,//
+                 colorDark : "#000000",   
+                 colorLight : "#ffffff",
+                 position : "absolute",
+                 bottom : "0",   
+                 correctLevel : QRCode.CorrectLevel.H  
+             });
+            
+     
+     })
+     
+     
+     </script>
+     <script id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+     <script>LA.init({id:"JlhoQBNlQDKfAxfu",ck:"JlhoQBNlQDKfAxfu"})</script>
+</body>
+     </html> 
